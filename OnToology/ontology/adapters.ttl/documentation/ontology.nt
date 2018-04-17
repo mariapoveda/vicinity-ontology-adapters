@@ -1,0 +1,940 @@
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#imports> <http://iot.linkeddata.es/def/core#> .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/elements/1.1/title> "Vicinity adapters model"@en .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://www.garcia-castro.com/foaf.rdf#me> .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#cardinality
+<http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://iot.linkeddata.es/def/adapters#ActivityTracker
+<http://iot.linkeddata.es/def/adapters#ActivityTracker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#ActivityTracker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#ActivityTracker> <http://www.w3.org/2000/01/rdf-schema#label> "Activity tracker"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty
+<http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient humidity property"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AmbientProperty
+<http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "AmbientProperty"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty
+<http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient temperature property"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Battery
+<http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/2000/01/rdf-schema#label> "Battery"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BeaconReader
+<http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#label> "Beacon reader"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BloodPressureMonitor
+<http://iot.linkeddata.es/def/adapters#BloodPressureMonitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#BloodPressureMonitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#BloodPressureMonitor> <http://www.w3.org/2000/01/rdf-schema#label> "Blood pressure monitor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#CO2Sensor
+<http://iot.linkeddata.es/def/adapters#CO2Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#CO2Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 Sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#CarbonDioxide
+<http://iot.linkeddata.es/def/adapters#CarbonDioxide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#CarbonDioxide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#CarbonDioxide> <http://www.w3.org/2000/01/rdf-schema#label> "CarbonDioxide"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#CarbonMonoxide
+<http://iot.linkeddata.es/def/adapters#CarbonMonoxide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#CarbonMonoxide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#CarbonMonoxide> <http://www.w3.org/2000/01/rdf-schema#label> "CarbonMonoxide"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Charger
+<http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/2000/01/rdf-schema#label> "Charger"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DoorSensor
+<http://iot.linkeddata.es/def/adapters#DoorSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#DoorSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#DoorSensor> <http://www.w3.org/2000/01/rdf-schema#label> "DoorSensor"@en .
+<http://iot.linkeddata.es/def/adapters#DoorSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://iot.linkeddata.es/def/adapters#EBikeCharger
+<http://iot.linkeddata.es/def/adapters#EBikeCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#EBikeCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#Charger> .
+<http://iot.linkeddata.es/def/adapters#EBikeCharger> <http://www.w3.org/2000/01/rdf-schema#label> "eBikeCharger"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#EVCharger
+<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#Charger> .
+<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charging point"@en .
+<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle chargeren" .
+# 
+# http://iot.linkeddata.es/def/adapters#HVACSensor
+<http://iot.linkeddata.es/def/adapters#HVACSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#HVACSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Actuator> .
+<http://iot.linkeddata.es/def/adapters#HVACSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#HVACSensor> <http://www.w3.org/2000/01/rdf-schema#label> "HVAC Sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HealthProperty
+<http://iot.linkeddata.es/def/adapters#HealthProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#HealthProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#HealthProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Helth property"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HumiditySensor
+<http://iot.linkeddata.es/def/adapters#HumiditySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor
+<http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor climate quality sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Irradiance
+<http://iot.linkeddata.es/def/adapters#Irradiance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Irradiance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#LightProperty> .
+<http://iot.linkeddata.es/def/adapters#Irradiance> <http://www.w3.org/2000/01/rdf-schema#label> "Irradiance"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#LightProperty
+<http://iot.linkeddata.es/def/adapters#LightProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#LightProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#LightProperty> <http://www.w3.org/2000/01/rdf-schema#label> "LightProperty"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#LightSwitch
+<http://iot.linkeddata.es/def/adapters#LightSwitch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Actuator> .
+<http://iot.linkeddata.es/def/adapters#LightSwitch> <http://www.w3.org/2000/01/rdf-schema#label> "Light switch"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Lightbulb
+<http://iot.linkeddata.es/def/adapters#Lightbulb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Lightbulb> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#Lightbulb> <http://www.w3.org/2000/01/rdf-schema#label> "Lightbulb"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#LuminanceMeter
+<http://iot.linkeddata.es/def/adapters#LuminanceMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#LuminanceMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#LuminanceMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Luminance meter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#LuminusFlux
+<http://iot.linkeddata.es/def/adapters#LuminusFlux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#LuminusFlux> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#LightProperty> .
+<http://iot.linkeddata.es/def/adapters#LuminusFlux> <http://www.w3.org/2000/01/rdf-schema#label> "Luminus flux"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#LuminusIntensity
+<http://iot.linkeddata.es/def/adapters#LuminusIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#LuminusIntensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#LightProperty> .
+<http://iot.linkeddata.es/def/adapters#LuminusIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "LuminusIntensity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MotionProperty
+<http://iot.linkeddata.es/def/adapters#MotionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#MotionProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#MotionProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Motion property"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MotionSensor
+<http://iot.linkeddata.es/def/adapters#MotionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Motion sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#NoiseSensor
+<http://iot.linkeddata.es/def/adapters#NoiseSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#NoiseSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#NoiseSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Noise sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#OccupancySensor
+<http://iot.linkeddata.es/def/adapters#OccupancySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#OccupancySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#OccupancySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Occupancy sensor"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#OperationalStatus
+<http://iot.linkeddata.es/def/adapters#OperationalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#OperationalStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#OperationalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Operational status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PanicButton
+<http://iot.linkeddata.es/def/adapters#PanicButton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PanicButton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#PanicButton> <http://www.w3.org/2000/01/rdf-schema#label> "Panic button"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PeopleCounter
+<http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)"@en .
+<http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#label> "People counter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PowerConsumption
+<http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+<http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Power consumption"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PowerMeter
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "PowerMeter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Presence
+<http://iot.linkeddata.es/def/adapters#Presence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Presence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#Presence> <http://www.w3.org/2000/01/rdf-schema#label> "Presence"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PressureMat
+<http://iot.linkeddata.es/def/adapters#PressureMat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PressureMat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#PressureMat> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure mat"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Radiance
+<http://iot.linkeddata.es/def/adapters#Radiance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Radiance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#LightProperty> .
+<http://iot.linkeddata.es/def/adapters#Radiance> <http://www.w3.org/2000/01/rdf-schema#label> "Radiance"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#RadiantIntensity
+<http://iot.linkeddata.es/def/adapters#RadiantIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#RadiantIntensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#LightProperty> .
+<http://iot.linkeddata.es/def/adapters#RadiantIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Radiant intensity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#SmartOven
+<http://iot.linkeddata.es/def/adapters#SmartOven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#SmartOven> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#SmartOven> <http://www.w3.org/2000/01/rdf-schema#label> "Smart oven"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#SmartRefrigerator
+<http://iot.linkeddata.es/def/adapters#SmartRefrigerator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#SmartRefrigerator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#SmartRefrigerator> <http://www.w3.org/2000/01/rdf-schema#label> "Smart refrigerator"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Sound
+<http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#label> "Sound"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#TemperatureProperty
+<http://iot.linkeddata.es/def/adapters#TemperatureProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#TemperatureProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#TemperatureProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Thermometer
+<http://iot.linkeddata.es/def/adapters#Thermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Thermometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#Thermometer> <http://www.w3.org/2000/01/rdf-schema#label> "Thermometer"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Thermostat
+<http://iot.linkeddata.es/def/adapters#Thermostat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Actuator> .
+<http://iot.linkeddata.es/def/adapters#Thermostat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#Thermostat> <http://www.w3.org/2000/01/rdf-schema#label> "Thermostat"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#TimeProperty
+<http://iot.linkeddata.es/def/adapters#TimeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#TimeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#TimeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "TimeProperty"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WaterEnergyMeter
+<http://iot.linkeddata.es/def/adapters#WaterEnergyMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#WaterEnergyMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#WaterEnergyMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterEnergyMeter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WaterFlowMeter
+<http://iot.linkeddata.es/def/adapters#WaterFlowMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#WaterFlowMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#WaterFlowMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterFlowMeter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WeightScale
+<http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/2000/01/rdf-schema#label> "Weight scale"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WindowSensor
+<http://iot.linkeddata.es/def/adapters#WindowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
+<http://iot.linkeddata.es/def/adapters#WindowSensor> <http://www.w3.org/2000/01/rdf-schema#label> "WindowSensor"@en .
+<http://iot.linkeddata.es/def/adapters#WindowSensor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://iot.linkeddata.es/def/core#Actuator
+<http://iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Actuator> .
+<http://iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "An actuator is a device that accepts digital inputs and which acts on (changes) one or more properties of a physical entity on the basis of those inputs. An actuator is a specialization of an IoT device. An actuator acts on a physical entity. (definition taken from ISO/IEC 11404:2007)"@en .
+<http://iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator"@en .
+<http://iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+# 
+# http://iot.linkeddata.es/def/core#Device
+<http://iot.linkeddata.es/def/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "An IoT device is a digital entity which bridges between real-world physical entities and the other digital entities of an IoT system. IoT device interacts one or more networks through which interactions are made with other entities. IoT device exposes one or more endpoints by which interactions are made. (definition taken from ISO/IEC 11404:2007)"@en .
+<http://iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+<http://iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+# 
+# http://iot.linkeddata.es/def/core#Sensor
+<http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Sensor> .
+<http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A sensor is a device that detects and responds to some type of input from the physical environment and outputs digital data that can be transmitted over a network. A sensor is a specialization of an IoT device. A sensor monitors a physical entity. The output digital data may only be distantly related to the input from the physical environment and may be output with a significant time delay, depending on processing of the data within the device, for example, the recognition of the identity of a person from a surveillance camera device. (definition taken from ISO/IEC 11404:2007)"@en .
+<http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+# 
+# http://www.w3.org/ns/sosa/ActuatableProperty
+<http://www.w3.org/ns/sosa/ActuatableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/ActuatableProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+# 
+# http://www.w3.org/ns/sosa/Actuator
+<http://www.w3.org/ns/sosa/Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/ObservableProperty
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/Property> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'property' [O&M] \n\t\t                    http://www.opengeospatial.org/standards/om" .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."@en .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "A ssn:Property is something that is a DUL:Quality and has a ssn:isPropertyOf property who may be a ssn:FeatureOfInterest"@en .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable Quality of an Event or Object.  That is, not a quality of an abstract entity as is also allowed by DUL's Quality, but rather an aspect of an entity that is intrinsic to and cannot exist without the entity and is observable by a sensor." .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/ssn/> .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn#" .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#label> "property (ssn)" .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton" .
+<http://www.w3.org/ns/ssn/Property> <http://www.w3.org/2004/02/skos/core#definition> "A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity."@en .
+# 
+# http://www.w3.org/ns/ssn/systems/Accuracy
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'measurement accuracy/accuracy' [VIM 2.13] \n\t\t                    http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://www.w3.org/2000/01/rdf-schema#comment> "The closeness of agreement between the value of an observation and the true value of the observed quality." .
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://www.w3.org/2000/01/rdf-schema#label> "Accuracy" .
+<http://www.w3.org/ns/ssn/systems/Accuracy> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/BatteryLifetime
+<http://www.w3.org/ns/ssn/systems/BatteryLifetime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SurvivalProperty> .
+<http://www.w3.org/ns/ssn/systems/BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#comment> "Total useful life of a battery." .
+<http://www.w3.org/ns/ssn/systems/BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#label> "Battery Lifetime" .
+<http://www.w3.org/ns/ssn/systems/BatteryLifetime> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/Condition
+<http://www.w3.org/ns/ssn/systems/Condition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Condition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/Condition> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to specify ranges for qualities that act as conditions on a system/sensor's operation.  For example, wind speed of 10-60m/s is expressed as a condition linking a quality, wind speed, a unit of measurement, metres per second, and a set of values, 10-60, and may be used as the condition on a MeasurementProperty, for example, to state that a sensor has a particular accuracy in that condition." .
+<http://www.w3.org/ns/ssn/systems/Condition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Condition> <http://www.w3.org/2000/01/rdf-schema#label> "Condition" .
+<http://www.w3.org/ns/ssn/systems/Condition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Base#ConstraintBlock" .
+# 
+# http://www.w3.org/ns/ssn/systems/DetectionLimit
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'detection limit' [VIM 4.18] \n                                 http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://www.w3.org/2000/01/rdf-schema#comment> "An observed value for which the probability of falsely claiming the absence of a component in a material is \u00CE\u00B2, given a probability \u00CE\u00B1 of falsely claiming its presence." .
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://www.w3.org/2000/01/rdf-schema#label> "detection limit" .
+<http://www.w3.org/ns/ssn/systems/DetectionLimit> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/Drift
+<http://www.w3.org/ns/ssn/systems/Drift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Drift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Drift> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'instrumental drift' [VIM 4.21]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/Drift> <http://www.w3.org/2000/01/rdf-schema#comment> "A, continuous or incremental, change in the reported values of observations over time for an unchanging quality." .
+<http://www.w3.org/ns/ssn/systems/Drift> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Drift> <http://www.w3.org/2000/01/rdf-schema#label> "Drift" .
+<http://www.w3.org/ns/ssn/systems/Drift> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/Frequency
+<http://www.w3.org/ns/ssn/systems/Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "The smallest possible time between one observation and the next." .
+<http://www.w3.org/ns/ssn/systems/Frequency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency" .
+<http://www.w3.org/ns/ssn/systems/Frequency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/Latency
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#comment> "The time between a request for an observation and the sensor providing a result." .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#label> "Latency" .
+<http://www.w3.org/ns/ssn/systems/Latency> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/MaintenanceSchedule
+<http://www.w3.org/ns/ssn/systems/MaintenanceSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/MaintenanceSchedule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+<http://www.w3.org/ns/ssn/systems/MaintenanceSchedule> <http://www.w3.org/2000/01/rdf-schema#comment> "Schedule of maintenance for a system/sensor in the specified conditions." .
+<http://www.w3.org/ns/ssn/systems/MaintenanceSchedule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/MaintenanceSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Schedule" .
+<http://www.w3.org/ns/ssn/systems/MaintenanceSchedule> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/MeasurementRange
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'measuring interval/measurement range' [VIM 4.7]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of values that the sensor can return as the result of an observation under the defined conditions with the defined measurement properties.  (If no conditions are specified or the conditions do not specify a range for the observed qualities, the measurement range is to be taken as the condition for the observed qualities.)" .
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement  Range" .
+<http://www.w3.org/ns/ssn/systems/MeasurementRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/OperatingPowerRange
+<http://www.w3.org/ns/ssn/systems/OperatingPowerRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/OperatingPowerRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+<http://www.w3.org/ns/ssn/systems/OperatingPowerRange> <http://www.w3.org/2000/01/rdf-schema#comment> "Power range in which system/sensor is expected to operate." .
+<http://www.w3.org/ns/ssn/systems/OperatingPowerRange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/OperatingPowerRange> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Power Range" .
+<http://www.w3.org/ns/ssn/systems/OperatingPowerRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/OperatingProperty
+<http://www.w3.org/ns/ssn/systems/OperatingProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/OperatingProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/OperatingProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifiable characteristic of the environmental and other conditions in which the sensor is intended to operate.  May include power ranges, power sources, standard configurations, attachments and the like." .
+<http://www.w3.org/ns/ssn/systems/OperatingProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/OperatingProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Property" .
+<http://www.w3.org/ns/ssn/systems/OperatingProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/OperatingRange
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://purl.org/dc/elements/1.1/source> "skos:broaderMatch 'reference operating condition' [VIM 4.11]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf\n\nThe difference is that here we also allow for qualities that aren't VIM influence quantities [VIM 2.52] - for example, a quantity that alters the power requirements, but doesn't affect the measurement properties - conditions specified in MeasurementCapability should be influence quantities." .
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The environmental conditions and characteristics of a system/sensor's normal operating environment.  Can be used to specify for example the standard environmental conditions in which the sensor is expected to operate (a Condition with no OperatingProperty), or how the environmental and other operating properties relate: i.e., that the maintenance schedule or power requirements differ according to the conditions." .
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://www.w3.org/2000/01/rdf-schema#label> "Operating Range" .
+<http://www.w3.org/ns/ssn/systems/OperatingRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/Precision
+<http://www.w3.org/ns/ssn/systems/Precision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Precision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Precision> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'measurement precision/precision' [VIM 2.15]\n                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/Precision> <http://www.w3.org/2000/01/rdf-schema#comment> "The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor's ability to consitently reproduce an observation." .
+<http://www.w3.org/ns/ssn/systems/Precision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Precision> <http://www.w3.org/2000/01/rdf-schema#label> "Precision" .
+<http://www.w3.org/ns/ssn/systems/Precision> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/Resolution
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'resolution' [VIM 4.14]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://www.w3.org/2000/01/rdf-schema#comment> "The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results." .
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://www.w3.org/2000/01/rdf-schema#label> "Resolution" .
+<http://www.w3.org/ns/ssn/systems/Resolution> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/ResponseTime
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'step response time' [VIM 4.23]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) 'settling' on an observed value." .
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://www.w3.org/2000/01/rdf-schema#label> "Response time" .
+<http://www.w3.org/ns/ssn/systems/ResponseTime> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/Selectivity
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'selectivity' [VIM 4.13]\n                                 http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Selectivity is a property of a sensor whereby it provides observed values for one or more qualities such that the values of each quality are independent of other qualities in the phenomenon, body, or substance being investigated." .
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Selectivity" .
+<http://www.w3.org/ns/ssn/systems/Selectivity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/Sensitivity
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SystemProperty> .
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'sensitivity' [VIM 4.12]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed." .
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://www.w3.org/2000/01/rdf-schema#label> "Sensitivity" .
+<http://www.w3.org/ns/ssn/systems/Sensitivity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/SurvivalProperty
+<http://www.w3.org/ns/ssn/systems/SurvivalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/SurvivalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/SurvivalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifiable characteristic that represents the extent of the sensors useful life.  Might include for example total battery life or number of recharges, or, for sensors that are used only a fixed number of times, the number of observations that can be made before the sensing capability is depleted." .
+<http://www.w3.org/ns/ssn/systems/SurvivalProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/SurvivalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Survival Property" .
+<http://www.w3.org/ns/ssn/systems/SurvivalProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/SurvivalRange
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://purl.org/dc/elements/1.1/source> "skos:narrowerMatch 'limiting operating condition' [VIM 4.10]\n                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://www.w3.org/2000/01/rdf-schema#comment> "The conditions a sensor can be exposed to without damage: i.e., the sensor continues to operate as defined using MeasurementCapability.  If, however, the SurvivalRange is exceeded, the sensor is 'damaged' and MeasurementCapability specifications may no longer hold." .
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://www.w3.org/2000/01/rdf-schema#label> "Survival Range" .
+<http://www.w3.org/ns/ssn/systems/SurvivalRange> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/SystemCapability
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://purl.org/dc/elements/1.1/source> "Similar idea to MeasurementCapability in MMI Device Ontology\n                                  http://marinemetadata.org/community/teams/ontdevices\n\nBut the the two express the relationship between constraints and multiple measurement properties differently.\n\nThe conditions linked to a MeasurementCapability are skos:exactMatch to 'influence quantity' [VIM 2.52]\nhttp://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf" .
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#comment> "Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor's capability in those conditions.\n\nThe conditions specified here are those that affect the measurement properties, while those in OperatingRange represent the sensor's standard operating conditions, including conditions that don't affect the observations." .
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement Capability" .
+<http://www.w3.org/ns/ssn/systems/SystemCapability> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# http://www.w3.org/ns/ssn/systems/SystemLifetime
+<http://www.w3.org/ns/ssn/systems/SystemLifetime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/SystemLifetime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/SurvivalProperty> .
+<http://www.w3.org/ns/ssn/systems/SystemLifetime> <http://www.w3.org/2000/01/rdf-schema#comment> "Total useful life of a sensor/system (expressed as total life since manufacture, time in use, number of operations, etc.)." .
+<http://www.w3.org/ns/ssn/systems/SystemLifetime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/SystemLifetime> <http://www.w3.org/2000/01/rdf-schema#label> "System Lifetime" .
+<http://www.w3.org/ns/ssn/systems/SystemLifetime> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction" .
+# 
+# http://www.w3.org/ns/ssn/systems/SystemProperty
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifiable and observable characteristic of a sensor's observations or ability to make observations." .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/ssn" .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement  Property" .
+<http://www.w3.org/ns/ssn/systems/SystemProperty> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://iot.linkeddata.es/def/adapters#AmbientTemperature
+<http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageCO2Concentration
+<http://iot.linkeddata.es/def/adapters#AverageCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
+<http://iot.linkeddata.es/def/adapters#AverageCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Average CO2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation
+<http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
+<http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average CO2 deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageHumidity
+<http://iot.linkeddata.es/def/adapters#AverageHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Average humidity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation
+<http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average humidity deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageLightIntensity
+<http://iot.linkeddata.es/def/adapters#AverageLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LuminusIntensity> .
+<http://iot.linkeddata.es/def/adapters#AverageLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageLightIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Average light intensity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageMovemenetShare
+<http://iot.linkeddata.es/def/adapters#AverageMovemenetShare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageMovemenetShare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageMovemenetShare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageMovemenetShare> <http://www.w3.org/2000/01/rdf-schema#label> "Average movemenet share"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageMovementTime
+<http://iot.linkeddata.es/def/adapters#AverageMovementTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageMovementTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageMovementTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageMovementTime> <http://www.w3.org/2000/01/rdf-schema#label> "Average movement time"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageSound
+<http://iot.linkeddata.es/def/adapters#AverageSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Sound> .
+<http://iot.linkeddata.es/def/adapters#AverageSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageSound> <http://www.w3.org/2000/01/rdf-schema#label> "Average sound"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageSoundDeviation
+<http://iot.linkeddata.es/def/adapters#AverageSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Sound> .
+<http://iot.linkeddata.es/def/adapters#AverageSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageSoundDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average sound deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageTemperature
+<http://iot.linkeddata.es/def/adapters#AverageTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Average temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation
+<http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average temperature deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BakeRemainingTime
+<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Bake remaining time"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingStep
+<http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+<http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/2000/01/rdf-schema#label> "Baking step"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#CO2Concentration
+<http://iot.linkeddata.es/def/adapters#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
+<http://iot.linkeddata.es/def/adapters#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#CO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 concentration"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#CaloriesBurned
+<http://iot.linkeddata.es/def/adapters#CaloriesBurned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#CaloriesBurned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
+<http://iot.linkeddata.es/def/adapters#CaloriesBurned> <http://www.w3.org/2000/01/rdf-schema#label> "Calories burned"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ChargeStatus
+<http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Charge status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime
+<http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+<http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Current baking step remaining time"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DeviceLightStatus
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Device light status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DeviceStatus
+<http://iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Device status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DeviceTemperature
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ActuatableProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Device temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DiastolicBloodPressure
+<http://iot.linkeddata.es/def/adapters#DiastolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DiastolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
+<http://iot.linkeddata.es/def/adapters#DiastolicBloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "Diastolic blood pressure"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DimmingLevel
+<http://iot.linkeddata.es/def/adapters#DimmingLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DimmingLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#DimmingLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#DimmingLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Dimming level"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DistanceWalked
+<http://iot.linkeddata.es/def/adapters#DistanceWalked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DistanceWalked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
+<http://iot.linkeddata.es/def/adapters#DistanceWalked> <http://www.w3.org/2000/01/rdf-schema#label> "Distance walked"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ElapsedBakingTime
+<http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+<http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Elapsed baking time"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#EntryExit
+<http://iot.linkeddata.es/def/adapters#EntryExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#EntryExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Presence> .
+<http://iot.linkeddata.es/def/adapters#EntryExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#EntryExit> <http://www.w3.org/2000/01/rdf-schema#label> "Entry exit"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#FanSpeed
+<http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "FanSpeed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeartRate
+<http://iot.linkeddata.es/def/adapters#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
+<http://iot.linkeddata.es/def/adapters#HeartRate> <http://www.w3.org/2000/01/rdf-schema#label> "Heart rate"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature
+<http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Heater default temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature
+<http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Heater maximum temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed
+<http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "Heater meat probe allowed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeaterMinTemperature
+<http://iot.linkeddata.es/def/adapters#HeaterMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeaterMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterMinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterMinTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Heater minimum temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed
+<http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+<http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "Heater preheat allowed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation
+<http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
+<http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highest CO2 deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation
+<http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
+<http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highst humidity deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HighestSoundDeviation
+<http://iot.linkeddata.es/def/adapters#HighestSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HighestSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Sound> .
+<http://iot.linkeddata.es/def/adapters#HighestSoundDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HighestSoundDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highest sound deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation
+<http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highst temperature deviation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore
+<http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "IEQ score"@en .
+<http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor environmental quality score"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#LightColor
+<http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LightProperty> .
+<http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ActuatableProperty> .
+<http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/2000/01/rdf-schema#label> "Light color"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Luminance
+<http://iot.linkeddata.es/def/adapters#Luminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Luminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LuminusIntensity> .
+<http://iot.linkeddata.es/def/adapters#Luminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ActuatableProperty> .
+<http://iot.linkeddata.es/def/adapters#Luminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Luminance> <http://www.w3.org/2000/01/rdf-schema#label> "Luminance"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxCO2Concentration
+<http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
+<http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum CO2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxHumidity
+<http://iot.linkeddata.es/def/adapters#MaxHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum humidity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxLightIntensity
+<http://iot.linkeddata.es/def/adapters#MaxLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LuminusIntensity> .
+<http://iot.linkeddata.es/def/adapters#MaxLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxLightIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum light intensity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxPowerConsumption
+<http://iot.linkeddata.es/def/adapters#MaxPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#PowerConsumption> .
+<http://iot.linkeddata.es/def/adapters#MaxPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxPowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum power consumption"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxSound
+<http://iot.linkeddata.es/def/adapters#MaxSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Sound> .
+<http://iot.linkeddata.es/def/adapters#MaxSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxSound> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum sound"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxTemperature
+<http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MeanPowerConsumption
+<http://iot.linkeddata.es/def/adapters#MeanPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MeanPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#PowerConsumption> .
+<http://iot.linkeddata.es/def/adapters#MeanPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MeanPowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Mean power consumption"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MeatProbeTemperature
+<http://iot.linkeddata.es/def/adapters#MeatProbeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MeatProbeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#MeatProbeTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MeatProbeTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Meat probe temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinCO2Concentration
+<http://iot.linkeddata.es/def/adapters#MinCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MinCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
+<http://iot.linkeddata.es/def/adapters#MinCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MinCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum CO2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinHumidity
+<http://iot.linkeddata.es/def/adapters#MinHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MinHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
+<http://iot.linkeddata.es/def/adapters#MinHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MinHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Minimun humidity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinLightIntensity
+<http://iot.linkeddata.es/def/adapters#MinLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MinLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LuminusIntensity> .
+<http://iot.linkeddata.es/def/adapters#MinLightIntensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MinLightIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Minimu light intensity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinPowerConsumption
+<http://iot.linkeddata.es/def/adapters#MinPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MinPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#PowerConsumption> .
+<http://iot.linkeddata.es/def/adapters#MinPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MinPowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum power consumption"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinSound
+<http://iot.linkeddata.es/def/adapters#MinSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MinSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Sound> .
+<http://iot.linkeddata.es/def/adapters#MinSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MinSound> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum sound"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinTemperature
+<http://iot.linkeddata.es/def/adapters#MinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#MinTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#MinTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Mode
+<http://iot.linkeddata.es/def/adapters#Mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#Mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Mode> <http://www.w3.org/2000/01/rdf-schema#label> "Mode"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Motion
+<http://iot.linkeddata.es/def/adapters#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
+<http://iot.linkeddata.es/def/adapters#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Motion> <http://www.w3.org/2000/01/rdf-schema#label> "Motion"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#NoiseLevel
+<http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Sound> .
+<http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Noise level"@en .
+<http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Sound level"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#OnOff
+<http://iot.linkeddata.es/def/adapters#OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#OnOff> <http://www.w3.org/2000/01/rdf-schema#label> "On Off"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#OpenClosed
+<http://iot.linkeddata.es/def/adapters#OpenClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#OpenClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#OpenClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#OpenClosed> <http://www.w3.org/2000/01/rdf-schema#label> "Open Closed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#RelativeHumidity
+<http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
+<http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Relative humidity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Sleep
+<http://iot.linkeddata.es/def/adapters#Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
+<http://iot.linkeddata.es/def/adapters#Sleep> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Steps
+<http://iot.linkeddata.es/def/adapters#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
+<http://iot.linkeddata.es/def/adapters#Steps> <http://www.w3.org/2000/01/rdf-schema#label> "Steps"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#StoredEnergy
+<http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/BatteryLifetime> .
+<http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Stored energy"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#SystolicBloodPressure
+<http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
+<http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "Systolic blood pressure"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ValvePosition
+<http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/2000/01/rdf-schema#label> "Valve position"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Weight
+<http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
+<http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
+# 
+_:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

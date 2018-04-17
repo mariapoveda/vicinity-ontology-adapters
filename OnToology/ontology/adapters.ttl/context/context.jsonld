@@ -1,0 +1,283 @@
+{
+  "@context" : {
+    "EBikeCharger" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#EBikeCharger"
+    },
+    "Precision" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Precision"
+    },
+    "MotionProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#MotionProperty"
+    },
+    "SystemLifetime" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SystemLifetime"
+    },
+    "OccupancySensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#OccupancySensor"
+    },
+    "Battery" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Battery"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "PressureMat" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#PressureMat"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "MotionSensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#MotionSensor"
+    },
+    "WaterFlowMeter" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WaterFlowMeter"
+    },
+    "WaterEnergyMeter" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WaterEnergyMeter"
+    },
+    "OperationalStatus" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#OperationalStatus"
+    },
+    "PanicButton" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#PanicButton"
+    },
+    "AmbientHumidityProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"
+    },
+    "SurvivalRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SurvivalRange"
+    },
+    "ActuatableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ActuatableProperty"
+    },
+    "PeopleCounter" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#PeopleCounter"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CO2Sensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#CO2Sensor"
+    },
+    "Sound" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Sound"
+    },
+    "Irradiance" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Irradiance"
+    },
+    "Thermometer" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Thermometer"
+    },
+    "Resolution" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Resolution"
+    },
+    "DetectionLimit" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/DetectionLimit"
+    },
+    "LuminusFlux" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#LuminusFlux"
+    },
+    "SmartRefrigerator" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#SmartRefrigerator"
+    },
+    "CarbonMonoxide" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#CarbonMonoxide"
+    },
+    "TemperatureProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#TemperatureProperty"
+    },
+    "Charger" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Charger"
+    },
+    "OperatingRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/OperatingRange"
+    },
+    "OperatingProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/OperatingProperty"
+    },
+    "Sensitivity" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Sensitivity"
+    },
+    "MaintenanceSchedule" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/MaintenanceSchedule"
+    },
+    "BeaconReader" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#BeaconReader"
+    },
+    "AmbientProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#AmbientProperty"
+    },
+    "PowerMeter" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#PowerMeter"
+    },
+    "Thermostat" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Thermostat"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "ActivityTracker" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#ActivityTracker"
+    },
+    "BloodPressureMonitor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#BloodPressureMonitor"
+    },
+    "ResponseTime" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/ResponseTime"
+    },
+    "WindowSensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WindowSensor"
+    },
+    "RadiantIntensity" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#RadiantIntensity"
+    },
+    "OperatingPowerRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/OperatingPowerRange"
+    },
+    "BatteryLifetime" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/BatteryLifetime"
+    },
+    "Radiance" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Radiance"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "Drift" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Drift"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/ns/ssn/Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "IndoorClimateQualitySensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor"
+    },
+    "LightSwitch" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#LightSwitch"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "DoorSensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#DoorSensor"
+    },
+    "PowerConsumption" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#PowerConsumption"
+    },
+    "Frequency" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Frequency"
+    },
+    "HealthProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#HealthProperty"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Latency" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Latency"
+    },
+    "NoiseSensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#NoiseSensor"
+    },
+    "Selectivity" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Selectivity"
+    },
+    "Condition" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Condition"
+    },
+    "Actuator" : {
+      "@id" : "http://iot.linkeddata.es/def/core#Actuator"
+    },
+    "WeightScale" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WeightScale"
+    },
+    "cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "LightProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#LightProperty"
+    },
+    "HumiditySensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#HumiditySensor"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "LuminanceMeter" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#LuminanceMeter"
+    },
+    "SystemProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SystemProperty"
+    },
+    "TimeProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#TimeProperty"
+    },
+    "CarbonDioxide" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#CarbonDioxide"
+    },
+    "Device" : {
+      "@id" : "http://iot.linkeddata.es/def/core#Device"
+    },
+    "SystemCapability" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SystemCapability"
+    },
+    "EVCharger" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#EVCharger"
+    },
+    "AmbientTemperatureProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"
+    },
+    "MeasurementRange" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/MeasurementRange"
+    },
+    "Lightbulb" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Lightbulb"
+    },
+    "HVACSensor" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#HVACSensor"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "LuminusIntensity" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#LuminusIntensity"
+    },
+    "Presence" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Presence"
+    },
+    "SmartOven" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#SmartOven"
+    },
+    "SurvivalProperty" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/SurvivalProperty"
+    },
+    "Sensor" : {
+      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+    },
+    "Accuracy" : {
+      "@id" : "http://www.w3.org/ns/ssn/systems/Accuracy"
+    }
+  }
+}
