@@ -1,0 +1,1739 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://iot.linkeddata.es/def/adapters#"
+     xml:base="http://iot.linkeddata.es/def/adapters"
+     xmlns:schema="http://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://iot.linkeddata.es/def/adapters#">
+        <owl:imports rdf:resource="http://iot.linkeddata.es/def/core#"/>
+        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:title xml:lang="en">Vicinity adapters model</dc:title>
+        <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
+        <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vcnt-adap</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ActivityTracker -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#ActivityTracker">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Activity tracker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientProperty"/>
+        <rdfs:label xml:lang="en">Ambient humidity property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AmbientProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#AmbientProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">AmbientProperty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientProperty"/>
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdfs:label xml:lang="en">Ambient temperature property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Battery -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Battery">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Battery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BeaconReader -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#BeaconReader">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Beacon reader</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BloodPressureMonitor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#BloodPressureMonitor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Blood pressure monitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#CO2Sensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#CO2Sensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">CO2 Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#CarbonDioxide -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#CarbonDioxide">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">CarbonDioxide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#CarbonMonoxide -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#CarbonMonoxide">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">CarbonMonoxide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Charger -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Charger">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Charger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DoorSensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#DoorSensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">DoorSensor</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#EBikeCharger -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#EBikeCharger">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#Charger"/>
+        <rdfs:label xml:lang="en">eBikeCharger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#EVCharger -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#EVCharger">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#Charger"/>
+        <rdfs:label xml:lang="en">Electric vehicle charging point</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric vehicle chargeren</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HVACSensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#HVACSensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Actuator"/>
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">HVAC Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HealthProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#HealthProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Helth property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HumiditySensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Humidity sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#IndoorClimateQualitySensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Indoor climate quality sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Irradiance -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Irradiance">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#LightProperty"/>
+        <rdfs:label xml:lang="en">Irradiance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#LightProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#LightProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">LightProperty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#LightSwitch -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#LightSwitch">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Actuator"/>
+        <rdfs:label xml:lang="en">Light switch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Lightbulb -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Lightbulb">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Lightbulb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#LuminanceMeter -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#LuminanceMeter">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Luminance meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#LuminusFlux -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#LuminusFlux">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#LightProperty"/>
+        <rdfs:label xml:lang="en">Luminus flux</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#LuminusIntensity -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#LuminusIntensity">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#LightProperty"/>
+        <rdfs:label xml:lang="en">LuminusIntensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MotionProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#MotionProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Motion property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MotionSensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#MotionSensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Motion sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#NoiseSensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#NoiseSensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Noise sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#OccupancySensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#OccupancySensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Occupancy sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#OperationalStatus -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#OperationalStatus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Operational status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#PanicButton -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PanicButton">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Panic button</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#PeopleCounter -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PeopleCounter">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:comment xml:lang="en">A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)</rdfs:comment>
+        <rdfs:label xml:lang="en">People counter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#PowerConsumption -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PowerConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+        <rdfs:label xml:lang="en">Power consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#PowerMeter -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PowerMeter">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">PowerMeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Presence -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Presence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Presence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#PressureMat -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PressureMat">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Pressure mat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Radiance -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Radiance">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#LightProperty"/>
+        <rdfs:label xml:lang="en">Radiance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#RadiantIntensity -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#RadiantIntensity">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#LightProperty"/>
+        <rdfs:label xml:lang="en">Radiant intensity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#SmartOven -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#SmartOven">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Smart oven</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#SmartRefrigerator -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#SmartRefrigerator">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Smart refrigerator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Sound -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Sound">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Sound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#TemperatureProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#TemperatureProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Thermometer -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Thermometer">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Thermometer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Thermostat -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Thermostat">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Actuator"/>
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Thermostat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#TimeProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#TimeProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">TimeProperty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#WaterEnergyMeter -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#WaterEnergyMeter">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">WaterEnergyMeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#WaterFlowMeter -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#WaterFlowMeter">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">WaterFlowMeter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#WeightScale -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#WeightScale">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">Weight scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#WindowSensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#WindowSensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
+        <rdfs:label xml:lang="en">WindowSensor</rdfs:label>
+        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#Actuator -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#Actuator">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+        <rdfs:comment xml:lang="en">An actuator is a device that accepts digital inputs and which acts on (changes) one or more properties of a physical entity on the basis of those inputs. An actuator is a specialization of an IoT device. An actuator acts on a physical entity. (definition taken from ISO/IEC 11404:2007)</rdfs:comment>
+        <rdfs:label xml:lang="en">Actuator</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#Device -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#Device">
+        <rdfs:comment xml:lang="en">An IoT device is a digital entity which bridges between real-world physical entities and the other digital entities of an IoT system. IoT device interacts one or more networks through which interactions are made with other entities. IoT device exposes one or more endpoints by which interactions are made. (definition taken from ISO/IEC 11404:2007)</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#Sensor -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#Sensor">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:comment xml:lang="en">A sensor is a device that detects and responds to some type of input from the physical environment and outputs digital data that can be transmitted over a network. A sensor is a specialization of an IoT device. A sensor monitors a physical entity. The output digital data may only be distantly related to the input from the physical environment and may be output with a significant time delay, depending on processing of the data within the device, for example, the recognition of the identity of a person from a surveillance camera device. (definition taken from ISO/IEC 11404:2007)</rdfs:comment>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ActuatableProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ActuatableProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Actuator -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Actuator"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property">
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;property&apos; [O&amp;M] 
+		                    http://www.opengeospatial.org/standards/om</dc:source>
+        <rdfs:comment xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A ssn:Property is something that is a DUL:Quality and has a ssn:isPropertyOf property who may be a ssn:FeatureOfInterest</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observable Quality of an Event or Object.  That is, not a quality of an abstract entity as is also allowed by DUL&apos;s Quality, but rather an aspect of an entity that is intrinsic to and cannot exist without the entity and is observable by a sensor.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">property (ssn)</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <skos:definition xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Accuracy -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Accuracy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;measurement accuracy/accuracy&apos; [VIM 2.13] 
+		                    http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The closeness of agreement between the value of an observation and the true value of the observed quality.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accuracy</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/BatteryLifetime -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/BatteryLifetime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SurvivalProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total useful life of a battery.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battery Lifetime</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Condition -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Condition">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used to specify ranges for qualities that act as conditions on a system/sensor&apos;s operation.  For example, wind speed of 10-60m/s is expressed as a condition linking a quality, wind speed, a unit of measurement, metres per second, and a set of values, 10-60, and may be used as the condition on a MeasurementProperty, for example, to state that a sensor has a particular accuracy in that condition.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Base#ConstraintBlock</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/DetectionLimit -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/DetectionLimit">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;detection limit&apos; [VIM 4.18] 
+                                 http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observed value for which the probability of falsely claiming the absence of a component in a material is Î², given a probability Î± of falsely claiming its presence.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detection limit</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Drift -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Drift">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;instrumental drift&apos; [VIM 4.21]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A, continuous or incremental, change in the reported values of observations over time for an unchanging quality.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drift</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Frequency -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Frequency">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smallest possible time between one observation and the next.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequency</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Latency -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Latency">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time between a request for an observation and the sensor providing a result.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latency</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/MaintenanceSchedule -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/MaintenanceSchedule">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schedule of maintenance for a system/sensor in the specified conditions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maintenance Schedule</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/MeasurementRange -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/MeasurementRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;measuring interval/measurement range&apos; [VIM 4.7]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The set of values that the sensor can return as the result of an observation under the defined conditions with the defined measurement properties.  (If no conditions are specified or the conditions do not specify a range for the observed qualities, the measurement range is to be taken as the condition for the observed qualities.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement  Range</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingPowerRange -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingPowerRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power range in which system/sensor is expected to operate.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Power Range</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifiable characteristic of the environmental and other conditions in which the sensor is intended to operate.  May include power ranges, power sources, standard configurations, attachments and the like.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Property</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingRange -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:broaderMatch &apos;reference operating condition&apos; [VIM 4.11]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf
+
+The difference is that here we also allow for qualities that aren&apos;t VIM influence quantities [VIM 2.52] - for example, a quantity that alters the power requirements, but doesn&apos;t affect the measurement properties - conditions specified in MeasurementCapability should be influence quantities.</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The environmental conditions and characteristics of a system/sensor&apos;s normal operating environment.  Can be used to specify for example the standard environmental conditions in which the sensor is expected to operate (a Condition with no OperatingProperty), or how the environmental and other operating properties relate: i.e., that the maintenance schedule or power requirements differ according to the conditions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Range</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Precision -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Precision">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;measurement precision/precision&apos; [VIM 2.15]
+                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor&apos;s ability to consitently reproduce an observation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precision</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Resolution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Resolution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;resolution&apos; [VIM 4.14]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resolution</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/ResponseTime -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/ResponseTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;step response time&apos; [VIM 4.23]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) &apos;settling&apos; on an observed value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Response time</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Selectivity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Selectivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;selectivity&apos; [VIM 4.13]
+                                 http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selectivity is a property of a sensor whereby it provides observed values for one or more qualities such that the values of each quality are independent of other qualities in the phenomenon, body, or substance being investigated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selectivity</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/Sensitivity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Sensitivity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;sensitivity&apos; [VIM 4.12]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensitivity</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SurvivalProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SurvivalProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifiable characteristic that represents the extent of the sensors useful life.  Might include for example total battery life or number of recharges, or, for sensors that are used only a fixed number of times, the number of observations that can be made before the sensing capability is depleted.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survival Property</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SurvivalRange -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SurvivalRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:narrowerMatch &apos;limiting operating condition&apos; [VIM 4.10]
+                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The conditions a sensor can be exposed to without damage: i.e., the sensor continues to operate as defined using MeasurementCapability.  If, however, the SurvivalRange is exceeded, the sensor is &apos;damaged&apos; and MeasurementCapability specifications may no longer hold.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survival Range</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemCapability -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemCapability">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Similar idea to MeasurementCapability in MMI Device Ontology
+                                  http://marinemetadata.org/community/teams/ontdevices
+
+But the the two express the relationship between constraints and multiple measurement properties differently.
+
+The conditions linked to a MeasurementCapability are skos:exactMatch to &apos;influence quantity&apos; [VIM 2.52]
+http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor&apos;s capability in those conditions.
+
+The conditions specified here are those that affect the measurement properties, while those in OperatingRange represent the sensor&apos;s standard operating conditions, including conditions that don&apos;t affect the observations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement Capability</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemLifetime -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemLifetime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SurvivalProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total useful life of a sensor/system (expressed as total life since manufacture, time in use, number of operations, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Lifetime</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemProperty -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifiable and observable characteristic of a sensor&apos;s observations or ability to make observations.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement  Property</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AmbientTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AmbientTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Ambient temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageCO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageCO2Concentration">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average CO2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average CO2 deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageHumidity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageHumidityDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average humidity deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageLightIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageLightIntensity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#LuminusIntensity"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average light intensity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageMovemenetShare -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageMovemenetShare">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#MotionProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average movemenet share</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageMovementTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageMovementTime">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#MotionProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average movement time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageSound -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageSound">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Sound"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average sound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageSoundDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageSoundDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Sound"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average sound deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Average temperature deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakeRemainingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Bake remaining time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingStep -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingStep">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+        <rdfs:label xml:lang="en">Baking step</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#CO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#CO2Concentration">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">CO2 concentration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#CaloriesBurned -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#CaloriesBurned">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label xml:lang="en">Calories burned</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ChargeStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ChargeStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Charge status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Current baking step remaining time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DeviceLightStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DeviceLightStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Device light status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DeviceStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DeviceStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Device status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DeviceTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DeviceTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Device temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DiastolicBloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DiastolicBloodPressure">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label xml:lang="en">Diastolic blood pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DimmingLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DimmingLevel">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Dimming level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DistanceWalked -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DistanceWalked">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#MotionProperty"/>
+        <rdfs:label xml:lang="en">Distance walked</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ElapsedBakingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Elapsed baking time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#EntryExit -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#EntryExit">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Presence"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Entry exit</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#FanSpeed -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FanSpeed">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">FanSpeed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeartRate -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeartRate">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label xml:lang="en">Heart rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Heater default temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Heater maximum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+        <rdfs:label xml:lang="en">Heater meat probe allowed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeaterMinTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeaterMinTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Heater minimum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+        <rdfs:label xml:lang="en">Heater preheat allowed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Highest CO2 deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HighestHumidityDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Highst humidity deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HighestSoundDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HighestSoundDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Sound"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Highest sound deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Highst temperature deviation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">IEQ score</rdfs:label>
+        <rdfs:label xml:lang="en">Indoor environmental quality score</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#LightColor -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#LightColor">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#LightProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Light color</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Luminance -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Luminance">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#LuminusIntensity"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Luminance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaxCO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxCO2Concentration">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum CO2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaxHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxHumidity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaxLightIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxLightIntensity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#LuminusIntensity"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum light intensity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaxPowerConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxPowerConsumption">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#PowerConsumption"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaxSound -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxSound">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Sound"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum sound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaxTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MeanPowerConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MeanPowerConsumption">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#PowerConsumption"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Mean power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MeatProbeTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MeatProbeTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Meat probe temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MinCO2Concentration -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MinCO2Concentration">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Minimum CO2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MinHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MinHumidity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Minimun humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MinLightIntensity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MinLightIntensity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#LuminusIntensity"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Minimu light intensity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MinPowerConsumption -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MinPowerConsumption">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#PowerConsumption"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Minimum power consumption</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MinSound -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MinSound">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Sound"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Minimum sound</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MinTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MinTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Minimum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Mode -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Mode">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Mode</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Motion -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Motion">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#MotionProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Motion</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#NoiseLevel -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#NoiseLevel">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Sound"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Noise level</rdfs:label>
+        <rdfs:label xml:lang="en">Sound level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#OnOff -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#OnOff">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">On Off</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#OpenClosed -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#OpenClosed">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Open Closed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#RelativeHumidity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#RelativeHumidity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Relative humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Sleep -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Sleep">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label xml:lang="en">Sleep</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Steps -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Steps">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#MotionProperty"/>
+        <rdfs:label xml:lang="en">Steps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#StoredEnergy -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#StoredEnergy">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/BatteryLifetime"/>
+        <rdfs:label xml:lang="en">Stored energy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#SystolicBloodPressure -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#SystolicBloodPressure">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label xml:lang="en">Systolic blood pressure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ValvePosition -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ValvePosition">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Valve position</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Weight -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Weight">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#HealthProperty"/>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
