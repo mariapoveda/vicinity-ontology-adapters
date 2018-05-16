@@ -37,6 +37,10 @@ This section provides details for each class and property defined by Vicinity ad
          <a href="#http://www.w3.org/ns/ssn/systems/BatteryLifetime" title="http://www.w3.org/ns/ssn/systems/BatteryLifetime">Battery Lifetime</a>
       </li>
       <li>
+         <a href="#BatteryStorageUnit"
+            title="http://iot.linkeddata.es/def/adapters#BatteryStorageUnit">Battery storage unit</a>
+      </li>
+      <li>
          <a href="#BeaconReader"
             title="http://iot.linkeddata.es/def/adapters#BeaconReader">Beacon reader</a>
       </li>
@@ -76,6 +80,10 @@ This section provides details for each class and property defined by Vicinity ad
       <li>
          <a href="#EBikeCharger"
             title="http://iot.linkeddata.es/def/adapters#EBikeCharger">eBikeCharger</a>
+      </li>
+      <li>
+         <a href="#ElectricVehicle"
+            title="http://iot.linkeddata.es/def/adapters#ElectricVehicle">Electric vehicle</a>
       </li>
       <li>
          <a href="#EVCharger" title="http://iot.linkeddata.es/def/adapters#EVCharger">Electric vehicle charging point</a>
@@ -187,11 +195,15 @@ This section provides details for each class and property defined by Vicinity ad
             title="http://iot.linkeddata.es/def/adapters#PeopleCounter">People counter</a>
       </li>
       <li>
+         <a href="#PhotovoltaicPanel"
+            title="http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel">Photovoltaic panel</a>
+      </li>
+      <li>
          <a href="#PowerConsumption"
             title="http://iot.linkeddata.es/def/adapters#PowerConsumption">Power consumption</a>
       </li>
       <li>
-         <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">PowerMeter</a>
+         <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">Power meter</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/ssn/systems/Precision" title="http://www.w3.org/ns/ssn/systems/Precision">Precision</a>
@@ -515,6 +527,21 @@ This section provides details for each class and property defined by Vicinity ad
          </dd>
       </dl>
    </div>
+   <div class="entity" id="BatteryStorageUnit">
+      <h3>Battery storage unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BatteryStorageUnit</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="BeaconReader">
       <h3>Beacon reader<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -687,12 +714,18 @@ This section provides details for each class and property defined by Vicinity ad
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Actuator" title="http://iot.linkeddata.es/def/core#Actuator">Actuator</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Battery" title="http://iot.linkeddata.es/def/adapters#Battery">Battery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#BatteryStorageUnit"
+               title="http://iot.linkeddata.es/def/adapters#BatteryStorageUnit">Battery storage unit</a>
             <sup class="type-c" title="class">c</sup>, <a href="#BeaconReader"
                title="http://iot.linkeddata.es/def/adapters#BeaconReader">Beacon reader</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Charger" title="http://iot.linkeddata.es/def/adapters#Charger">Charger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ElectricVehicle"
+               title="http://iot.linkeddata.es/def/adapters#ElectricVehicle">Electric vehicle</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Lightbulb" title="http://iot.linkeddata.es/def/adapters#Lightbulb">Lightbulb</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PanicButton"
                title="http://iot.linkeddata.es/def/adapters#PanicButton">Panic button</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PhotovoltaicPanel"
+               title="http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel">Photovoltaic panel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SmartOven" title="http://iot.linkeddata.es/def/adapters#SmartOven">Smart oven</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SmartRefrigerator"
@@ -753,6 +786,21 @@ This section provides details for each class and property defined by Vicinity ad
          <dt>has super-classes</dt>
          <dd>
             <a href="#Charger" title="http://iot.linkeddata.es/def/adapters#Charger">Charger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ElectricVehicle">
+      <h3>Electric vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ElectricVehicle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1490,6 +1538,21 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PhotovoltaicPanel">
+      <h3>Photovoltaic panel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="PowerConsumption">
       <h3>Power consumption<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1517,7 +1580,7 @@ The conditions specified here are those that affect the measurement properties, 
       </dl>
    </div>
    <div class="entity" id="PowerMeter">
-      <h3>PowerMeter<sup class="type-c" title="class">c</sup>
+      <h3>Power meter<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -1811,7 +1874,7 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#OccupancySensor">Occupancy sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PeopleCounter"
                title="http://iot.linkeddata.es/def/adapters#PeopleCounter">People counter</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">PowerMeter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">Power meter</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PressureMat"
                title="http://iot.linkeddata.es/def/adapters#PressureMat">Pressure mat</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Thermometer"

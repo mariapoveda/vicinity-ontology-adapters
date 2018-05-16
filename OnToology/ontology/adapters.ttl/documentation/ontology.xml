@@ -139,6 +139,16 @@
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#BatteryStorageUnit -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#BatteryStorageUnit">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Battery storage unit</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#BeaconReader -->
 
 
@@ -226,7 +236,17 @@
     <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#EVCharger">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#Charger"/>
         <rdfs:label xml:lang="en">Electric vehicle charging point</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric vehicle chargeren</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric vehicle charger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ElectricVehicle -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#ElectricVehicle">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Electric vehicle</rdfs:label>
     </owl:Class>
     
 
@@ -413,6 +433,16 @@
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
+        <rdfs:label xml:lang="en">Photovoltaic panel</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#PowerConsumption -->
 
 
@@ -428,7 +458,8 @@
 
     <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#PowerMeter">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label xml:lang="en">PowerMeter</rdfs:label>
+        <rdfs:label xml:lang="en">Power meter</rdfs:label>
+        <rdfs:label xml:lang="en">Smart meter</rdfs:label>
     </owl:Class>
     
 
