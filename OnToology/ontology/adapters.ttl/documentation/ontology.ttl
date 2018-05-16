@@ -77,6 +77,12 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                                 rdfs:label "Battery"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#BatteryStorageUnit
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://iot.linkeddata.es/def/core#Device> ;
+                                                           rdfs:label "Battery storage unit"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#BeaconReader
 <http://iot.linkeddata.es/def/adapters#BeaconReader> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://iot.linkeddata.es/def/core#Device> ;
@@ -130,7 +136,13 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 <http://iot.linkeddata.es/def/adapters#EVCharger> rdf:type owl:Class ;
                                                   rdfs:subClassOf <http://iot.linkeddata.es/def/adapters#Charger> ;
                                                   rdfs:label "Electric vehicle charging point"@en ,
-                                                             "Electric vehicle chargeren"^^xsd:string .
+                                                             "Electric vehicle charger"^^xsd:string .
+
+
+###  http://iot.linkeddata.es/def/adapters#ElectricVehicle
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://iot.linkeddata.es/def/core#Device> ;
+                                                        rdfs:label "Electric vehicle"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#HVACSensor
@@ -243,6 +255,12 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                                                       rdfs:label "People counter"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://iot.linkeddata.es/def/core#Device> ;
+                                                          rdfs:label "Photovoltaic panel"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#PowerConsumption
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> rdf:type owl:Class ;
                                                          rdfs:subClassOf <http://www.w3.org/ns/ssn/systems/OperatingProperty> ;
@@ -252,7 +270,8 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 ###  http://iot.linkeddata.es/def/adapters#PowerMeter
 <http://iot.linkeddata.es/def/adapters#PowerMeter> rdf:type owl:Class ;
                                                    rdfs:subClassOf <http://iot.linkeddata.es/def/core#Sensor> ;
-                                                   rdfs:label "PowerMeter"@en .
+                                                   rdfs:label "Power meter"@en ,
+                                                              "Smart meter"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#Presence

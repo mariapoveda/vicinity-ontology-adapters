@@ -68,6 +68,11 @@
 <http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/2000/01/rdf-schema#label> "Battery"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#BatteryStorageUnit
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Battery storage unit"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#BeaconReader
 <http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
@@ -113,7 +118,12 @@
 <http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#Charger> .
 <http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charging point"@en .
-<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle chargeren" .
+<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charger" .
+# 
+# http://iot.linkeddata.es/def/adapters#ElectricVehicle
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HVACSensor
 <http://iot.linkeddata.es/def/adapters#HVACSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -207,6 +217,11 @@
 <http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)"@en .
 <http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#label> "People counter"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Photovoltaic panel"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PowerConsumption
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
@@ -215,7 +230,8 @@
 # http://iot.linkeddata.es/def/adapters#PowerMeter
 <http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
-<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "PowerMeter"@en .
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Power meter"@en .
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Smart meter"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Presence
 <http://iot.linkeddata.es/def/adapters#Presence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
