@@ -92,6 +92,12 @@ vs:term_status a owl:AnnotationProperty .
 	rdfs:subClassOf :Device ;
 	rdfs:label "Battery"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#BatteryStorageUnit
+
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> a owl:Class ;
+	rdfs:subClassOf :Device ;
+	rdfs:label "Battery storage unit"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#BeaconReader
 
 <http://iot.linkeddata.es/def/adapters#BeaconReader> a owl:Class ;
@@ -145,7 +151,13 @@ vs:term_status a owl:AnnotationProperty .
 
 <http://iot.linkeddata.es/def/adapters#EVCharger> a owl:Class ;
 	rdfs:subClassOf <http://iot.linkeddata.es/def/adapters#Charger> ;
-	rdfs:label "Electric vehicle chargeren" , "Electric vehicle charging point"@en .
+	rdfs:label "Electric vehicle charger" , "Electric vehicle charging point"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ElectricVehicle
+
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> a owl:Class ;
+	rdfs:subClassOf :Device ;
+	rdfs:label "Electric vehicle"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HVACSensor
 
@@ -256,6 +268,12 @@ vs:term_status a owl:AnnotationProperty .
 	rdfs:comment "A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)"@en ;
 	rdfs:label "People counter"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel
+
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> a owl:Class ;
+	rdfs:subClassOf :Device ;
+	rdfs:label "Photovoltaic panel"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PowerConsumption
 
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> a owl:Class ;
@@ -266,7 +284,7 @@ vs:term_status a owl:AnnotationProperty .
 
 <http://iot.linkeddata.es/def/adapters#PowerMeter> a owl:Class ;
 	rdfs:subClassOf :Sensor ;
-	rdfs:label "PowerMeter"@en .
+	rdfs:label "Power meter"@en , "Smart meter"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Presence
 
