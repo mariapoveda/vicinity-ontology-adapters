@@ -16,7 +16,7 @@
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap"^^xsd:string ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#"^^xsd:string ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.0"^^xsd:string .
+                                          owl:versionInfo "0.1.1"^^xsd:string .
 
 #################################################################
 #    Annotation properties
