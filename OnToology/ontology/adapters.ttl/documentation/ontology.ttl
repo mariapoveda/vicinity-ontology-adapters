@@ -676,7 +676,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed
 <http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed> rdf:type owl:NamedIndividual ,
-                                                                           <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                           <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                  rdfs:label "Accumulated energy consumed"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid
@@ -688,62 +689,74 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid
 <http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid> rdf:type owl:NamedIndividual ,
-                                                                             <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                             <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                    rdfs:label "Active power absorbed from grid"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid
 <http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid> rdf:type owl:NamedIndividual ,
-                                                                           <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                           <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                  rdfs:label "Active power injected to grid"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActivePowerProduction
 <http://iot.linkeddata.es/def/adapters#ActivePowerProduction> rdf:type owl:NamedIndividual ,
-                                                                       <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                       <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                              rdfs:label "Active power production"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint
 <http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint> rdf:type owl:NamedIndividual ,
-                                                                     <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                     <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                            rdfs:label "Active power set point"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration
 <http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration> rdf:type owl:NamedIndividual ,
-                                                                             <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                             <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                    rdfs:label "Actual active power generation"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid
 <http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid> rdf:type owl:NamedIndividual ,
-                                                                                 <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                                 <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                        rdfs:label "Actual active power injected to grid"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad
 <http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad> rdf:type owl:NamedIndividual ,
-                                                                       <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                       <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                              rdfs:label "Actual active power load"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration
 <http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration> rdf:type owl:NamedIndividual ,
-                                                                               <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+                                                                               <http://iot.linkeddata.es/def/adapters#TimeProperty> ;
+                                                                      rdfs:label "Actual charging session duration"@en .
 
 
-###  http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession
-<http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession> rdf:type owl:NamedIndividual ,
-                                                                                     <http://iot.linkeddata.es/def/adapters#PowerConsumption> .
+###  http://iot.linkeddata.es/def/adapters#ActualEnergyConsumedChargingSession
+<http://iot.linkeddata.es/def/adapters#ActualEnergyConsumedChargingSession> rdf:type owl:NamedIndividual ,
+                                                                                     <http://iot.linkeddata.es/def/adapters#PowerConsumption> ;
+                                                                            rdfs:label "Actual energy consumed charging session"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration
 <http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration> rdf:type owl:NamedIndividual ,
-                                                                               <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                               <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                      rdfs:label "Actual reactive power generation"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid
 <http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid> rdf:type owl:NamedIndividual ,
-                                                                                   <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                                   <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                          rdfs:label "Actual reactive power injected to grid"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad
 <http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad> rdf:type owl:NamedIndividual ,
-                                                                         <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                         <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                rdfs:label "Actual reactive power load"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#AmbientTemperature
@@ -757,14 +770,14 @@ The conditions specified here are those that affect the measurement properties, 
 <http://iot.linkeddata.es/def/adapters#AverageCO2Concentration> rdf:type owl:NamedIndividual ,
                                                                          <http://iot.linkeddata.es/def/adapters#CarbonDioxide> ,
                                                                          <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                                                                rdfs:label "Average CO2"@en .
+                                                                rdfs:label "Average CO2 concentration"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation
 <http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation> rdf:type owl:NamedIndividual ,
                                                                                   <http://iot.linkeddata.es/def/adapters#CarbonDioxide> ,
                                                                                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                                                                         rdfs:label "Average CO2 deviation"@en .
+                                                                         <http://purl.org/dc/terms/title> "Average CO2 concentration deviation"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#AverageHumidity
@@ -832,7 +845,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#Azimuth
 <http://iot.linkeddata.es/def/adapters#Azimuth> rdf:type owl:NamedIndividual ,
-                                                         <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+                                                         <http://iot.linkeddata.es/def/adapters#SpaceProperty> ;
+                                                rdfs:label "Azimuth"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#BakeRemainingTime
@@ -851,7 +865,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity
 <http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity> rdf:type owl:NamedIndividual ,
-                                                                        <http://www.w3.org/ns/ssn/systems/BatteryLifetime> .
+                                                                        <http://www.w3.org/ns/ssn/systems/BatteryLifetime> ;
+                                                               rdfs:label "Battery nomina capacity"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#CO2Concentration
@@ -876,27 +891,32 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus
 <http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus> rdf:type owl:NamedIndividual ,
-                                                                                  <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+                                                                                  <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+                                                                         rdfs:label "Charging station operational status"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower
 <http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower> rdf:type owl:NamedIndividual ,
-                                                                               <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                               <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                      rdfs:label "Connector current charging power"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower
 <http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower> rdf:type owl:NamedIndividual ,
-                                                                          <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                          <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                 rdfs:label "Connector desired maximum power"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile
 <http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile> rdf:type owl:NamedIndividual ,
-                                                                               <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                               <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                      rdfs:label "Connector smart charging profile"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ConnectorStatus
 <http://iot.linkeddata.es/def/adapters#ConnectorStatus> rdf:type owl:NamedIndividual ,
-                                                                 <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+                                                                 <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+                                                        rdfs:label "Connector status"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime
@@ -957,12 +977,14 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#Elevation
 <http://iot.linkeddata.es/def/adapters#Elevation> rdf:type owl:NamedIndividual ,
-                                                           <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+                                                           <http://iot.linkeddata.es/def/adapters#SpaceProperty> ;
+                                                  rdfs:label "Elevation"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#EnergySupplySystem
 <http://iot.linkeddata.es/def/adapters#EnergySupplySystem> rdf:type owl:NamedIndividual ,
-                                                                    <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                    <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                           rdfs:label "Energy supply system"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#EntryExit
@@ -976,7 +998,7 @@ The conditions specified here are those that affect the measurement properties, 
 <http://iot.linkeddata.es/def/adapters#FanSpeed> rdf:type owl:NamedIndividual ,
                                                           <http://iot.linkeddata.es/def/adapters#OperationalStatus> ,
                                                           <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                                                 rdfs:label "FanSpeed"@en .
+                                                 rdfs:label "Fan speed"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#HeartRate
@@ -1058,7 +1080,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#InverterNominalPower
 <http://iot.linkeddata.es/def/adapters#InverterNominalPower> rdf:type owl:NamedIndividual ,
-                                                                      <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                      <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                             rdfs:label "Inverter nominal power"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#LightColor
@@ -1071,12 +1094,14 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#Location
 <http://iot.linkeddata.es/def/adapters#Location> rdf:type owl:NamedIndividual ,
-                                                          <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+                                                          <http://iot.linkeddata.es/def/adapters#SpaceProperty> ;
+                                                 rdfs:label "Location"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary
 <http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary> rdf:type owl:NamedIndividual ,
-                                                                            <http://www.w3.org/ns/ssn/systems/OperatingPowerRange> .
+                                                                            <http://www.w3.org/ns/ssn/systems/OperatingPowerRange> ;
+                                                                   rdfs:label "Lower state of charge boundary"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#Luminance
@@ -1096,7 +1121,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#MaxCableCurrent
 <http://iot.linkeddata.es/def/adapters#MaxCableCurrent> rdf:type owl:NamedIndividual ,
-                                                                 <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                 <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                        rdfs:label "Maximum cable current"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#MaxHumidity
@@ -1136,7 +1162,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector
 <http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector> rdf:type owl:NamedIndividual ,
-                                                                          <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                          <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                 rdfs:label "Maximal power per connector"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#MeanPowerConsumption
@@ -1219,12 +1246,14 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#NominalProductionCapacity
 <http://iot.linkeddata.es/def/adapters#NominalProductionCapacity> rdf:type owl:NamedIndividual ,
-                                                                           <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                           <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                  rdfs:label "Nominal production capacity"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#NumberOfConnectors
 <http://iot.linkeddata.es/def/adapters#NumberOfConnectors> rdf:type owl:NamedIndividual ,
-                                                                    <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                    <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                           rdfs:label "Number of connectors"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#OnOff
@@ -1243,32 +1272,38 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
 <http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> rdf:type owl:NamedIndividual ,
-                                                                               <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                               <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                      rdfs:label "Photo voltaic panel service level"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound
 <http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound> rdf:type owl:NamedIndividual ,
-                                                                       <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                       <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                              rdfs:label "Power factor lower bound"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid
 <http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid> rdf:type owl:NamedIndividual ,
-                                                                               <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                               <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                      rdfs:label "Reactive power absorbed from grid"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid
 <http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid> rdf:type owl:NamedIndividual ,
-                                                                             <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                             <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                    rdfs:label "Reactive power injected to grid"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ReactivePowerProduction
 <http://iot.linkeddata.es/def/adapters#ReactivePowerProduction> rdf:type owl:NamedIndividual ,
-                                                                         <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                         <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                                rdfs:label "Reactive power production"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint
 <http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint> rdf:type owl:NamedIndividual ,
-                                                                       <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                       <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                              rdfs:label "Reactive power set point"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#RelativeHumidity
@@ -1280,7 +1315,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#SimultaneousCharging
 <http://iot.linkeddata.es/def/adapters#SimultaneousCharging> rdf:type owl:NamedIndividual ,
-                                                                      <http://iot.linkeddata.es/def/adapters#Power> .
+                                                                      <http://iot.linkeddata.es/def/adapters#Power> ;
+                                                             rdfs:label "Simultaneous charging"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#Sleep
@@ -1311,7 +1347,8 @@ The conditions specified here are those that affect the measurement properties, 
 
 ###  http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary
 <http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary> rdf:type owl:NamedIndividual ,
-                                                                            <http://www.w3.org/ns/ssn/systems/OperatingPowerRange> .
+                                                                            <http://www.w3.org/ns/ssn/systems/OperatingPowerRange> ;
+                                                                   rdfs:label "Upper state of charge boundary"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ValvePosition
