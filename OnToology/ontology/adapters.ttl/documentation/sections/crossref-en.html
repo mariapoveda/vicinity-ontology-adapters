@@ -37,6 +37,10 @@ This section provides details for each class and property defined by Vicinity ad
          <a href="#http://www.w3.org/ns/ssn/systems/BatteryLifetime" title="http://www.w3.org/ns/ssn/systems/BatteryLifetime">Battery Lifetime</a>
       </li>
       <li>
+         <a href="#BatteryStorageUnit"
+            title="http://iot.linkeddata.es/def/adapters#BatteryStorageUnit">Battery storage unit</a>
+      </li>
+      <li>
          <a href="#BeaconReader"
             title="http://iot.linkeddata.es/def/adapters#BeaconReader">Beacon reader</a>
       </li>
@@ -76,6 +80,10 @@ This section provides details for each class and property defined by Vicinity ad
       <li>
          <a href="#EBikeCharger"
             title="http://iot.linkeddata.es/def/adapters#EBikeCharger">eBikeCharger</a>
+      </li>
+      <li>
+         <a href="#ElectricVehicle"
+            title="http://iot.linkeddata.es/def/adapters#ElectricVehicle">Electric vehicle</a>
       </li>
       <li>
          <a href="#EVCharger" title="http://iot.linkeddata.es/def/adapters#EVCharger">Electric vehicle charging point</a>
@@ -187,11 +195,20 @@ This section provides details for each class and property defined by Vicinity ad
             title="http://iot.linkeddata.es/def/adapters#PeopleCounter">People counter</a>
       </li>
       <li>
+         <a href="#PhotovoltaicPanel"
+            title="http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel">Photovoltaic panel</a>
+      </li>
+      <li>
+         <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">
+            <span>power</span>
+         </a>
+      </li>
+      <li>
          <a href="#PowerConsumption"
             title="http://iot.linkeddata.es/def/adapters#PowerConsumption">Power consumption</a>
       </li>
       <li>
-         <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">PowerMeter</a>
+         <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">Power meter</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/ssn/systems/Precision" title="http://www.w3.org/ns/ssn/systems/Precision">Precision</a>
@@ -237,6 +254,10 @@ This section provides details for each class and property defined by Vicinity ad
       </li>
       <li>
          <a href="#Sound" title="http://iot.linkeddata.es/def/adapters#Sound">Sound</a>
+      </li>
+      <li>
+         <a href="#SpaceProperty"
+            title="http://iot.linkeddata.es/def/adapters#SpaceProperty">Space property</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/ssn/systems/SurvivalProperty"
@@ -511,7 +532,24 @@ This section provides details for each class and property defined by Vicinity ad
          <dd>
             <a href="#StoredEnergy"
                title="http://iot.linkeddata.es/def/adapters#StoredEnergy">Stored energy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BatteryNominalCapacity"
+               title="http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity">battery nominal capacity</a>
             <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BatteryStorageUnit">
+      <h3>Battery storage unit<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BatteryStorageUnit</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -687,12 +725,18 @@ This section provides details for each class and property defined by Vicinity ad
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Actuator" title="http://iot.linkeddata.es/def/core#Actuator">Actuator</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Battery" title="http://iot.linkeddata.es/def/adapters#Battery">Battery</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#BatteryStorageUnit"
+               title="http://iot.linkeddata.es/def/adapters#BatteryStorageUnit">Battery storage unit</a>
             <sup class="type-c" title="class">c</sup>, <a href="#BeaconReader"
                title="http://iot.linkeddata.es/def/adapters#BeaconReader">Beacon reader</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Charger" title="http://iot.linkeddata.es/def/adapters#Charger">Charger</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ElectricVehicle"
+               title="http://iot.linkeddata.es/def/adapters#ElectricVehicle">Electric vehicle</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Lightbulb" title="http://iot.linkeddata.es/def/adapters#Lightbulb">Lightbulb</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PanicButton"
                title="http://iot.linkeddata.es/def/adapters#PanicButton">Panic button</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PhotovoltaicPanel"
+               title="http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel">Photovoltaic panel</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SmartOven" title="http://iot.linkeddata.es/def/adapters#SmartOven">Smart oven</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SmartRefrigerator"
@@ -753,6 +797,21 @@ This section provides details for each class and property defined by Vicinity ad
          <dt>has super-classes</dt>
          <dd>
             <a href="#Charger" title="http://iot.linkeddata.es/def/adapters#Charger">Charger</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ElectricVehicle">
+      <h3>Electric vehicle<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ElectricVehicle</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1357,6 +1416,14 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#LowerStateOfChargeBoundary"
+               title="http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary">lower state of charge boundary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#UpperStateOfChargeBoundary"
+               title="http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary">upper state of charge boundary</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://www.w3.org/ns/ssn/systems/OperatingProperty">
@@ -1453,6 +1520,10 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#OpenClosed">Open Closed</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ValvePosition"
                title="http://iot.linkeddata.es/def/adapters#ValvePosition">Valve position</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ChargingStationOperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus">charging station operational status</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ConnectorStatus"
+               title="http://iot.linkeddata.es/def/adapters#ConnectorStatus">connector status</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1490,6 +1561,102 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PhotovoltaicPanel">
+      <h3>Photovoltaic panel<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Power">
+      <h3>power<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Power</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#PowerConsumption"
+               title="http://iot.linkeddata.es/def/adapters#PowerConsumption">Power consumption</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#AccumulatedEnergyInjectedToGrid"
+               title="http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid">Accumulated energy imported to grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AccumulatedEnergyConsumed"
+               title="http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed">accumulated energy consumed</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActivePowerAbsorbedFromGrid"
+               title="http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid">active power absorbed from grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActivePowerInjectedToGrid"
+               title="http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid">active power injected to grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActivePowerProduction"
+               title="http://iot.linkeddata.es/def/adapters#ActivePowerProduction">active power production</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActivePowerSetPoint"
+               title="http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint">active power set point</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualActivePowerGeneration"
+               title="http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration">actual active power generation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualActivePowerInjectedToGrid"
+               title="http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid">actual active power injected to grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualActivePowerLoad"
+               title="http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad">actual active power load</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualReactivePowerGeneration"
+               title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration">actual reactive power generation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualReactivePowerInjectedToGrid"
+               title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid">actual reactive power injected to grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualReactivePowerLoad"
+               title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad">actual reactive power load</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ConnectorCurrentChargingPower"
+               title="http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower">connector current charging power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ConnectorDesiredMaxPower"
+               title="http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower">connector desired max power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ConnectorSmartChargingProfile"
+               title="http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile">connector smart charging profile</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#EnergySupplySystem"
+               title="http://iot.linkeddata.es/def/adapters#EnergySupplySystem">energy supply system</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#InverterNominalPower"
+               title="http://iot.linkeddata.es/def/adapters#InverterNominalPower">inverter nominal power</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaxCableCurrent"
+               title="http://iot.linkeddata.es/def/adapters#MaxCableCurrent">max cable current</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaximalPowerPerConnector"
+               title="http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector">maximal power per connector</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#NominalProductionCapacity"
+               title="http://iot.linkeddata.es/def/adapters#NominalProductionCapacity">nominal production capacity</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#NumberOfConnectors"
+               title="http://iot.linkeddata.es/def/adapters#NumberOfConnectors">number of connectors</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PhotoVoltaicPanelServiceLevel"
+               title="http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel">photo voltaic panel service level</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PowerFactorLowerBound"
+               title="http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound">power factor lower bound</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ReactivePowerAbsorbedFromGrid"
+               title="http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid">reactive power absorbed from grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ReactivePowerInjectedToGrid"
+               title="http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid">reactive power injected to grid</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ReactivePowerProduction"
+               title="http://iot.linkeddata.es/def/adapters#ReactivePowerProduction">reactive power production</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ReactivePowerSetPoint"
+               title="http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint">reactive power set point</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SimultaneousCharging"
+               title="http://iot.linkeddata.es/def/adapters#SimultaneousCharging">simultaneous charging</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="PowerConsumption">
       <h3>Power consumption<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1499,6 +1666,10 @@ The conditions specified here are those that affect the measurement properties, 
          <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PowerConsumption</p>
       <dl class="description">
          <dt>has super-classes</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dd>
             <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
                title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
@@ -1512,12 +1683,14 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#MeanPowerConsumption">Mean power consumption</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#MinPowerConsumption"
                title="http://iot.linkeddata.es/def/adapters#MinPowerConsumption">Minimum power consumption</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualEnergyconsumedChargingSession"
+               title="http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession">actual energyconsumed charging session</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
    <div class="entity" id="PowerMeter">
-      <h3>PowerMeter<sup class="type-c" title="class">c</sup>
+      <h3>Power meter<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -1635,6 +1808,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Presence" title="http://iot.linkeddata.es/def/adapters#Presence">Presence</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Sound" title="http://iot.linkeddata.es/def/adapters#Sound">Sound</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SpaceProperty"
+               title="http://iot.linkeddata.es/def/adapters#SpaceProperty">Space property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/ssn/systems/SurvivalProperty"
                title="http://www.w3.org/ns/ssn/systems/SurvivalProperty">Survival Property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/ssn/systems/SurvivalRange" title="http://www.w3.org/ns/ssn/systems/SurvivalRange">Survival Range</a>
@@ -1644,6 +1819,7 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/sosa/ActuatableProperty" title="http://www.w3.org/ns/sosa/ActuatableProperty">actuatable property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1811,7 +1987,7 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#OccupancySensor">Occupancy sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PeopleCounter"
                title="http://iot.linkeddata.es/def/adapters#PeopleCounter">People counter</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">PowerMeter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PowerMeter" title="http://iot.linkeddata.es/def/adapters#PowerMeter">Power meter</a>
             <sup class="type-c" title="class">c</sup>, <a href="#PressureMat"
                title="http://iot.linkeddata.es/def/adapters#PressureMat">Pressure mat</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Thermometer"
@@ -1884,6 +2060,31 @@ The conditions specified here are those that affect the measurement properties, 
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#MinSound" title="http://iot.linkeddata.es/def/adapters#MinSound">Minimum sound</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#NoiseLevel"
                title="http://iot.linkeddata.es/def/adapters#NoiseLevel">Noise level</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SpaceProperty">
+      <h3>Space property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#SpaceProperty</p>
+      <div class="comment">
+         <span class="markdown">Property related to spatial information</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#Azimuth" title="http://iot.linkeddata.es/def/adapters#Azimuth">azimuth</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Elevation" title="http://iot.linkeddata.es/def/adapters#Elevation">elevation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Location" title="http://iot.linkeddata.es/def/adapters#Location">location</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2051,6 +2252,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime">Current baking step remaining time</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ElapsedBakingTime"
                title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Elapsed baking time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ActualChargingSessionDuration"
+               title="http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration">actual charging session duration</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2123,6 +2326,88 @@ The conditions specified here are those that affect the measurement properties, 
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
+         <a href="#AccumulatedEnergyConsumed"
+            title="http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed">
+            <span>accumulated energy consumed</span>
+         </a>
+      </li>
+      <li>
+         <a href="#AccumulatedEnergyInjectedToGrid"
+            title="http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid">Accumulated energy imported to grid</a>
+      </li>
+      <li>
+         <a href="#ActivePowerAbsorbedFromGrid"
+            title="http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid">
+            <span>active power absorbed from grid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActivePowerInjectedToGrid"
+            title="http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid">
+            <span>active power injected to grid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActivePowerProduction"
+            title="http://iot.linkeddata.es/def/adapters#ActivePowerProduction">
+            <span>active power production</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActivePowerSetPoint"
+            title="http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint">
+            <span>active power set point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualActivePowerGeneration"
+            title="http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration">
+            <span>actual active power generation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualActivePowerInjectedToGrid"
+            title="http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid">
+            <span>actual active power injected to grid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualActivePowerLoad"
+            title="http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad">
+            <span>actual active power load</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualChargingSessionDuration"
+            title="http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration">
+            <span>actual charging session duration</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualEnergyconsumedChargingSession"
+            title="http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession">
+            <span>actual energyconsumed charging session</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualReactivePowerGeneration"
+            title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration">
+            <span>actual reactive power generation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualReactivePowerInjectedToGrid"
+            title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid">
+            <span>actual reactive power injected to grid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActualReactivePowerLoad"
+            title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad">
+            <span>actual reactive power load</span>
+         </a>
+      </li>
+      <li>
          <a href="#AmbientTemperature"
             title="http://iot.linkeddata.es/def/adapters#AmbientTemperature">Ambient temperature</a>
       </li>
@@ -2171,12 +2456,23 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation">Average temperature deviation</a>
       </li>
       <li>
+         <a href="#Azimuth" title="http://iot.linkeddata.es/def/adapters#Azimuth">
+            <span>azimuth</span>
+         </a>
+      </li>
+      <li>
          <a href="#BakeRemainingTime"
             title="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">Bake remaining time</a>
       </li>
       <li>
          <a href="#BakingStep"
             title="http://iot.linkeddata.es/def/adapters#BakingStep">Baking step</a>
+      </li>
+      <li>
+         <a href="#BatteryNominalCapacity"
+            title="http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity">
+            <span>battery nominal capacity</span>
+         </a>
       </li>
       <li>
          <a href="#CaloriesBurned"
@@ -2187,8 +2483,38 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#ChargeStatus">Charge status</a>
       </li>
       <li>
+         <a href="#ChargingStationOperationalStatus"
+            title="http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus">
+            <span>charging station operational status</span>
+         </a>
+      </li>
+      <li>
          <a href="#CO2Concentration"
             title="http://iot.linkeddata.es/def/adapters#CO2Concentration">CO2 concentration</a>
+      </li>
+      <li>
+         <a href="#ConnectorCurrentChargingPower"
+            title="http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower">
+            <span>connector current charging power</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ConnectorDesiredMaxPower"
+            title="http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower">
+            <span>connector desired max power</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ConnectorSmartChargingProfile"
+            title="http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile">
+            <span>connector smart charging profile</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ConnectorStatus"
+            title="http://iot.linkeddata.es/def/adapters#ConnectorStatus">
+            <span>connector status</span>
+         </a>
       </li>
       <li>
          <a href="#CurrentBakingStepRemainingTime"
@@ -2221,6 +2547,17 @@ The conditions specified here are those that affect the measurement properties, 
       <li>
          <a href="#ElapsedBakingTime"
             title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Elapsed baking time</a>
+      </li>
+      <li>
+         <a href="#Elevation" title="http://iot.linkeddata.es/def/adapters#Elevation">
+            <span>elevation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EnergySupplySystem"
+            title="http://iot.linkeddata.es/def/adapters#EnergySupplySystem">
+            <span>energy supply system</span>
+         </a>
       </li>
       <li>
          <a href="#EntryExit" title="http://iot.linkeddata.es/def/adapters#EntryExit">Entry exit</a>
@@ -2272,11 +2609,40 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore">IEQ score</a>
       </li>
       <li>
+         <a href="#InverterNominalPower"
+            title="http://iot.linkeddata.es/def/adapters#InverterNominalPower">
+            <span>inverter nominal power</span>
+         </a>
+      </li>
+      <li>
          <a href="#LightColor"
             title="http://iot.linkeddata.es/def/adapters#LightColor">Light color</a>
       </li>
       <li>
+         <a href="#Location" title="http://iot.linkeddata.es/def/adapters#Location">
+            <span>location</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LowerStateOfChargeBoundary"
+            title="http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary">
+            <span>lower state of charge boundary</span>
+         </a>
+      </li>
+      <li>
          <a href="#Luminance" title="http://iot.linkeddata.es/def/adapters#Luminance">Luminance</a>
+      </li>
+      <li>
+         <a href="#MaxCableCurrent"
+            title="http://iot.linkeddata.es/def/adapters#MaxCableCurrent">
+            <span>max cable current</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MaximalPowerPerConnector"
+            title="http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector">
+            <span>maximal power per connector</span>
+         </a>
       </li>
       <li>
          <a href="#MaxCO2Concentration"
@@ -2343,6 +2709,18 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#NoiseLevel">Noise level</a>
       </li>
       <li>
+         <a href="#NominalProductionCapacity"
+            title="http://iot.linkeddata.es/def/adapters#NominalProductionCapacity">
+            <span>nominal production capacity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NumberOfConnectors"
+            title="http://iot.linkeddata.es/def/adapters#NumberOfConnectors">
+            <span>number of connectors</span>
+         </a>
+      </li>
+      <li>
          <a href="#OnOff" title="http://iot.linkeddata.es/def/adapters#OnOff">On Off</a>
       </li>
       <li>
@@ -2350,8 +2728,50 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#OpenClosed">Open Closed</a>
       </li>
       <li>
+         <a href="#PhotoVoltaicPanelServiceLevel"
+            title="http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel">
+            <span>photo voltaic panel service level</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PowerFactorLowerBound"
+            title="http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound">
+            <span>power factor lower bound</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ReactivePowerAbsorbedFromGrid"
+            title="http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid">
+            <span>reactive power absorbed from grid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ReactivePowerInjectedToGrid"
+            title="http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid">
+            <span>reactive power injected to grid</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ReactivePowerProduction"
+            title="http://iot.linkeddata.es/def/adapters#ReactivePowerProduction">
+            <span>reactive power production</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ReactivePowerSetPoint"
+            title="http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint">
+            <span>reactive power set point</span>
+         </a>
+      </li>
+      <li>
          <a href="#RelativeHumidity"
             title="http://iot.linkeddata.es/def/adapters#RelativeHumidity">Relative humidity</a>
+      </li>
+      <li>
+         <a href="#SimultaneousCharging"
+            title="http://iot.linkeddata.es/def/adapters#SimultaneousCharging">
+            <span>simultaneous charging</span>
+         </a>
       </li>
       <li>
          <a href="#Sleep" title="http://iot.linkeddata.es/def/adapters#Sleep">Sleep</a>
@@ -2368,6 +2788,12 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#SystolicBloodPressure">Systolic blood pressure</a>
       </li>
       <li>
+         <a href="#UpperStateOfChargeBoundary"
+            title="http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary">
+            <span>upper state of charge boundary</span>
+         </a>
+      </li>
+      <li>
          <a href="#ValvePosition"
             title="http://iot.linkeddata.es/def/adapters#ValvePosition">Valve position</a>
       </li>
@@ -2375,6 +2801,218 @@ The conditions specified here are those that affect the measurement properties, 
          <a href="#Weight" title="http://iot.linkeddata.es/def/adapters#Weight">Weight</a>
       </li>
    </ul>
+   <div class="entity" id="AccumulatedEnergyConsumed">
+      <h3>accumulated energy consumed<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AccumulatedEnergyInjectedToGrid">
+      <h3>Accumulated energy imported to grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActivePowerAbsorbedFromGrid">
+      <h3>active power absorbed from grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActivePowerInjectedToGrid">
+      <h3>active power injected to grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActivePowerProduction">
+      <h3>active power production<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActivePowerProduction</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActivePowerSetPoint">
+      <h3>active power set point<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualActivePowerGeneration">
+      <h3>actual active power generation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualActivePowerInjectedToGrid">
+      <h3>actual active power injected to grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualActivePowerLoad">
+      <h3>actual active power load<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualChargingSessionDuration">
+      <h3>actual charging session duration<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualEnergyconsumedChargingSession">
+      <h3>actual energyconsumed charging session<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#PowerConsumption"
+               title="http://iot.linkeddata.es/def/adapters#PowerConsumption">Power consumption</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualReactivePowerGeneration">
+      <h3>actual reactive power generation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualReactivePowerInjectedToGrid">
+      <h3>actual reactive power injected to grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActualReactivePowerLoad">
+      <h3>actual reactive power load<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AmbientTemperature">
       <h3>Ambient temperature<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2613,6 +3251,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Azimuth">
+      <h3>azimuth<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Azimuth</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SpaceProperty"
+               title="http://iot.linkeddata.es/def/adapters#SpaceProperty">Space property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="BakeRemainingTime">
       <h3>Bake remaining time<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2653,6 +3307,21 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="BatteryNominalCapacity">
+      <h3>battery nominal capacity<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/BatteryLifetime" title="http://www.w3.org/ns/ssn/systems/BatteryLifetime">Battery Lifetime</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="CaloriesBurned">
       <h3>Calories burned<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2689,6 +3358,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ChargingStationOperationalStatus">
+      <h3>charging station operational status<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="CO2Concentration">
       <h3>CO2 concentration<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -2705,6 +3390,67 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ConnectorCurrentChargingPower">
+      <h3>connector current charging power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ConnectorDesiredMaxPower">
+      <h3>connector desired max power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ConnectorSmartChargingProfile">
+      <h3>connector smart charging profile<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ConnectorStatus">
+      <h3>connector status<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ConnectorStatus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2866,6 +3612,37 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Elevation">
+      <h3>elevation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Elevation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SpaceProperty"
+               title="http://iot.linkeddata.es/def/adapters#SpaceProperty">Space property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EnergySupplySystem">
+      <h3>energy supply system<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#EnergySupplySystem</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3124,6 +3901,21 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="InverterNominalPower">
+      <h3>inverter nominal power<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#InverterNominalPower</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="LightColor">
       <h3>Light color<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3148,6 +3940,38 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Location">
+      <h3>location<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Location</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SpaceProperty"
+               title="http://iot.linkeddata.es/def/adapters#SpaceProperty">Space property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LowerStateOfChargeBoundary">
+      <h3>lower state of charge boundary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/OperatingPowerRange"
+               title="http://www.w3.org/ns/ssn/systems/OperatingPowerRange">Operating Power Range</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Luminance">
       <h3>Luminance<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3168,6 +3992,36 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MaxCableCurrent">
+      <h3>max cable current<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#MaxCableCurrent</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MaximalPowerPerConnector">
+      <h3>maximal power per connector<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3509,6 +4363,36 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="NominalProductionCapacity">
+      <h3>nominal production capacity<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#NominalProductionCapacity</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NumberOfConnectors">
+      <h3>number of connectors<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#NumberOfConnectors</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="OnOff">
       <h3>On Off<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3549,6 +4433,96 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PhotoVoltaicPanelServiceLevel">
+      <h3>photo voltaic panel service level<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PowerFactorLowerBound">
+      <h3>power factor lower bound<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReactivePowerAbsorbedFromGrid">
+      <h3>reactive power absorbed from grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReactivePowerInjectedToGrid">
+      <h3>reactive power injected to grid<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReactivePowerProduction">
+      <h3>reactive power production<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ReactivePowerProduction</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReactivePowerSetPoint">
+      <h3>reactive power set point<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="RelativeHumidity">
       <h3>Relative humidity<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3565,6 +4539,21 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SimultaneousCharging">
+      <h3>simultaneous charging<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#SimultaneousCharging</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3632,6 +4621,22 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#HealthProperty"
                title="http://iot.linkeddata.es/def/adapters#HealthProperty">Helth property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UpperStateOfChargeBoundary">
+      <h3>upper state of charge boundary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/OperatingPowerRange"
+               title="http://www.w3.org/ns/ssn/systems/OperatingPowerRange">Operating Power Range</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

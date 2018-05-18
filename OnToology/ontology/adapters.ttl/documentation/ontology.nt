@@ -68,6 +68,11 @@
 <http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/adapters#Battery> <http://www.w3.org/2000/01/rdf-schema#label> "Battery"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#BatteryStorageUnit
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#BatteryStorageUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Battery storage unit"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#BeaconReader
 <http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
@@ -113,7 +118,12 @@
 <http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#Charger> .
 <http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charging point"@en .
-<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle chargeren" .
+<http://iot.linkeddata.es/def/adapters#EVCharger> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle charger" .
+# 
+# http://iot.linkeddata.es/def/adapters#ElectricVehicle
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#ElectricVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Electric vehicle"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HVACSensor
 <http://iot.linkeddata.es/def/adapters#HVACSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -207,15 +217,26 @@
 <http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#comment> "A people counter is a device that is used to measure the number of people traversing a certain passage or entrance. (Definition taken from https://en.wikipedia.org/wiki/People_counter)"@en .
 <http://iot.linkeddata.es/def/adapters#PeopleCounter> <http://www.w3.org/2000/01/rdf-schema#label> "People counter"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Photovoltaic panel"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Power
+<http://iot.linkeddata.es/def/adapters#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#Power> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+# 
 # http://iot.linkeddata.es/def/adapters#PowerConsumption
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#Power> .
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 <http://iot.linkeddata.es/def/adapters#PowerConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Power consumption"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#PowerMeter
 <http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
-<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "PowerMeter"@en .
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Power meter"@en .
+<http://iot.linkeddata.es/def/adapters#PowerMeter> <http://www.w3.org/2000/01/rdf-schema#label> "Smart meter"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Presence
 <http://iot.linkeddata.es/def/adapters#Presence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -251,6 +272,12 @@
 <http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
 <http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#label> "Sound"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#SpaceProperty
+<http://iot.linkeddata.es/def/adapters#SpaceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#SpaceProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/adapters#SpaceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Property related to spatial information"@en .
+<http://iot.linkeddata.es/def/adapters#SpaceProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Space property"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#TemperatureProperty
 <http://iot.linkeddata.es/def/adapters#TemperatureProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -542,6 +569,64 @@
 # #################################################################
 # 
 # 
+# http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy imported to grid"@en .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy injected to grid"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid
+<http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid
+<http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActivePowerProduction
+<http://iot.linkeddata.es/def/adapters#ActivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint
+<http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration
+<http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession
+<http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#PowerConsumption> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
 # http://iot.linkeddata.es/def/adapters#AmbientTemperature
 <http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
@@ -614,6 +699,10 @@
 <http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Average temperature deviation"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#Azimuth
+<http://iot.linkeddata.es/def/adapters#Azimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Azimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+# 
 # http://iot.linkeddata.es/def/adapters#BakeRemainingTime
 <http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
@@ -625,6 +714,10 @@
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/2000/01/rdf-schema#label> "Baking step"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity
+<http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/BatteryLifetime> .
 # 
 # http://iot.linkeddata.es/def/adapters#CO2Concentration
 <http://iot.linkeddata.es/def/adapters#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -642,6 +735,26 @@
 <http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 <http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#ChargeStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Charge status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus
+<http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+# 
+# http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower
+<http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower
+<http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile
+<http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ConnectorStatus
+<http://iot.linkeddata.es/def/adapters#ConnectorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ConnectorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 # 
 # http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime
 <http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -690,6 +803,14 @@
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Elapsed baking time"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Elevation
+<http://iot.linkeddata.es/def/adapters#Elevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Elevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#EnergySupplySystem
+<http://iot.linkeddata.es/def/adapters#EnergySupplySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#EnergySupplySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
 # 
 # http://iot.linkeddata.es/def/adapters#EntryExit
 <http://iot.linkeddata.es/def/adapters#EntryExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -769,12 +890,24 @@
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "IEQ score"@en .
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor environmental quality score"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#InverterNominalPower
+<http://iot.linkeddata.es/def/adapters#InverterNominalPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterNominalPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
 # http://iot.linkeddata.es/def/adapters#LightColor
 <http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LightProperty> .
 <http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ActuatableProperty> .
 <http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#LightColor> <http://www.w3.org/2000/01/rdf-schema#label> "Light color"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Location
+<http://iot.linkeddata.es/def/adapters#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary
+<http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingPowerRange> .
 # 
 # http://iot.linkeddata.es/def/adapters#Luminance
 <http://iot.linkeddata.es/def/adapters#Luminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -788,6 +921,10 @@
 <http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#CarbonDioxide> .
 <http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum CO2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxCableCurrent
+<http://iot.linkeddata.es/def/adapters#MaxCableCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaxCableCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
 # 
 # http://iot.linkeddata.es/def/adapters#MaxHumidity
 <http://iot.linkeddata.es/def/adapters#MaxHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -818,6 +955,10 @@
 <http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
 <http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#MaxTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector
+<http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
 # 
 # http://iot.linkeddata.es/def/adapters#MeanPowerConsumption
 <http://iot.linkeddata.es/def/adapters#MeanPowerConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -886,6 +1027,14 @@
 <http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Noise level"@en .
 <http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Sound level"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#NominalProductionCapacity
+<http://iot.linkeddata.es/def/adapters#NominalProductionCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#NominalProductionCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#NumberOfConnectors
+<http://iot.linkeddata.es/def/adapters#NumberOfConnectors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#NumberOfConnectors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
 # http://iot.linkeddata.es/def/adapters#OnOff
 <http://iot.linkeddata.es/def/adapters#OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#OnOff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
@@ -898,11 +1047,39 @@
 <http://iot.linkeddata.es/def/adapters#OpenClosed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#OpenClosed> <http://www.w3.org/2000/01/rdf-schema#label> "Open Closed"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
+<http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound
+<http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid
+<http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid
+<http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ReactivePowerProduction
+<http://iot.linkeddata.es/def/adapters#ReactivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ReactivePowerProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
+# http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint
+<http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+# 
 # http://iot.linkeddata.es/def/adapters#RelativeHumidity
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Relative humidity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#SimultaneousCharging
+<http://iot.linkeddata.es/def/adapters#SimultaneousCharging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#SimultaneousCharging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
 # 
 # http://iot.linkeddata.es/def/adapters#Sleep
 <http://iot.linkeddata.es/def/adapters#Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -919,11 +1096,16 @@
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/BatteryLifetime> .
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Stored energy"@en .
+<http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal EV current" .
 # 
 # http://iot.linkeddata.es/def/adapters#SystolicBloodPressure
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "Systolic blood pressure"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary
+<http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingPowerRange> .
 # 
 # http://iot.linkeddata.es/def/adapters#ValvePosition
 <http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
