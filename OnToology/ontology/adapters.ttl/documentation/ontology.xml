@@ -694,6 +694,7 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
     </owl:Class>
     
@@ -1063,6 +1064,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Accumulated energy consumed</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1072,6 +1075,7 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Accumulated energy imported to grid</rdfs:label>
         <rdfs:label xml:lang="en">Accumulated energy injected to grid</rdfs:label>
     </owl:NamedIndividual>
@@ -1083,6 +1087,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Active power absorbed from grid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1092,6 +1098,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActivePowerInjectedToGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Active power injected to grid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1101,6 +1109,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActivePowerProduction">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Active power production</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1110,6 +1120,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActivePowerSetPoint">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdfs:label xml:lang="en">Active power set point</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1119,6 +1131,9 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualActivePowerGeneration">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual active power generation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1128,6 +1143,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualActivePowerInjectedToGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual active power injected to grid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1137,6 +1154,9 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual active power load</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1146,15 +1166,19 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual charging session duration</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession -->
+    <!-- http://iot.linkeddata.es/def/adapters#ActualEnergyConsumedChargingSession -->
 
 
-    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualEnergyconsumedChargingSession">
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualEnergyConsumedChargingSession">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#PowerConsumption"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual energy consumed charging session</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1164,6 +1188,9 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualReactivePowerGeneration">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual reactive power generation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1173,6 +1200,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualReactivePowerInjectedToGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual reactive power injected to grid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1182,6 +1211,9 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Actual reactive power load</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1203,7 +1235,7 @@ The conditions specified here are those that affect the measurement properties, 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageCO2Concentration">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:label xml:lang="en">Average CO2</rdfs:label>
+        <rdfs:label xml:lang="en">Average CO2 concentration</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1214,7 +1246,7 @@ The conditions specified here are those that affect the measurement properties, 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#CarbonDioxide"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:label xml:lang="en">Average CO2 deviation</rdfs:label>
+        <terms:title xml:lang="en">Average CO2 concentration deviation</terms:title>
     </owl:NamedIndividual>
     
 
@@ -1323,6 +1355,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Azimuth">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Azimuth</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1353,7 +1387,9 @@ The conditions specified here are those that affect the measurement properties, 
 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/BatteryLifetime"/>
+        <rdfs:label xml:lang="en">Battery nominal capacity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1386,6 +1422,7 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Charge status</rdfs:label>
+        <rdfs:label xml:lang="en">State of charge</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1395,6 +1432,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Charging station operational status</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1404,6 +1443,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Connector current charging power</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1413,6 +1454,9 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ConnectorDesiredMaxPower">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Connector desired maximum power</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1422,6 +1466,9 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ConnectorSmartChargingProfile">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Connector smart charging profile</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1431,6 +1478,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ConnectorStatus">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Connector status</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1528,6 +1577,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Elevation">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Elevation</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1537,6 +1588,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#EnergySupplySystem">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Energy supply system</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1558,7 +1611,7 @@ The conditions specified here are those that affect the measurement properties, 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FanSpeed">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:label xml:lang="en">FanSpeed</rdfs:label>
+        <rdfs:label xml:lang="en">Fan speed</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1689,6 +1742,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#InverterNominalPower">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Inverter nominal power</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1710,6 +1765,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Location">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1718,7 +1775,9 @@ The conditions specified here are those that affect the measurement properties, 
 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#LowerStateOfChargeBoundary">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+        <rdfs:label xml:lang="en">Lower state of charge boundary</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1751,6 +1810,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxCableCurrent">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximum cable current</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1815,6 +1876,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximal power per connector</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1946,6 +2009,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#NominalProductionCapacity">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Nominal production capacity</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1955,6 +2020,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#NumberOfConnectors">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Number of connectors</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1986,6 +2053,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Photo voltaic panel service level</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1995,6 +2064,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Power factor lower bound</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2004,6 +2075,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ReactivePowerAbsorbedFromGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Reactive power absorbed from grid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2013,6 +2086,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ReactivePowerInjectedToGrid">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Reactive power injected to grid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2022,6 +2097,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ReactivePowerProduction">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Reactive power production</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2031,6 +2108,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
+        <rdfs:label xml:lang="en">Reactive power set point</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2051,6 +2130,8 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#SimultaneousCharging">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Simultaneous charging</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2101,7 +2182,9 @@ The conditions specified here are those that affect the measurement properties, 
 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+        <rdfs:label xml:lang="en">Upper state of charge boundary</rdfs:label>
     </owl:NamedIndividual>
     
 
