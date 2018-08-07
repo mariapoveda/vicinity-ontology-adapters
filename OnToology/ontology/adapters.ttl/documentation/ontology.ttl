@@ -16,7 +16,7 @@
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap"^^xsd:string ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#"^^xsd:string ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.1"^^xsd:string .
+                                          owl:versionInfo "0.1.2"^^xsd:string .
 
 #################################################################
 #    Annotation properties
@@ -117,6 +117,21 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 <http://iot.linkeddata.es/def/adapters#Charger> rdf:type owl:Class ;
                                                 rdfs:subClassOf <http://iot.linkeddata.es/def/core#Device> ;
                                                 rdfs:label "Charger"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty
+<http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+
+
+###  http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+
+
+###  http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty
+<http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#DoorSensor
@@ -778,6 +793,11 @@ The conditions specified here are those that affect the measurement properties, 
                                                                 rdfs:label "Actual reactive power load"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#AlarmTime
+<http://iot.linkeddata.es/def/adapters#AlarmTime> rdf:type owl:NamedIndividual ,
+                                                           <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+
+
 ###  http://iot.linkeddata.es/def/adapters#AmbientTemperature
 <http://iot.linkeddata.es/def/adapters#AmbientTemperature> rdf:type owl:NamedIndividual ,
                                                                     <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> ,
@@ -869,11 +889,37 @@ The conditions specified here are those that affect the measurement properties, 
                                                 rdfs:label "Azimuth"@en .
 
 
-###  http://iot.linkeddata.es/def/adapters#BakeRemainingTime
-<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> rdf:type owl:NamedIndividual ,
-                                                                   <http://iot.linkeddata.es/def/adapters#TimeProperty> ,
-                                                                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                                                          rdfs:label "Bake remaining time"@en .
+###  http://iot.linkeddata.es/def/adapters#Baking
+<http://iot.linkeddata.es/def/adapters#Baking> rdf:type owl:NamedIndividual ,
+                                                        <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingEndTimeHour
+<http://iot.linkeddata.es/def/adapters#BakingEndTimeHour> rdf:type owl:NamedIndividual ,
+                                                                   <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute
+<http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute> rdf:type owl:NamedIndividual ,
+                                                                     <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingRemainingTime
+<http://iot.linkeddata.es/def/adapters#BakingRemainingTime> rdf:type owl:NamedIndividual ,
+                                                                     <http://iot.linkeddata.es/def/adapters#TimeProperty> ,
+                                                                     <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                            rdfs:label "Bake remaining time"@en ,
+                                                                       "Baking remaining time"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingStartTimeHour
+<http://iot.linkeddata.es/def/adapters#BakingStartTimeHour> rdf:type owl:NamedIndividual ,
+                                                                     <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute
+<http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute> rdf:type owl:NamedIndividual ,
+                                                                       <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#BakingStep
@@ -881,6 +927,16 @@ The conditions specified here are those that affect the measurement properties, 
                                                             <http://www.w3.org/ns/sosa/ObservableProperty> ,
                                                             <http://www.w3.org/ns/ssn/systems/OperatingProperty> ;
                                                    rdfs:label "Baking step"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingTemperature
+<http://iot.linkeddata.es/def/adapters#BakingTemperature> rdf:type owl:NamedIndividual ,
+                                                                   <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#BakingTime
+<http://iot.linkeddata.es/def/adapters#BakingTime> rdf:type owl:NamedIndividual ,
+                                                            <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity
@@ -916,6 +972,11 @@ The conditions specified here are those that affect the measurement properties, 
                                                                                   <http://iot.linkeddata.es/def/adapters#OperationalStatus> ,
                                                                                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                                                          rdfs:label "Charging station operational status"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#ChildLock
+<http://iot.linkeddata.es/def/adapters#ChildLock> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower
@@ -955,9 +1016,14 @@ The conditions specified here are those that affect the measurement properties, 
                                                                        rdfs:label "Current baking step remaining time"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#DelayedBaking
+<http://iot.linkeddata.es/def/adapters#DelayedBaking> rdf:type owl:NamedIndividual ,
+                                                               <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+
+
 ###  http://iot.linkeddata.es/def/adapters#DeviceLightStatus
 <http://iot.linkeddata.es/def/adapters#DeviceLightStatus> rdf:type owl:NamedIndividual ,
-                                                                   <http://iot.linkeddata.es/def/adapters#OperationalStatus> ,
+                                                                   <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> ,
                                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                                           rdfs:label "Device light status"@en .
 
@@ -972,7 +1038,7 @@ The conditions specified here are those that affect the measurement properties, 
 ###  http://iot.linkeddata.es/def/adapters#DeviceTemperature
 <http://iot.linkeddata.es/def/adapters#DeviceTemperature> rdf:type owl:NamedIndividual ,
                                                                    <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> ,
-                                                                   <http://iot.linkeddata.es/def/adapters#TemperatureProperty> ,
+                                                                   <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> ,
                                                                    <http://www.w3.org/ns/sosa/ActuatableProperty> ,
                                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                                           rdfs:label "Device temperature"@en .
@@ -1001,7 +1067,8 @@ The conditions specified here are those that affect the measurement properties, 
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> rdf:type owl:NamedIndividual ,
                                                                    <http://iot.linkeddata.es/def/adapters#TimeProperty> ,
                                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                                                          rdfs:label "Elapsed baking time"@en .
+                                                          rdfs:label "Bake elapse time"@en ,
+                                                                     "Elapsed baking time"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#Elevation
@@ -1030,6 +1097,26 @@ The conditions specified here are those that affect the measurement properties, 
                                                           <http://iot.linkeddata.es/def/adapters#OperationalStatus> ,
                                                           <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                                  rdfs:label "Fan speed"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#FastFreeze
+<http://iot.linkeddata.es/def/adapters#FastFreeze> rdf:type owl:NamedIndividual ,
+                                                            <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#FreezerDoorStatus
+<http://iot.linkeddata.es/def/adapters#FreezerDoorStatus> rdf:type owl:NamedIndividual ,
+                                                                   <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#FreezerLightStatus
+<http://iot.linkeddata.es/def/adapters#FreezerLightStatus> rdf:type owl:NamedIndividual ,
+                                                                    <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#FreezerTemperature
+<http://iot.linkeddata.es/def/adapters#FreezerTemperature> rdf:type owl:NamedIndividual ,
+                                                                    <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#HeartRate
@@ -1071,6 +1158,11 @@ The conditions specified here are those that affect the measurement properties, 
                                                                       <http://www.w3.org/ns/sosa/ObservableProperty> ,
                                                                       <http://www.w3.org/ns/ssn/systems/OperatingProperty> ;
                                                              rdfs:label "Heater preheat allowed"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#HeaterSystem
+<http://iot.linkeddata.es/def/adapters#HeaterSystem> rdf:type owl:NamedIndividual ,
+                                                              <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation
@@ -1350,6 +1442,21 @@ The conditions specified here are those that affect the measurement properties, 
                                                               rdfs:label "Reactive power set point"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus
+<http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus> rdf:type owl:NamedIndividual ,
+                                                                        <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus
+<http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus> rdf:type owl:NamedIndividual ,
+                                                                         <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
+
+
+###  http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature
+<http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature> rdf:type owl:NamedIndividual ,
+                                                                         <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
+
+
 ###  http://iot.linkeddata.es/def/adapters#RelativeHumidity
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> rdf:type owl:NamedIndividual ,
                                                                   <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> ,
@@ -1370,10 +1477,20 @@ The conditions specified here are those that affect the measurement properties, 
                                               rdfs:label "Sleep"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#Start
+<http://iot.linkeddata.es/def/adapters#Start> rdf:type owl:NamedIndividual ,
+                                                       <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+
+
 ###  http://iot.linkeddata.es/def/adapters#Steps
 <http://iot.linkeddata.es/def/adapters#Steps> rdf:type owl:NamedIndividual ,
                                                        <http://iot.linkeddata.es/def/adapters#MotionProperty> ;
                                               rdfs:label "Steps"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#Stop
+<http://iot.linkeddata.es/def/adapters#Stop> rdf:type owl:NamedIndividual ,
+                                                      <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#StoredEnergy
@@ -1382,6 +1499,11 @@ The conditions specified here are those that affect the measurement properties, 
                                                               <http://www.w3.org/ns/ssn/systems/BatteryLifetime> ;
                                                      rdfs:label "Stored energy"@en ,
                                                                 "Nominal EV current"^^xsd:string .
+
+
+###  http://iot.linkeddata.es/def/adapters#SuperCool
+<http://iot.linkeddata.es/def/adapters#SuperCool> rdf:type owl:NamedIndividual ,
+                                                           <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 
 
 ###  http://iot.linkeddata.es/def/adapters#SystolicBloodPressure

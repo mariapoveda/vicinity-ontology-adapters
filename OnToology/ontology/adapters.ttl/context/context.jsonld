@@ -21,6 +21,9 @@
     "term_status" : {
       "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
     },
+    "DeviceLightStatusProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty"
+    },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
@@ -32,6 +35,9 @@
     },
     "MotionSensor" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#MotionSensor"
+    },
+    "ElectricVehicle" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#ElectricVehicle"
     },
     "WaterFlowMeter" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#WaterFlowMeter"
@@ -120,6 +126,9 @@
     "creator" : {
       "@id" : "http://purl.org/dc/terms/creator"
     },
+    "BatteryStorageUnit" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#BatteryStorageUnit"
+    },
     "ActivityTracker" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#ActivityTracker"
     },
@@ -160,7 +169,10 @@
       "@id" : "http://www.w3.org/ns/ssn/Property"
     },
     "title" : {
-      "@id" : "http://purl.org/dc/elements/1.1/title"
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "DeviceDoorStatusProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty"
     },
     "source" : {
       "@id" : "http://purl.org/dc/elements/1.1/source"
@@ -198,8 +210,14 @@
     "Selectivity" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/Selectivity"
     },
+    "DeviceTemperatureProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty"
+    },
     "Condition" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/Condition"
+    },
+    "PhotovoltaicPanel" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel"
     },
     "Actuator" : {
       "@id" : "http://iot.linkeddata.es/def/core#Actuator"
@@ -240,6 +258,9 @@
     "Device" : {
       "@id" : "http://iot.linkeddata.es/def/core#Device"
     },
+    "SpaceProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#SpaceProperty"
+    },
     "SystemCapability" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/SystemCapability"
     },
@@ -251,6 +272,9 @@
     },
     "MeasurementRange" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/MeasurementRange"
+    },
+    "Power" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#Power"
     },
     "Lightbulb" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#Lightbulb"

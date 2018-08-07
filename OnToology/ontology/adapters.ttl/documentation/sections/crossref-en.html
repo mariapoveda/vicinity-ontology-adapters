@@ -1,7 +1,7 @@
 <h2  id="crossreference" class="list">Cross reference for Vicinity adapters model classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Vicinity adapters model.
 <div id="classes">
-   <h3 id="classes" class="list">Classes</h3>
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#http://www.w3.org/ns/ssn/systems/Accuracy" title="http://www.w3.org/ns/ssn/systems/Accuracy">Accuracy</a>
@@ -70,6 +70,24 @@ This section provides details for each class and property defined by Vicinity ad
       </li>
       <li>
          <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
+      </li>
+      <li>
+         <a href="#DeviceDoorStatusProperty"
+            title="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty">
+            <span>device door status property</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DeviceLightStatusProperty"
+            title="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">
+            <span>device light status property</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DeviceTemperatureProperty"
+            title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">
+            <span>device temperature property</span>
+         </a>
       </li>
       <li>
          <a href="#DoorSensor" title="http://iot.linkeddata.es/def/adapters#DoorSensor">DoorSensor</a>
@@ -761,6 +779,84 @@ This section provides details for each class and property defined by Vicinity ad
          </dd>
       </dl>
    </div>
+   <div class="entity" id="DeviceDoorStatusProperty">
+      <h3>device door status property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#FreezerDoorStatus"
+               title="http://iot.linkeddata.es/def/adapters#FreezerDoorStatus">freezer door status</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RefrigeratorDoorStatus"
+               title="http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus">refrigerator door status</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DeviceLightStatusProperty">
+      <h3>device light status property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#DeviceLightStatus"
+               title="http://iot.linkeddata.es/def/adapters#DeviceLightStatus">Device light status</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#FreezerLightStatus"
+               title="http://iot.linkeddata.es/def/adapters#FreezerLightStatus">freezer light status</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RefrigeratorLightStatus"
+               title="http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus">refrigerator light status</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DeviceTemperatureProperty">
+      <h3>device temperature property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TemperatureProperty"
+               title="http://iot.linkeddata.es/def/adapters#TemperatureProperty">Temperature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#DeviceTemperature"
+               title="http://iot.linkeddata.es/def/adapters#DeviceTemperature">Device temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingTemperature"
+               title="http://iot.linkeddata.es/def/adapters#BakingTemperature">baking temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#FreezerTemperature"
+               title="http://iot.linkeddata.es/def/adapters#FreezerTemperature">freezer temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#RefrigeratorTemperature"
+               title="http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature">refrigerator temperature</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="DoorSensor">
       <h3>DoorSensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -1342,8 +1438,10 @@ The conditions specified here are those that affect the measurement properties, 
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#AverageTemperatureDeviation"
                title="http://iot.linkeddata.es/def/adapters#AverageTemperatureDeviation">Average temperature deviation</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Azimuth" title="http://iot.linkeddata.es/def/adapters#Azimuth">Azimuth</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakeRemainingTime"
-               title="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">Bake remaining time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ElapsedBakingTime"
+               title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Bake elapse time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingRemainingTime"
+               title="http://iot.linkeddata.es/def/adapters#BakingRemainingTime">Bake remaining time</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingStep"
                title="http://iot.linkeddata.es/def/adapters#BakingStep">Baking step</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#BatteryNominalCapacity"
@@ -1372,8 +1470,6 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#DeviceTemperature">Device temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DimmingLevel"
                title="http://iot.linkeddata.es/def/adapters#DimmingLevel">Dimming level</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ElapsedBakingTime"
-               title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Elapsed baking time</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Elevation" title="http://iot.linkeddata.es/def/adapters#Elevation">Elevation</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#EnergySupplySystem"
                title="http://iot.linkeddata.es/def/adapters#EnergySupplySystem">Energy supply system</a>
@@ -1558,6 +1654,12 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#HeaterMeatProbeAllowed">Heater meat probe allowed</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#HeaterPreheatAllowed"
                title="http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed">Heater preheat allowed</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ChildLock" title="http://iot.linkeddata.es/def/adapters#ChildLock">child lock</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#FastFreeze"
+               title="http://iot.linkeddata.es/def/adapters#FastFreeze">fast freeze</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#HeaterSystem"
+               title="http://iot.linkeddata.es/def/adapters#HeaterSystem">heater system</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SuperCool" title="http://iot.linkeddata.es/def/adapters#SuperCool">super cool</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1597,6 +1699,14 @@ The conditions specified here are those that affect the measurement properties, 
             <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#DeviceDoorStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty">device door status property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DeviceLightStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">device light status property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has members</dt>
          <dd>
             <a href="#ChargeStatus"
@@ -1605,8 +1715,6 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus">Charging station operational status</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ConnectorStatus"
                title="http://iot.linkeddata.es/def/adapters#ConnectorStatus">Connector status</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceLightStatus"
-               title="http://iot.linkeddata.es/def/adapters#DeviceLightStatus">Device light status</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DeviceStatus"
                title="http://iot.linkeddata.es/def/adapters#DeviceStatus">Device status</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DimmingLevel"
@@ -1618,6 +1726,9 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#OpenClosed">Open Closed</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ValvePosition"
                title="http://iot.linkeddata.es/def/adapters#ValvePosition">Valve position</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Baking" title="http://iot.linkeddata.es/def/adapters#Baking">baking</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Start" title="http://iot.linkeddata.es/def/adapters#Start">start</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Stop" title="http://iot.linkeddata.es/def/adapters#Stop">stop</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2273,13 +2384,13 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#AmbientTemperatureProperty"
                title="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty">Ambient temperature property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#DeviceTemperatureProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">device temperature property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#DeviceTemperature"
-               title="http://iot.linkeddata.es/def/adapters#DeviceTemperature">Device temperature</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#HeaterDefaultTemperature"
+            <a href="#HeaterDefaultTemperature"
                title="http://iot.linkeddata.es/def/adapters#HeaterDefaultTemperature">Heater default temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#HeaterMaxTemperature"
                title="http://iot.linkeddata.es/def/adapters#HeaterMaxTemperature">Heater maximum temperature</a>
@@ -2342,12 +2453,25 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#ActualChargingSessionDuration"
                title="http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration">Actual charging session duration</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakeRemainingTime"
-               title="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">Bake remaining time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ElapsedBakingTime"
+               title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Bake elapse time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingRemainingTime"
+               title="http://iot.linkeddata.es/def/adapters#BakingRemainingTime">Bake remaining time</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#CurrentBakingStepRemainingTime"
                title="http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime">Current baking step remaining time</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ElapsedBakingTime"
-               title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Elapsed baking time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AlarmTime" title="http://iot.linkeddata.es/def/adapters#AlarmTime">alarm time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingEndTimeHour"
+               title="http://iot.linkeddata.es/def/adapters#BakingEndTimeHour">baking end time hour</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingEndTimeMinute"
+               title="http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute">baking end time minute</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingStartTimeHour"
+               title="http://iot.linkeddata.es/def/adapters#BakingStartTimeHour">baking start time hour</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingStartTimeMinute"
+               title="http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute">baking start time minute</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#BakingTime"
+               title="http://iot.linkeddata.es/def/adapters#BakingTime">baking time</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#DelayedBaking"
+               title="http://iot.linkeddata.es/def/adapters#DelayedBaking">delayed baking</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2476,6 +2600,11 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad">Actual reactive power load</a>
       </li>
       <li>
+         <a href="#AlarmTime" title="http://iot.linkeddata.es/def/adapters#AlarmTime">
+            <span>alarm time</span>
+         </a>
+      </li>
+      <li>
          <a href="#AmbientTemperature"
             title="http://iot.linkeddata.es/def/adapters#AmbientTemperature">Ambient temperature</a>
       </li>
@@ -2529,12 +2658,57 @@ The conditions specified here are those that affect the measurement properties, 
          <a href="#Azimuth" title="http://iot.linkeddata.es/def/adapters#Azimuth">Azimuth</a>
       </li>
       <li>
-         <a href="#BakeRemainingTime"
-            title="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">Bake remaining time</a>
+         <a href="#ElapsedBakingTime"
+            title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Bake elapse time</a>
+      </li>
+      <li>
+         <a href="#BakingRemainingTime"
+            title="http://iot.linkeddata.es/def/adapters#BakingRemainingTime">Bake remaining time</a>
+      </li>
+      <li>
+         <a href="#Baking" title="http://iot.linkeddata.es/def/adapters#Baking">
+            <span>baking</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BakingEndTimeHour"
+            title="http://iot.linkeddata.es/def/adapters#BakingEndTimeHour">
+            <span>baking end time hour</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BakingEndTimeMinute"
+            title="http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute">
+            <span>baking end time minute</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BakingStartTimeHour"
+            title="http://iot.linkeddata.es/def/adapters#BakingStartTimeHour">
+            <span>baking start time hour</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BakingStartTimeMinute"
+            title="http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute">
+            <span>baking start time minute</span>
+         </a>
       </li>
       <li>
          <a href="#BakingStep"
             title="http://iot.linkeddata.es/def/adapters#BakingStep">Baking step</a>
+      </li>
+      <li>
+         <a href="#BakingTemperature"
+            title="http://iot.linkeddata.es/def/adapters#BakingTemperature">
+            <span>baking temperature</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BakingTime"
+            title="http://iot.linkeddata.es/def/adapters#BakingTime">
+            <span>baking time</span>
+         </a>
       </li>
       <li>
          <a href="#BatteryNominalCapacity"
@@ -2551,6 +2725,11 @@ The conditions specified here are those that affect the measurement properties, 
       <li>
          <a href="#ChargingStationOperationalStatus"
             title="http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus">Charging station operational status</a>
+      </li>
+      <li>
+         <a href="#ChildLock" title="http://iot.linkeddata.es/def/adapters#ChildLock">
+            <span>child lock</span>
+         </a>
       </li>
       <li>
          <a href="#CO2Concentration"
@@ -2577,6 +2756,12 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime">Current baking step remaining time</a>
       </li>
       <li>
+         <a href="#DelayedBaking"
+            title="http://iot.linkeddata.es/def/adapters#DelayedBaking">
+            <span>delayed baking</span>
+         </a>
+      </li>
+      <li>
          <a href="#DeviceLightStatus"
             title="http://iot.linkeddata.es/def/adapters#DeviceLightStatus">Device light status</a>
       </li>
@@ -2601,10 +2786,6 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#DistanceWalked">Distance walked</a>
       </li>
       <li>
-         <a href="#ElapsedBakingTime"
-            title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Elapsed baking time</a>
-      </li>
-      <li>
          <a href="#Elevation" title="http://iot.linkeddata.es/def/adapters#Elevation">Elevation</a>
       </li>
       <li>
@@ -2616,6 +2797,30 @@ The conditions specified here are those that affect the measurement properties, 
       </li>
       <li>
          <a href="#FanSpeed" title="http://iot.linkeddata.es/def/adapters#FanSpeed">Fan speed</a>
+      </li>
+      <li>
+         <a href="#FastFreeze"
+            title="http://iot.linkeddata.es/def/adapters#FastFreeze">
+            <span>fast freeze</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FreezerDoorStatus"
+            title="http://iot.linkeddata.es/def/adapters#FreezerDoorStatus">
+            <span>freezer door status</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FreezerLightStatus"
+            title="http://iot.linkeddata.es/def/adapters#FreezerLightStatus">
+            <span>freezer light status</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FreezerTemperature"
+            title="http://iot.linkeddata.es/def/adapters#FreezerTemperature">
+            <span>freezer temperature</span>
+         </a>
       </li>
       <li>
          <a href="#HeartRate" title="http://iot.linkeddata.es/def/adapters#HeartRate">Heart rate</a>
@@ -2639,6 +2844,12 @@ The conditions specified here are those that affect the measurement properties, 
       <li>
          <a href="#HeaterPreheatAllowed"
             title="http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed">Heater preheat allowed</a>
+      </li>
+      <li>
+         <a href="#HeaterSystem"
+            title="http://iot.linkeddata.es/def/adapters#HeaterSystem">
+            <span>heater system</span>
+         </a>
       </li>
       <li>
          <a href="#HighestCO2ConcentrationDeviation"
@@ -2790,6 +3001,24 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint">Reactive power set point</a>
       </li>
       <li>
+         <a href="#RefrigeratorDoorStatus"
+            title="http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus">
+            <span>refrigerator door status</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RefrigeratorLightStatus"
+            title="http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus">
+            <span>refrigerator light status</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RefrigeratorTemperature"
+            title="http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature">
+            <span>refrigerator temperature</span>
+         </a>
+      </li>
+      <li>
          <a href="#RelativeHumidity"
             title="http://iot.linkeddata.es/def/adapters#RelativeHumidity">Relative humidity</a>
       </li>
@@ -2801,11 +3030,26 @@ The conditions specified here are those that affect the measurement properties, 
          <a href="#Sleep" title="http://iot.linkeddata.es/def/adapters#Sleep">Sleep</a>
       </li>
       <li>
+         <a href="#Start" title="http://iot.linkeddata.es/def/adapters#Start">
+            <span>start</span>
+         </a>
+      </li>
+      <li>
          <a href="#Steps" title="http://iot.linkeddata.es/def/adapters#Steps">Steps</a>
+      </li>
+      <li>
+         <a href="#Stop" title="http://iot.linkeddata.es/def/adapters#Stop">
+            <span>stop</span>
+         </a>
       </li>
       <li>
          <a href="#StoredEnergy"
             title="http://iot.linkeddata.es/def/adapters#StoredEnergy">Stored energy</a>
+      </li>
+      <li>
+         <a href="#SuperCool" title="http://iot.linkeddata.es/def/adapters#SuperCool">
+            <span>super cool</span>
+         </a>
       </li>
       <li>
          <a href="#SystolicBloodPressure"
@@ -3107,6 +3351,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="AlarmTime">
+      <h3>alarm time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#AlarmTime</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AmbientTemperature">
       <h3>Ambient temperature<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3365,13 +3625,13 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="BakeRemainingTime">
-      <h3>Bake remaining time<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="ElapsedBakingTime">
+      <h3>Bake elapse time<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakeRemainingTime</p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ElapsedBakingTime</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3381,6 +3641,106 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingRemainingTime">
+      <h3>Bake remaining time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingRemainingTime</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Baking">
+      <h3>baking<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Baking</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingEndTimeHour">
+      <h3>baking end time hour<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingEndTimeHour</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingEndTimeMinute">
+      <h3>baking end time minute<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingStartTimeHour">
+      <h3>baking start time hour<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingStartTimeHour</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingStartTimeMinute">
+      <h3>baking start time minute<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3401,6 +3761,38 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
                title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingTemperature">
+      <h3>baking temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingTemperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceTemperatureProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">device temperature property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BakingTime">
+      <h3>baking time<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#BakingTime</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3476,6 +3868,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ChildLock">
+      <h3>child lock<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ChildLock</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
+               title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3605,6 +4013,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="DelayedBaking">
+      <h3>delayed baking<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#DelayedBaking</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#TimeProperty"
+               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="DeviceLightStatus">
       <h3>Device light status<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3615,8 +4039,8 @@ The conditions specified here are those that affect the measurement properties, 
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#OperationalStatus"
-               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <a href="#DeviceLightStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">device light status property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
@@ -3660,8 +4084,8 @@ The conditions specified here are those that affect the measurement properties, 
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
-            <a href="#TemperatureProperty"
-               title="http://iot.linkeddata.es/def/adapters#TemperatureProperty">Temperature</a>
+            <a href="#DeviceTemperatureProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">device temperature property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
@@ -3722,26 +4146,6 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#MotionProperty"
                title="http://iot.linkeddata.es/def/adapters#MotionProperty">Motion property</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="ElapsedBakingTime">
-      <h3>Elapsed baking time<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#ElapsedBakingTime</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#TimeProperty"
-               title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3820,6 +4224,70 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FastFreeze">
+      <h3>fast freeze<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#FastFreeze</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
+               title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FreezerDoorStatus">
+      <h3>freezer door status<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#FreezerDoorStatus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceDoorStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty">device door status property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FreezerLightStatus">
+      <h3>freezer light status<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#FreezerLightStatus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceLightStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">device light status property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FreezerTemperature">
+      <h3>freezer temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#FreezerTemperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceTemperatureProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">device temperature property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3933,6 +4401,22 @@ The conditions specified here are those that affect the measurement properties, 
             <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
+               title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HeaterSystem">
+      <h3>heater system<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#HeaterSystem</p>
+      <dl class="description">
+         <dt>belongs to</dt>
          <dd>
             <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
                title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
@@ -4713,6 +5197,54 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="RefrigeratorDoorStatus">
+      <h3>refrigerator door status<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceDoorStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty">device door status property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RefrigeratorLightStatus">
+      <h3>refrigerator light status<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceLightStatusProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">device light status property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RefrigeratorTemperature">
+      <h3>refrigerator temperature<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#DeviceTemperatureProperty"
+               title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">device temperature property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="RelativeHumidity">
       <h3>Relative humidity<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -4768,6 +5300,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Start">
+      <h3>start<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Start</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Steps">
       <h3>Steps<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -4780,6 +5328,22 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#MotionProperty"
                title="http://iot.linkeddata.es/def/adapters#MotionProperty">Motion property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Stop">
+      <h3>stop<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#Stop</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#OperationalStatus"
+               title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -4799,6 +5363,22 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
          <dd>
             <a href="#http://www.w3.org/ns/ssn/systems/BatteryLifetime" title="http://www.w3.org/ns/ssn/systems/BatteryLifetime">Battery Lifetime</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SuperCool">
+      <h3>super cool<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#SuperCool</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
+               title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
