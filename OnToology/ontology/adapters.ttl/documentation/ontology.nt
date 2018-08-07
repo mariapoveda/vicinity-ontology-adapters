@@ -8,7 +8,7 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.2" .
 # 
 # 
 # #################################################################
@@ -102,6 +102,18 @@
 <http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/2000/01/rdf-schema#label> "Charger"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty
+<http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+# 
+# http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+# 
+# http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty
+<http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#DoorSensor
 <http://iot.linkeddata.es/def/adapters#DoorSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -659,6 +671,10 @@
 <http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Actual reactive power load"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#AlarmTime
+<http://iot.linkeddata.es/def/adapters#AlarmTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AlarmTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+# 
 # http://iot.linkeddata.es/def/adapters#AmbientTemperature
 <http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
@@ -737,17 +753,46 @@
 <http://iot.linkeddata.es/def/adapters#Azimuth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#Azimuth> <http://www.w3.org/2000/01/rdf-schema#label> "Azimuth"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#BakeRemainingTime
-<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
-<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#BakeRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Bake remaining time"@en .
+# http://iot.linkeddata.es/def/adapters#Baking
+<http://iot.linkeddata.es/def/adapters#Baking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Baking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingEndTimeHour
+<http://iot.linkeddata.es/def/adapters#BakingEndTimeHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingEndTimeHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute
+<http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingRemainingTime
+<http://iot.linkeddata.es/def/adapters#BakingRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+<http://iot.linkeddata.es/def/adapters#BakingRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#BakingRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Bake remaining time"@en .
+<http://iot.linkeddata.es/def/adapters#BakingRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Baking remaining time"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingStartTimeHour
+<http://iot.linkeddata.es/def/adapters#BakingStartTimeHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingStartTimeHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute
+<http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#BakingStep
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 <http://iot.linkeddata.es/def/adapters#BakingStep> <http://www.w3.org/2000/01/rdf-schema#label> "Baking step"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingTemperature
+<http://iot.linkeddata.es/def/adapters#BakingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#BakingTime
+<http://iot.linkeddata.es/def/adapters#BakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#BakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity
 <http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -778,6 +823,10 @@
 <http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 <http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Charging station operational status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ChildLock
+<http://iot.linkeddata.es/def/adapters#ChildLock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ChildLock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower
 <http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -811,9 +860,13 @@
 <http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Current baking step remaining time"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#DelayedBaking
+<http://iot.linkeddata.es/def/adapters#DelayedBaking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DelayedBaking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
+# 
 # http://iot.linkeddata.es/def/adapters#DeviceLightStatus
 <http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
 <http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#DeviceLightStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Device light status"@en .
 # 
@@ -826,7 +879,7 @@
 # http://iot.linkeddata.es/def/adapters#DeviceTemperature
 <http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> .
-<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TemperatureProperty> .
+<http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
 <http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ActuatableProperty> .
 <http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#DeviceTemperature> <http://www.w3.org/2000/01/rdf-schema#label> "Device temperature"@en .
@@ -851,6 +904,7 @@
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Bake elapse time"@en .
 <http://iot.linkeddata.es/def/adapters#ElapsedBakingTime> <http://www.w3.org/2000/01/rdf-schema#label> "Elapsed baking time"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Elevation
@@ -876,6 +930,22 @@
 <http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 <http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#FanSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "Fan speed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#FastFreeze
+<http://iot.linkeddata.es/def/adapters#FastFreeze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#FastFreeze> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#FreezerDoorStatus
+<http://iot.linkeddata.es/def/adapters#FreezerDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#FreezerDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#FreezerLightStatus
+<http://iot.linkeddata.es/def/adapters#FreezerLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#FreezerLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#FreezerTemperature
+<http://iot.linkeddata.es/def/adapters#FreezerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#FreezerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#HeartRate
 <http://iot.linkeddata.es/def/adapters#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -911,6 +981,10 @@
 <http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 <http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed> <http://www.w3.org/2000/01/rdf-schema#label> "Heater preheat allowed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#HeaterSystem
+<http://iot.linkeddata.es/def/adapters#HeaterSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#HeaterSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation
 <http://iot.linkeddata.es/def/adapters#HighestCO2ConcentrationDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1150,6 +1224,18 @@
 <http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ActuatableProperty> .
 <http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Reactive power set point"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus
+<http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus
+<http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature
+<http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
+# 
 # http://iot.linkeddata.es/def/adapters#RelativeHumidity
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> .
@@ -1167,10 +1253,18 @@
 <http://iot.linkeddata.es/def/adapters#Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
 <http://iot.linkeddata.es/def/adapters#Sleep> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#Start
+<http://iot.linkeddata.es/def/adapters#Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Start> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+# 
 # http://iot.linkeddata.es/def/adapters#Steps
 <http://iot.linkeddata.es/def/adapters#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#Steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
 <http://iot.linkeddata.es/def/adapters#Steps> <http://www.w3.org/2000/01/rdf-schema#label> "Steps"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Stop
+<http://iot.linkeddata.es/def/adapters#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Stop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 # 
 # http://iot.linkeddata.es/def/adapters#StoredEnergy
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1178,6 +1272,10 @@
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/BatteryLifetime> .
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Stored energy"@en .
 <http://iot.linkeddata.es/def/adapters#StoredEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal EV current" .
+# 
+# http://iot.linkeddata.es/def/adapters#SuperCool
+<http://iot.linkeddata.es/def/adapters#SuperCool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#SuperCool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#SystolicBloodPressure
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

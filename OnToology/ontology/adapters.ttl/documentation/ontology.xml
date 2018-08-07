@@ -24,7 +24,7 @@
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vcnt-adap</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -205,6 +205,33 @@
     <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#Charger">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
         <rdfs:label xml:lang="en">Charger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
     </owl:Class>
     
 
@@ -1218,6 +1245,15 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#AlarmTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#AlarmTime">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#AmbientTemperature -->
 
 
@@ -1361,13 +1397,59 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
-    <!-- http://iot.linkeddata.es/def/adapters#BakeRemainingTime -->
+    <!-- http://iot.linkeddata.es/def/adapters#Baking -->
 
 
-    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Baking">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingEndTimeHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingEndTimeHour">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingRemainingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingRemainingTime">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Bake remaining time</rdfs:label>
+        <rdfs:label xml:lang="en">Baking remaining time</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingStartTimeHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingStartTimeHour">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1379,6 +1461,24 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
         <rdfs:label xml:lang="en">Baking step</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#BakingTime -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#BakingTime">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1434,6 +1534,15 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Charging station operational status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ChildLock -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ChildLock">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1495,11 +1604,20 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#DelayedBaking -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DelayedBaking">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#DeviceLightStatus -->
 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DeviceLightStatus">
-        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Device light status</rdfs:label>
     </owl:NamedIndividual>
@@ -1522,7 +1640,7 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#DeviceTemperature">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
-        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TemperatureProperty"/>
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Device temperature</rdfs:label>
@@ -1567,6 +1685,7 @@ The conditions specified here are those that affect the measurement properties, 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#TimeProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Bake elapse time</rdfs:label>
         <rdfs:label xml:lang="en">Elapsed baking time</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1612,6 +1731,42 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Fan speed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#FastFreeze -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FastFreeze">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#FreezerDoorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FreezerDoorStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#FreezerLightStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FreezerLightStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#FreezerTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FreezerTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1677,6 +1832,15 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
         <rdfs:label xml:lang="en">Heater preheat allowed</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#HeaterSystem -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#HeaterSystem">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
     </owl:NamedIndividual>
     
 
@@ -2114,6 +2278,33 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#RelativeHumidity -->
 
 
@@ -2146,12 +2337,30 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#Start -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Start">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#Steps -->
 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Steps">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#MotionProperty"/>
         <rdfs:label xml:lang="en">Steps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#Stop -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#Stop">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
     </owl:NamedIndividual>
     
 
@@ -2164,6 +2373,15 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/BatteryLifetime"/>
         <rdfs:label xml:lang="en">Stored energy</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nominal EV current</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#SuperCool -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#SuperCool">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
     </owl:NamedIndividual>
     
 

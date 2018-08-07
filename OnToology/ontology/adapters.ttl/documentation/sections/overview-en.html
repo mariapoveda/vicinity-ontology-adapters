@@ -72,6 +72,24 @@ This ontology has the following classes and properties.</span>
       <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
    </li>
    <li>
+      <a href="#DeviceDoorStatusProperty"
+         title="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty">
+         <span>device door status property</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DeviceLightStatusProperty"
+         title="http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty">
+         <span>device light status property</span>
+      </a>
+   </li>
+   <li>
+      <a href="#DeviceTemperatureProperty"
+         title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">
+         <span>device temperature property</span>
+      </a>
+   </li>
+   <li>
       <a href="#DoorSensor" title="http://iot.linkeddata.es/def/adapters#DoorSensor">DoorSensor</a>
    </li>
    <li>
@@ -358,6 +376,11 @@ This ontology has the following classes and properties.</span>
          title="http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad">Actual reactive power load</a>
    </li>
    <li>
+      <a href="#AlarmTime" title="http://iot.linkeddata.es/def/adapters#AlarmTime">
+         <span>alarm time</span>
+      </a>
+   </li>
+   <li>
       <a href="#AmbientTemperature"
          title="http://iot.linkeddata.es/def/adapters#AmbientTemperature">Ambient temperature</a>
    </li>
@@ -411,12 +434,57 @@ This ontology has the following classes and properties.</span>
       <a href="#Azimuth" title="http://iot.linkeddata.es/def/adapters#Azimuth">Azimuth</a>
    </li>
    <li>
-      <a href="#BakeRemainingTime"
-         title="http://iot.linkeddata.es/def/adapters#BakeRemainingTime">Bake remaining time</a>
+      <a href="#ElapsedBakingTime"
+         title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Bake elapse time</a>
+   </li>
+   <li>
+      <a href="#BakingRemainingTime"
+         title="http://iot.linkeddata.es/def/adapters#BakingRemainingTime">Bake remaining time</a>
+   </li>
+   <li>
+      <a href="#Baking" title="http://iot.linkeddata.es/def/adapters#Baking">
+         <span>baking</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BakingEndTimeHour"
+         title="http://iot.linkeddata.es/def/adapters#BakingEndTimeHour">
+         <span>baking end time hour</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BakingEndTimeMinute"
+         title="http://iot.linkeddata.es/def/adapters#BakingEndTimeMinute">
+         <span>baking end time minute</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BakingStartTimeHour"
+         title="http://iot.linkeddata.es/def/adapters#BakingStartTimeHour">
+         <span>baking start time hour</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BakingStartTimeMinute"
+         title="http://iot.linkeddata.es/def/adapters#BakingStartTimeMinute">
+         <span>baking start time minute</span>
+      </a>
    </li>
    <li>
       <a href="#BakingStep"
          title="http://iot.linkeddata.es/def/adapters#BakingStep">Baking step</a>
+   </li>
+   <li>
+      <a href="#BakingTemperature"
+         title="http://iot.linkeddata.es/def/adapters#BakingTemperature">
+         <span>baking temperature</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BakingTime"
+         title="http://iot.linkeddata.es/def/adapters#BakingTime">
+         <span>baking time</span>
+      </a>
    </li>
    <li>
       <a href="#BatteryNominalCapacity"
@@ -433,6 +501,11 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#ChargingStationOperationalStatus"
          title="http://iot.linkeddata.es/def/adapters#ChargingStationOperationalStatus">Charging station operational status</a>
+   </li>
+   <li>
+      <a href="#ChildLock" title="http://iot.linkeddata.es/def/adapters#ChildLock">
+         <span>child lock</span>
+      </a>
    </li>
    <li>
       <a href="#CO2Concentration"
@@ -459,6 +532,12 @@ This ontology has the following classes and properties.</span>
          title="http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime">Current baking step remaining time</a>
    </li>
    <li>
+      <a href="#DelayedBaking"
+         title="http://iot.linkeddata.es/def/adapters#DelayedBaking">
+         <span>delayed baking</span>
+      </a>
+   </li>
+   <li>
       <a href="#DeviceLightStatus"
          title="http://iot.linkeddata.es/def/adapters#DeviceLightStatus">Device light status</a>
    </li>
@@ -483,10 +562,6 @@ This ontology has the following classes and properties.</span>
          title="http://iot.linkeddata.es/def/adapters#DistanceWalked">Distance walked</a>
    </li>
    <li>
-      <a href="#ElapsedBakingTime"
-         title="http://iot.linkeddata.es/def/adapters#ElapsedBakingTime">Elapsed baking time</a>
-   </li>
-   <li>
       <a href="#Elevation" title="http://iot.linkeddata.es/def/adapters#Elevation">Elevation</a>
    </li>
    <li>
@@ -498,6 +573,30 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#FanSpeed" title="http://iot.linkeddata.es/def/adapters#FanSpeed">Fan speed</a>
+   </li>
+   <li>
+      <a href="#FastFreeze"
+         title="http://iot.linkeddata.es/def/adapters#FastFreeze">
+         <span>fast freeze</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FreezerDoorStatus"
+         title="http://iot.linkeddata.es/def/adapters#FreezerDoorStatus">
+         <span>freezer door status</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FreezerLightStatus"
+         title="http://iot.linkeddata.es/def/adapters#FreezerLightStatus">
+         <span>freezer light status</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FreezerTemperature"
+         title="http://iot.linkeddata.es/def/adapters#FreezerTemperature">
+         <span>freezer temperature</span>
+      </a>
    </li>
    <li>
       <a href="#HeartRate" title="http://iot.linkeddata.es/def/adapters#HeartRate">Heart rate</a>
@@ -521,6 +620,12 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#HeaterPreheatAllowed"
          title="http://iot.linkeddata.es/def/adapters#HeaterPreheatAllowed">Heater preheat allowed</a>
+   </li>
+   <li>
+      <a href="#HeaterSystem"
+         title="http://iot.linkeddata.es/def/adapters#HeaterSystem">
+         <span>heater system</span>
+      </a>
    </li>
    <li>
       <a href="#HighestCO2ConcentrationDeviation"
@@ -672,6 +777,24 @@ This ontology has the following classes and properties.</span>
          title="http://iot.linkeddata.es/def/adapters#ReactivePowerSetPoint">Reactive power set point</a>
    </li>
    <li>
+      <a href="#RefrigeratorDoorStatus"
+         title="http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus">
+         <span>refrigerator door status</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RefrigeratorLightStatus"
+         title="http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus">
+         <span>refrigerator light status</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RefrigeratorTemperature"
+         title="http://iot.linkeddata.es/def/adapters#RefrigeratorTemperature">
+         <span>refrigerator temperature</span>
+      </a>
+   </li>
+   <li>
       <a href="#RelativeHumidity"
          title="http://iot.linkeddata.es/def/adapters#RelativeHumidity">Relative humidity</a>
    </li>
@@ -683,11 +806,26 @@ This ontology has the following classes and properties.</span>
       <a href="#Sleep" title="http://iot.linkeddata.es/def/adapters#Sleep">Sleep</a>
    </li>
    <li>
+      <a href="#Start" title="http://iot.linkeddata.es/def/adapters#Start">
+         <span>start</span>
+      </a>
+   </li>
+   <li>
       <a href="#Steps" title="http://iot.linkeddata.es/def/adapters#Steps">Steps</a>
+   </li>
+   <li>
+      <a href="#Stop" title="http://iot.linkeddata.es/def/adapters#Stop">
+         <span>stop</span>
+      </a>
    </li>
    <li>
       <a href="#StoredEnergy"
          title="http://iot.linkeddata.es/def/adapters#StoredEnergy">Stored energy</a>
+   </li>
+   <li>
+      <a href="#SuperCool" title="http://iot.linkeddata.es/def/adapters#SuperCool">
+         <span>super cool</span>
+      </a>
    </li>
    <li>
       <a href="#SystolicBloodPressure"
