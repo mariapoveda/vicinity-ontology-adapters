@@ -727,7 +727,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.41113551382809088</real>
+						<real>0.41113552451133728</real>
 					</dict>
 					<key>ID</key>
 					<integer>42912</integer>
@@ -740,7 +740,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 694.74631471742259}</string>
-						<string>{2747.9287790454318, 694.49999999999989}</string>
+						<string>{2747.9287790454318, 694.49999069815567}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -795,7 +795,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.37668026168707625</real>
+						<real>0.37668025493621826</real>
 					</dict>
 					<key>ID</key>
 					<integer>42911</integer>
@@ -808,7 +808,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 724.56137228823673}</string>
-						<string>{2747.9287790454318, 724.5}</string>
+						<string>{2747.9287790454318, 724.50000587793534}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -863,7 +863,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.34165075534371159</real>
+						<real>0.34165075421333313</real>
 					</dict>
 					<key>ID</key>
 					<integer>42910</integer>
@@ -876,7 +876,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 754.87616552282225}</string>
-						<string>{2747.9287790454318, 754.99999999999977}</string>
+						<string>{2747.9287790454318, 755.00000098421424}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -931,7 +931,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.30690837610152177</real>
+						<real>0.30690836906433105</real>
 					</dict>
 					<key>ID</key>
 					<integer>42909</integer>
@@ -944,7 +944,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 785.23279954787654}</string>
-						<string>{2747.9287790454318, 785.25}</string>
+						<string>{2747.9287790454318, 785.25000612724352}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -999,7 +999,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.27187886975815712</real>
+						<real>0.27187886834144592</real>
 					</dict>
 					<key>ID</key>
 					<integer>42908</integer>
@@ -1012,7 +1012,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 815.6863170992242}</string>
-						<string>{2747.9287790454318, 815.74999999999989}</string>
+						<string>{2747.9287790454318, 815.75000123352265}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1067,7 +1067,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.85847953745892935</real>
+						<real>0.85847955942153931</real>
 					</dict>
 					<key>ID</key>
 					<integer>42907</integer>
@@ -1080,7 +1080,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9127390154363, 305.07887521923516}</string>
-						<string>{2747.9287790454318, 305}</string>
+						<string>{2747.9287790454318, 304.99998087727556}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1135,7 +1135,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.82345003111556492</real>
+						<real>0.82345002889633179</real>
 					</dict>
 					<key>ID</key>
 					<integer>42906</integer>
@@ -1148,7 +1148,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9127390154363, 335.5463277529584}</string>
-						<string>{2747.9287790454318, 335.49999999999989}</string>
+						<string>{2747.9287790454318, 335.50000193227413}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1203,7 +1203,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.89350904380229401</real>
+						<real>0.89350903034210205</real>
 					</dict>
 					<key>ID</key>
 					<integer>42905</integer>
@@ -1216,7 +1216,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9127390154363, 274.56632910479175}</string>
-						<string>{2747.9287790454318, 274.50000000000011}</string>
+						<string>{2747.9287790454318, 274.5000117197161}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1271,7 +1271,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.92825142304448394</real>
+						<real>0.92825144529342651</real>
 					</dict>
 					<key>ID</key>
 					<integer>42904</integer>
@@ -1284,7 +1284,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9127390154363, 244.29452142785564}</string>
-						<string>{2747.9287790454318, 244.25}</string>
+						<string>{2747.9287790454318, 244.24998062796692}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1339,7 +1339,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.96328092938784859</real>
+						<real>0.96328091621398926</real>
 					</dict>
 					<key>ID</key>
 					<integer>42903</integer>
@@ -1352,7 +1352,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9127390154363, 213.85585581819348}</string>
-						<string>{2747.9287790454318, 213.75000000000011}</string>
+						<string>{2747.9287790454318, 213.75001147040734}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1407,7 +1407,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.2371364905159673</real>
+						<real>0.23713648319244385</real>
 					</dict>
 					<key>ID</key>
 					<integer>42902</integer>
@@ -1420,7 +1420,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 846.1488509866092}</string>
-						<string>{2747.9287790454318, 846}</string>
+						<string>{2747.9287790454318, 846.00000637655194}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1475,7 +1475,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.20181985707142747</real>
+						<real>0.20181985199451447</real>
 					</dict>
 					<key>ID</key>
 					<integer>42901</integer>
@@ -1488,7 +1488,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 876.82631569911109}</string>
-						<string>{2747.9287790454318, 876.75}</string>
+						<string>{2747.9287790454318, 876.75000442044029}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1543,7 +1543,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.16650322362688763</real>
+						<real>0.16650322079658508</real>
 					</dict>
 					<key>ID</key>
 					<integer>42900</integer>
@@ -1556,7 +1556,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 907.42594282733353}</string>
-						<string>{2747.9287790454318, 907.49999999999989}</string>
+						<string>{2747.9287790454318, 907.50000246432899}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1611,7 +1611,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.13147371728352258</real>
+						<real>0.13147372007369995</real>
 					</dict>
 					<key>ID</key>
 					<integer>42899</integer>
@@ -1624,7 +1624,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 938.02556995555597}</string>
-						<string>{2747.9287790454318, 938.00000000000011}</string>
+						<string>{2747.9287790454318, 937.999997570608}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -1679,7 +1679,7 @@
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.095869956737807543</real>
+						<real>0.095869958400726318</real>
 					</dict>
 					<key>ID</key>
 					<integer>42898</integer>
@@ -1692,7 +1692,7 @@
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 968.91983185034564}</string>
-						<string>{2747.9287790454318, 969.00000000000011}</string>
+						<string>{2747.9287790454318, 968.99999855210569}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -6380,7 +6380,7 @@ DeviceLightStatusProperty}</string>
 						<key>ID</key>
 						<integer>42828</integer>
 						<key>Position</key>
-						<real>0.06084045039444292</real>
+						<real>0.06084045022726059</real>
 					</dict>
 					<key>ID</key>
 					<integer>42833</integer>
@@ -6393,7 +6393,7 @@ DeviceLightStatusProperty}</string>
 					<key>Points</key>
 					<array>
 						<string>{2771.9999380409718, 999.2863129954444}</string>
-						<string>{2747.9287790454318, 999.5}</string>
+						<string>{2747.9287790454318, 999.50000014556474}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -110030,7 +110030,7 @@ Class}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{1115.714304714787, -87.000000000000014}, {1937.1428901322042, 1262.8571643634721}}</string>
+		<string>{{0, -87.000000000000014}, {1937.142890132204, 1261.4285929105722}}</string>
 		<key>Zoom</key>
 		<real>0.69999998807907104</real>
 		<key>ZoomValues</key>
