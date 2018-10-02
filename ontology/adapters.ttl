@@ -17,7 +17,7 @@
 	owl:imports <http://iot.linkeddata.es/def/core#> ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
 	dc:title "Vicinity adapters model"@en ;
-	owl:versionInfo "0.1.2" ;
+	owl:versionInfo "0.1.3" ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
@@ -1200,6 +1200,10 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#OpenClosed> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
 	rdfs:label "Open Closed"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#OvenDoorStatus
+
+<http://iot.linkeddata.es/def/adapters#OvenDoorStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
 # 
 # http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
 
