@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://iot.linkeddata.es/def/adapters#"
      xml:base="http://iot.linkeddata.es/def/adapters"
-     xmlns:schema="http://schema.org/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:org="http://www.w3.org/ns/org#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="http://iot.linkeddata.es/def/adapters#">
         <owl:imports rdf:resource="http://iot.linkeddata.es/def/core#"/>
         <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
@@ -21,10 +21,10 @@
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
         <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vcnt-adap</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>vcnt-adap</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1.2</owl:versionInfo>
+        <owl:versionInfo>0.1.3</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -242,7 +242,7 @@
     <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#DoorSensor">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
         <rdfs:label xml:lang="en">DoorSensor</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</ns:term_status>
+        <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
@@ -263,7 +263,7 @@
     <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#EVCharger">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/adapters#Charger"/>
         <rdfs:label xml:lang="en">Electric vehicle charging point</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric vehicle charger</rdfs:label>
+        <rdfs:label>Electric vehicle charger</rdfs:label>
     </owl:Class>
     
 
@@ -659,7 +659,7 @@
     <owl:Class rdf:about="http://iot.linkeddata.es/def/adapters#WindowSensor">
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Sensor"/>
         <rdfs:label xml:lang="en">WindowSensor</rdfs:label>
-        <ns:term_status rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unstable</ns:term_status>
+        <ns:term_status>unstable</ns:term_status>
     </owl:Class>
     
 
@@ -738,18 +738,18 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property">
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;property&apos; [O&amp;M] 
+        <dc:source>skos:exactMatch &apos;property&apos; [O&amp;M] 
 		                    http://www.opengeospatial.org/standards/om</dc:source>
         <rdfs:comment xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</rdfs:comment>
         <rdfs:comment xml:lang="en">A ssn:Property is something that is a DUL:Quality and has a ssn:isPropertyOf property who may be a ssn:FeatureOfInterest</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observable Quality of an Event or Object.  That is, not a quality of an abstract entity as is also allowed by DUL&apos;s Quality, but rather an aspect of an entity that is intrinsic to and cannot exist without the entity and is observable by a sensor.</rdfs:comment>
+        <rdfs:comment>An observable Quality of an Event or Object.  That is, not a quality of an abstract entity as is also allowed by DUL&apos;s Quality, but rather an aspect of an entity that is intrinsic to and cannot exist without the entity and is observable by a sensor.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/ssn/"/>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn#</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Property</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Property</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">property (ssn)</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <rdfs:label>Property</rdfs:label>
+        <rdfs:label>property (ssn)</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
         <skos:definition xml:lang="en">A quality of an entity. An aspect of an entity that is intrinsic to and cannot exist without the entity.</skos:definition>
     </owl:Class>
     
@@ -760,12 +760,12 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Accuracy">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;measurement accuracy/accuracy&apos; [VIM 2.13] 
+        <dc:source>skos:exactMatch &apos;measurement accuracy/accuracy&apos; [VIM 2.13] 
 		                    http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The closeness of agreement between the value of an observation and the true value of the observed quality.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Accuracy</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The closeness of agreement between the value of an observation and the true value of the observed quality.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Accuracy</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -775,10 +775,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/BatteryLifetime">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SurvivalProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total useful life of a battery.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battery Lifetime</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
+        <rdfs:comment>Total useful life of a battery.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Battery Lifetime</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -788,10 +788,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Condition">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used to specify ranges for qualities that act as conditions on a system/sensor&apos;s operation.  For example, wind speed of 10-60m/s is expressed as a condition linking a quality, wind speed, a unit of measurement, metres per second, and a set of values, 10-60, and may be used as the condition on a MeasurementProperty, for example, to state that a sensor has a particular accuracy in that condition.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Base#ConstraintBlock</rdfs:seeAlso>
+        <rdfs:comment>Used to specify ranges for qualities that act as conditions on a system/sensor&apos;s operation.  For example, wind speed of 10-60m/s is expressed as a condition linking a quality, wind speed, a unit of measurement, metres per second, and a set of values, 10-60, and may be used as the condition on a MeasurementProperty, for example, to state that a sensor has a particular accuracy in that condition.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Condition</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Base#ConstraintBlock</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -801,12 +801,12 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/DetectionLimit">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;detection limit&apos; [VIM 4.18] 
+        <dc:source>skos:exactMatch &apos;detection limit&apos; [VIM 4.18] 
                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An observed value for which the probability of falsely claiming the absence of a component in a material is Î², given a probability Î± of falsely claiming its presence.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detection limit</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>An observed value for which the probability of falsely claiming the absence of a component in a material is Î², given a probability Î± of falsely claiming its presence.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>detection limit</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -816,12 +816,12 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Drift">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;instrumental drift&apos; [VIM 4.21]
+        <dc:source>skos:exactMatch &apos;instrumental drift&apos; [VIM 4.21]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A, continuous or incremental, change in the reported values of observations over time for an unchanging quality.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drift</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>A, continuous or incremental, change in the reported values of observations over time for an unchanging quality.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Drift</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -831,10 +831,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Frequency">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smallest possible time between one observation and the next.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequency</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The smallest possible time between one observation and the next.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Frequency</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -844,10 +844,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Latency">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time between a request for an observation and the sensor providing a result.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latency</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The time between a request for an observation and the sensor providing a result.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Latency</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -857,10 +857,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/MaintenanceSchedule">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schedule of maintenance for a system/sensor in the specified conditions.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maintenance Schedule</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+        <rdfs:comment>Schedule of maintenance for a system/sensor in the specified conditions.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Maintenance Schedule</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -870,12 +870,12 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/MeasurementRange">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;measuring interval/measurement range&apos; [VIM 4.7]
+        <dc:source>skos:exactMatch &apos;measuring interval/measurement range&apos; [VIM 4.7]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The set of values that the sensor can return as the result of an observation under the defined conditions with the defined measurement properties.  (If no conditions are specified or the conditions do not specify a range for the observed qualities, the measurement range is to be taken as the condition for the observed qualities.)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement  Range</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The set of values that the sensor can return as the result of an observation under the defined conditions with the defined measurement properties.  (If no conditions are specified or the conditions do not specify a range for the observed qualities, the measurement range is to be taken as the condition for the observed qualities.)</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Measurement  Range</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -885,10 +885,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingPowerRange">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power range in which system/sensor is expected to operate.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Power Range</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
+        <rdfs:comment>Power range in which system/sensor is expected to operate.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Operating Power Range</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Energy#EnergyRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -898,10 +898,10 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifiable characteristic of the environmental and other conditions in which the sensor is intended to operate.  May include power ranges, power sources, standard configurations, attachments and the like.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Property</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+        <rdfs:comment>An identifiable characteristic of the environmental and other conditions in which the sensor is intended to operate.  May include power ranges, power sources, standard configurations, attachments and the like.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Operating Property</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -911,14 +911,14 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingRange">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:broaderMatch &apos;reference operating condition&apos; [VIM 4.11]
+        <dc:source>skos:broaderMatch &apos;reference operating condition&apos; [VIM 4.11]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf
 
 The difference is that here we also allow for qualities that aren&apos;t VIM influence quantities [VIM 2.52] - for example, a quantity that alters the power requirements, but doesn&apos;t affect the measurement properties - conditions specified in MeasurementCapability should be influence quantities.</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The environmental conditions and characteristics of a system/sensor&apos;s normal operating environment.  Can be used to specify for example the standard environmental conditions in which the sensor is expected to operate (a Condition with no OperatingProperty), or how the environmental and other operating properties relate: i.e., that the maintenance schedule or power requirements differ according to the conditions.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Operating Range</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+        <rdfs:comment>The environmental conditions and characteristics of a system/sensor&apos;s normal operating environment.  Can be used to specify for example the standard environmental conditions in which the sensor is expected to operate (a Condition with no OperatingProperty), or how the environmental and other operating properties relate: i.e., that the maintenance schedule or power requirements differ according to the conditions.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Operating Range</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -928,12 +928,12 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Precision">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;measurement precision/precision&apos; [VIM 2.15]
+        <dc:source>skos:exactMatch &apos;measurement precision/precision&apos; [VIM 2.15]
                                    http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor&apos;s ability to consitently reproduce an observation.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precision</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The closeness of agreement between replicate observations on an unchanged or similar quality value: i.e., a measure of a sensor&apos;s ability to consitently reproduce an observation.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Precision</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -943,12 +943,12 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Resolution">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;resolution&apos; [VIM 4.14]
+        <dc:source>skos:exactMatch &apos;resolution&apos; [VIM 4.14]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resolution</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The smallest difference in the value of a quality being observed that would result in perceptably different values of observation results.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Resolution</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -958,12 +958,12 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/ResponseTime">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;step response time&apos; [VIM 4.23]
+        <dc:source>skos:exactMatch &apos;step response time&apos; [VIM 4.23]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) &apos;settling&apos; on an observed value.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Response time</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>The time between a (step) change inthe value of an observed quality and a sensor (possibly with specified error) &apos;settling&apos; on an observed value.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Response time</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -973,12 +973,12 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Selectivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;selectivity&apos; [VIM 4.13]
+        <dc:source>skos:exactMatch &apos;selectivity&apos; [VIM 4.13]
                                  http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selectivity is a property of a sensor whereby it provides observed values for one or more qualities such that the values of each quality are independent of other qualities in the phenomenon, body, or substance being investigated.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Selectivity</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>Selectivity is a property of a sensor whereby it provides observed values for one or more qualities such that the values of each quality are independent of other qualities in the phenomenon, body, or substance being investigated.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Selectivity</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -988,12 +988,12 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/Sensitivity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:exactMatch &apos;sensitivity&apos; [VIM 4.12]
+        <dc:source>skos:exactMatch &apos;sensitivity&apos; [VIM 4.12]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensitivity</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>Sensitivity is the quotient of the change in a result of sensor and the corresponding change in a value of a quality being observed.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Sensitivity</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1003,10 +1003,10 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SurvivalProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifiable characteristic that represents the extent of the sensors useful life.  Might include for example total battery life or number of recharges, or, for sensors that are used only a fixed number of times, the number of observations that can be made before the sensing capability is depleted.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survival Property</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+        <rdfs:comment>An identifiable characteristic that represents the extent of the sensors useful life.  Might include for example total battery life or number of recharges, or, for sensors that are used only a fixed number of times, the number of observations that can be made before the sensing capability is depleted.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Survival Property</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1016,12 +1016,12 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SurvivalRange">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skos:narrowerMatch &apos;limiting operating condition&apos; [VIM 4.10]
+        <dc:source>skos:narrowerMatch &apos;limiting operating condition&apos; [VIM 4.10]
                                   http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The conditions a sensor can be exposed to without damage: i.e., the sensor continues to operate as defined using MeasurementCapability.  If, however, the SurvivalRange is exceeded, the sensor is &apos;damaged&apos; and MeasurementCapability specifications may no longer hold.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Survival Range</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+        <rdfs:comment>The conditions a sensor can be exposed to without damage: i.e., the sensor continues to operate as defined using MeasurementCapability.  If, however, the SurvivalRange is exceeded, the sensor is &apos;damaged&apos; and MeasurementCapability specifications may no longer hold.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Survival Range</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1031,19 +1031,19 @@ The difference is that here we also allow for qualities that aren&apos;t VIM inf
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemCapability">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Similar idea to MeasurementCapability in MMI Device Ontology
+        <dc:source>Similar idea to MeasurementCapability in MMI Device Ontology
                                   http://marinemetadata.org/community/teams/ontdevices
 
 But the the two express the relationship between constraints and multiple measurement properties differently.
 
 The conditions linked to a MeasurementCapability are skos:exactMatch to &apos;influence quantity&apos; [VIM 2.52]
 http://www.bipm.org/utils/common/documents/jcgm/JCGM_200_2008.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor&apos;s capability in those conditions.
+        <rdfs:comment>Collects together measurement properties (accuracy, range, precision, etc) and the environmental conditions in which those properties hold, representing a specification of a sensor&apos;s capability in those conditions.
 
 The conditions specified here are those that affect the measurement properties, while those in OperatingRange represent the sensor&apos;s standard operating conditions, including conditions that don&apos;t affect the observations.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement Capability</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Measurement Capability</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1053,10 +1053,10 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemLifetime">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SurvivalProperty"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total useful life of a sensor/system (expressed as total life since manufacture, time in use, number of operations, etc.).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">System Lifetime</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
+        <rdfs:comment>Total useful life of a sensor/system (expressed as total life since manufacture, time in use, number of operations, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>System Lifetime</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Deploy#OperatingRestriction</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -1066,10 +1066,10 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifiable and observable characteristic of a sensor&apos;s observations or ability to make observations.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measurement  Property</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
+        <rdfs:comment>An identifiable and observable characteristic of a sensor&apos;s observations or ability to make observations.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <rdfs:label>Measurement  Property</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#MeasuringCapability</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -2212,6 +2212,15 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#OvenDoorStatus -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#OvenDoorStatus">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel -->
 
 
@@ -2372,7 +2381,7 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/BatteryLifetime"/>
         <rdfs:label xml:lang="en">Stored energy</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nominal EV current</rdfs:label>
+        <rdfs:label>Nominal EV current</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2432,6 +2441,6 @@ The conditions specified here are those that affect the measurement properties, 
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
 
 
