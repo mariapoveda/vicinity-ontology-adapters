@@ -16,7 +16,7 @@
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.3" .
+                                          owl:versionInfo "0.1.4" .
 
 #################################################################
 #    Annotation properties
@@ -1382,6 +1382,12 @@ The conditions specified here are those that affect the measurement properties, 
                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
             rdfs:label "Noise level"@en ,
                        "Sound level"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent
+:NominalElectricVehicleCurrent rdf:type owl:NamedIndividual ,
+                                        :Power ;
+                               rdfs:label "Nominal electric vehicle current"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#NominalProductionCapacity

@@ -24,7 +24,7 @@
         <vann:preferredNamespacePrefix>vcnt-adap</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo>0.1.3</owl:versionInfo>
+        <owl:versionInfo>0.1.4</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2184,6 +2184,16 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Noise level</rdfs:label>
         <rdfs:label xml:lang="en">Sound level</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdfs:label xml:lang="en">Nominal electric vehicle current</rdfs:label>
     </owl:NamedIndividual>
     
 

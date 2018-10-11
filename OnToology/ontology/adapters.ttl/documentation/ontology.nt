@@ -8,7 +8,7 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.3" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.4" .
 # 
 # 
 # #################################################################
@@ -1173,6 +1173,11 @@
 <http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Noise level"@en .
 <http://iot.linkeddata.es/def/adapters#NoiseLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Sound level"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent
+<http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#NominalElectricVehicleCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Nominal electric vehicle current"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#NominalProductionCapacity
 <http://iot.linkeddata.es/def/adapters#NominalProductionCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
