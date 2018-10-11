@@ -741,6 +741,11 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#ActualActivePowerLoad> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ActuatableProperty , sosa:ObservableProperty ;
 	rdfs:label "Actual active power load"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction
+
+<http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> ;
+	rdfs:label "Actual active power production"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration
 
 <http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#TimeProperty> , sosa:ObservableProperty ;
@@ -765,6 +770,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#ActualReactivePowerLoad> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ActuatableProperty , sosa:ObservableProperty ;
 	rdfs:label "Actual reactive power load"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualReactivePowerProduction
+
+<http://iot.linkeddata.es/def/adapters#ActualReactivePowerProduction> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> ;
+	rdfs:label "Actual reactive power production"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#AlarmTime
 
