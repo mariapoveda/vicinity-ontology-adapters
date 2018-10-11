@@ -26,7 +26,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2018-10-02 09:51:03 +0000</string>
+	<string>2018-10-11 09:28:47 +0000</string>
 	<key>Modifier</key>
 	<string>María Poveda</string>
 	<key>NotesVisible</key>
@@ -10505,7 +10505,7 @@ ChargingSession}</string>
 \pard\tx60\tx300\tx940\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li20\fi-20\pardirnatural
 \ls1\ilvl0
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\ul \ulc2 adapters:MaxCableCurrent}</string>
+\ul \ulc2 adapters:MaximalCurrentOfChargingCable}</string>
 					</dict>
 					<key>VFlip</key>
 					<string>YES</string>
@@ -31049,7 +31049,7 @@ core:Device}</string>
 
 \f0\b\fs24 \cf2 Imported ontologies:\
       
-\b0 \cf2 core: http://iot.linkeddata.es/def/core#}</string>
+\b0 core: http://iot.linkeddata.es/def/core#}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
@@ -31121,7 +31121,7 @@ core:Device}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Referenced ontologies:
-\b0 \cf2 \
+\b0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading40\pardirnatural
 
 \b \cf2       
@@ -31596,9 +31596,8 @@ Class}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Legend:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\b0 \cf2 \
+\b0 \
 \
 }</string>
 					</dict>
@@ -62632,7 +62631,7 @@ core:Device}</string>
 
 \f0\b\fs24 \cf2 Imported ontologies:\
       
-\b0 \cf2 core: http://iot.linkeddata.es/def/core#}</string>
+\b0 core: http://iot.linkeddata.es/def/core#}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
@@ -62704,7 +62703,7 @@ core:Device}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Referenced ontologies:
-\b0 \cf2 \
+\b0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading40\pardirnatural
 
 \b \cf2       
@@ -63179,9 +63178,8 @@ Class}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Legend:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\b0 \cf2 \
+\b0 \
 \
 }</string>
 					</dict>
@@ -89714,7 +89712,7 @@ core:Device}</string>
 
 \f0\b\fs24 \cf2 Imported ontologies:\
       
-\b0 \cf2 core: http://iot.linkeddata.es/def/core#}</string>
+\b0 core: http://iot.linkeddata.es/def/core#}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
@@ -89786,7 +89784,7 @@ core:Device}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Referenced ontologies:
-\b0 \cf2 \
+\b0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading40\pardirnatural
 
 \b \cf2       
@@ -90261,9 +90259,8 @@ Class}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Legend:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\b0 \cf2 \
+\b0 \
 \
 }</string>
 					</dict>
@@ -109557,7 +109554,7 @@ core:Device}</string>
 
 \f0\b\fs24 \cf2 Imported ontologies:\
       
-\b0 \cf2 core: http://iot.linkeddata.es/def/core#}</string>
+\b0 core: http://iot.linkeddata.es/def/core#}</string>
 					</dict>
 					<key>TextPlacement</key>
 					<integer>0</integer>
@@ -109629,7 +109626,7 @@ core:Device}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Referenced ontologies:
-\b0 \cf2 \
+\b0 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\slleading40\pardirnatural
 
 \b \cf2       
@@ -110104,9 +110101,8 @@ Class}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\b\fs24 \cf2 Legend:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\b0 \cf2 \
+\b0 \
 \
 }</string>
 					</dict>
@@ -110178,13 +110174,13 @@ Class}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>BottomSlabHeight</key>
-		<real>376</real>
+		<real>220</real>
 		<key>CurrentSheet</key>
 		<integer>0</integer>
 		<key>Expanded_Canvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{12, 28}, {1903, 1029}}</string>
+		<string>{{0, 4}, {1440, 873}}</string>
 		<key>ShowInfo</key>
 		<true/>
 		<key>ShowRuler</key>
@@ -110194,7 +110190,7 @@ Class}</string>
 		<key>SidebarWidth</key>
 		<integer>230</integer>
 		<key>VisibleRegion</key>
-		<string>{{1673, 215}, {1356, 884}}</string>
+		<string>{{2151.5, 190.5}, {878, 713}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
@@ -110217,7 +110213,7 @@ Class}</string>
 			<array>
 				<string>adapters 5</string>
 				<real>1</real>
-				<real>0.69999998807907104</real>
+				<real>0.5</real>
 			</array>
 		</array>
 	</dict>

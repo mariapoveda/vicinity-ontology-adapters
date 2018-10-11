@@ -1091,11 +1091,6 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#MaxCO2Concentration> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#CarbonDioxide> , sosa:ObservableProperty ;
 	rdfs:label "Maximum CO2"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#MaxCableCurrent
-
-<http://iot.linkeddata.es/def/adapters#MaxCableCurrent> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
-	rdfs:label "Maximum cable current"@en .
-# 
 # http://iot.linkeddata.es/def/adapters#MaxHumidity
 
 <http://iot.linkeddata.es/def/adapters#MaxHumidity> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> , sosa:ObservableProperty ;
@@ -1120,6 +1115,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#MaxTemperature> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> , sosa:ObservableProperty ;
 	rdfs:label "Maximum temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaximalCurrentOfChargingCable
+
+<http://iot.linkeddata.es/def/adapters#MaximalCurrentOfChargingCable> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Maximal current of charging cable"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector
 
