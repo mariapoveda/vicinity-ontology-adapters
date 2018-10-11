@@ -1188,6 +1188,16 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdfs:label xml:lang="en">Actual active power production</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration -->
 
 
@@ -1241,6 +1251,16 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ActuatableProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Actual reactive power load</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#ActualReactivePowerProduction -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#ActualReactivePowerProduction">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdfs:label xml:lang="en">Actual reactive power production</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1969,17 +1989,6 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
-    <!-- http://iot.linkeddata.es/def/adapters#MaxCableCurrent -->
-
-
-    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaxCableCurrent">
-        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
-        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
-        <rdfs:label xml:lang="en">Maximum cable current</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://iot.linkeddata.es/def/adapters#MaxHumidity -->
 
 
@@ -2031,6 +2040,17 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Maximum temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#MaximalCurrentOfChargingCable -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#MaximalCurrentOfChargingCable">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Maximal current of charging cable</rdfs:label>
     </owl:NamedIndividual>
     
 
