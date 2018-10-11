@@ -756,6 +756,12 @@ The conditions specified here are those that affect the measurement properties, 
                        rdfs:label "Actual active power load"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction
+:ActualActivePowerProduction rdf:type owl:NamedIndividual ,
+                                      :Power ;
+                             rdfs:label "Actual active power production"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration
 :ActualChargingSessionDuration rdf:type owl:NamedIndividual ,
                                         :TimeProperty ,
@@ -791,6 +797,12 @@ The conditions specified here are those that affect the measurement properties, 
                                   <http://www.w3.org/ns/sosa/ActuatableProperty> ,
                                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
                          rdfs:label "Actual reactive power load"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#ActualReactivePowerProduction
+:ActualReactivePowerProduction rdf:type owl:NamedIndividual ,
+                                        :Power ;
+                               rdfs:label "Actual reactive power production"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#AlarmTime
@@ -1245,13 +1257,6 @@ The conditions specified here are those that affect the measurement properties, 
                      rdfs:label "Maximum CO2"@en .
 
 
-###  http://iot.linkeddata.es/def/adapters#MaxCableCurrent
-:MaxCableCurrent rdf:type owl:NamedIndividual ,
-                          :Power ,
-                          <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                 rdfs:label "Maximum cable current"@en .
-
-
 ###  http://iot.linkeddata.es/def/adapters#MaxHumidity
 :MaxHumidity rdf:type owl:NamedIndividual ,
                       :AmbientHumidityProperty ,
@@ -1285,6 +1290,13 @@ The conditions specified here are those that affect the measurement properties, 
                          :AmbientTemperatureProperty ,
                          <http://www.w3.org/ns/sosa/ObservableProperty> ;
                 rdfs:label "Maximum temperature"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#MaximalCurrentOfChargingCable
+:MaximalCurrentOfChargingCable rdf:type owl:NamedIndividual ,
+                                        :Power ,
+                                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                               rdfs:label "Maximal current of charging cable"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector

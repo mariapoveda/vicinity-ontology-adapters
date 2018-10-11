@@ -115,6 +115,13 @@
     "@value" : "Actual active power load"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual active power production"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#TimeProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -148,6 +155,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Actual reactive power load"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ActualReactivePowerProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual reactive power production"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AlarmTime",
@@ -865,13 +879,6 @@
     "@value" : "Maximum CO2"
   } ]
 }, {
-  "@id" : "http://iot.linkeddata.es/def/adapters#MaxCableCurrent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Maximum cable current"
-  } ]
-}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#MaxHumidity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -905,6 +912,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Maximum temperature"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#MaximalCurrentOfChargingCable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maximal current of charging cable"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#MaximalPowerPerConnector",
