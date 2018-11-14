@@ -8,7 +8,7 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.4" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.5" .
 # 
 # 
 # #################################################################
@@ -949,6 +949,11 @@
 <http://iot.linkeddata.es/def/adapters#FreezerDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#FreezerDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
 # 
+# http://iot.linkeddata.es/def/adapters#FreezerEmergency
+<http://iot.linkeddata.es/def/adapters#FreezerEmergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#FreezerEmergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#FreezerEmergency> <http://www.w3.org/2000/01/rdf-schema#label> "Freezer emergency"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#FreezerLightStatus
 <http://iot.linkeddata.es/def/adapters#FreezerLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#FreezerLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
@@ -1207,6 +1212,11 @@
 <http://iot.linkeddata.es/def/adapters#OvenDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#OvenDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
 # 
+# http://iot.linkeddata.es/def/adapters#OvenEmergency
+<http://iot.linkeddata.es/def/adapters#OvenEmergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#OvenEmergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#OvenEmergency> <http://www.w3.org/2000/01/rdf-schema#label> "Oven emergency"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
 <http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
@@ -1246,6 +1256,11 @@
 # http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus
 <http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency
+<http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency> <http://www.w3.org/2000/01/rdf-schema#label> "Refrigerator emergency"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus
 <http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

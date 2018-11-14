@@ -24,7 +24,7 @@
         <vann:preferredNamespacePrefix>vcnt-adap</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo>0.1.4</owl:versionInfo>
+        <owl:versionInfo>0.1.5</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1773,6 +1773,16 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#FreezerEmergency -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FreezerEmergency">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdfs:label xml:lang="en">Freezer emergency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#FreezerLightStatus -->
 
 
@@ -2251,6 +2261,16 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/adapters#OvenEmergency -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#OvenEmergency">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdfs:label xml:lang="en">Oven emergency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel -->
 
 
@@ -2322,6 +2342,16 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#OperationalStatus"/>
+        <rdfs:label xml:lang="en">Refrigerator emergency</rdfs:label>
     </owl:NamedIndividual>
     
 

@@ -16,7 +16,7 @@
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.4" .
+                                          owl:versionInfo "0.1.5" .
 
 #################################################################
 #    Annotation properties
@@ -1121,6 +1121,12 @@ The conditions specified here are those that affect the measurement properties, 
                             :DeviceDoorStatusProperty .
 
 
+###  http://iot.linkeddata.es/def/adapters#FreezerEmergency
+:FreezerEmergency rdf:type owl:NamedIndividual ,
+                           :OperationalStatus ;
+                  rdfs:label "Freezer emergency"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#FreezerLightStatus
 :FreezerLightStatus rdf:type owl:NamedIndividual ,
                              :DeviceLightStatusProperty .
@@ -1423,6 +1429,12 @@ The conditions specified here are those that affect the measurement properties, 
                          :DeviceDoorStatusProperty .
 
 
+###  http://iot.linkeddata.es/def/adapters#OvenEmergency
+:OvenEmergency rdf:type owl:NamedIndividual ,
+                        :OperationalStatus ;
+               rdfs:label "Oven emergency"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
 :PhotoVoltaicPanelServiceLevel rdf:type owl:NamedIndividual ,
                                         :Power ,
@@ -1468,6 +1480,12 @@ The conditions specified here are those that affect the measurement properties, 
 ###  http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus
 :RefrigeratorDoorStatus rdf:type owl:NamedIndividual ,
                                  :DeviceDoorStatusProperty .
+
+
+###  http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency
+:RefrigeratorEmergency rdf:type owl:NamedIndividual ,
+                                :OperationalStatus ;
+                       rdfs:label "Refrigerator emergency"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus
