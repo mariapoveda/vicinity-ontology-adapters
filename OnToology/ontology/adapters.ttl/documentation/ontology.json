@@ -36,7 +36,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.4"
+    "@value" : "0.1.5"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed",
@@ -636,6 +636,13 @@
   "@id" : "http://iot.linkeddata.es/def/adapters#FreezerDoorStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty" ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#FreezerEmergency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Freezer emergency"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#FreezerLightStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty" ]
 }, {
@@ -1096,6 +1103,13 @@
   "@id" : "http://iot.linkeddata.es/def/adapters#OvenDoorStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty" ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#OvenEmergency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Oven emergency"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#PanicButton",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1245,6 +1259,13 @@
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty" ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Refrigerator emergency"
+  } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty" ]
