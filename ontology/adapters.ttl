@@ -18,7 +18,7 @@
 	dcterms:creator <http://purl.org/net/mpoveda> ;
 	dc:title "Vicinity adapters model"@en ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
-	owl:versionInfo "0.1.4" ;
+	owl:versionInfo "0.1.5" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
 	vann:preferredNamespaceUri "http://iot.linkeddata.es/def/adapters#" ;
@@ -1004,6 +1004,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#FreezerDoorStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
 # 
+# http://iot.linkeddata.es/def/adapters#FreezerEmergency
+
+<http://iot.linkeddata.es/def/adapters#FreezerEmergency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+	rdfs:label "Freezer emergency"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#FreezerLightStatus
 
 <http://iot.linkeddata.es/def/adapters#FreezerLightStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#DeviceLightStatusProperty> .
@@ -1220,6 +1225,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#OvenDoorStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
 # 
+# http://iot.linkeddata.es/def/adapters#OvenEmergency
+
+<http://iot.linkeddata.es/def/adapters#OvenEmergency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+	rdfs:label "Oven emergency"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
 
 <http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
@@ -1253,6 +1263,11 @@ ssn-system:SystemProperty a owl:Class ;
 # http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus
 
 <http://iot.linkeddata.es/def/adapters#RefrigeratorDoorStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency
+
+<http://iot.linkeddata.es/def/adapters#RefrigeratorEmergency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+	rdfs:label "Refrigerator emergency"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#RefrigeratorLightStatus
 
