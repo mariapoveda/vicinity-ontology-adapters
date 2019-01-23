@@ -18,7 +18,7 @@
 	dcterms:creator <http://purl.org/net/mpoveda> ;
 	dc:title "Vicinity adapters model"@en ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
-	owl:versionInfo "0.1.5" ;
+	owl:versionInfo "0.1.6" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
 	vann:preferredNamespaceUri "http://iot.linkeddata.es/def/adapters#" ;
@@ -1016,6 +1016,26 @@ ssn-system:SystemProperty a owl:Class ;
 # http://iot.linkeddata.es/def/adapters#FreezerTemperature
 
 <http://iot.linkeddata.es/def/adapters#FreezerTemperature> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSAltitude
+
+<http://iot.linkeddata.es/def/adapters#GPSAltitude> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#SpaceProperty> , sosa:ObservableProperty ;
+	rdfs:label "GPS altitude"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSLatitude
+
+<http://iot.linkeddata.es/def/adapters#GPSLatitude> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#SpaceProperty> , sosa:ObservableProperty ;
+	rdfs:label "GPS latitude"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSLongitude
+
+<http://iot.linkeddata.es/def/adapters#GPSLongitude> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#SpaceProperty> , sosa:ObservableProperty ;
+	rdfs:label "GPS longitude"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSPrecision
+
+<http://iot.linkeddata.es/def/adapters#GPSPrecision> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#SpaceProperty> , sosa:ObservableProperty ;
+	rdfs:label "GPS precision"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HeartRate
 
