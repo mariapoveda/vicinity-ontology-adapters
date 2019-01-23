@@ -8,7 +8,7 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.5" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.6" .
 # 
 # 
 # #################################################################
@@ -961,6 +961,30 @@
 # http://iot.linkeddata.es/def/adapters#FreezerTemperature
 <http://iot.linkeddata.es/def/adapters#FreezerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#FreezerTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty> .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSAltitude
+<http://iot.linkeddata.es/def/adapters#GPSAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#GPSAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSAltitude> <http://www.w3.org/2000/01/rdf-schema#label> "GPS altitude"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSLatitude
+<http://iot.linkeddata.es/def/adapters#GPSLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#GPSLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSLatitude> <http://www.w3.org/2000/01/rdf-schema#label> "GPS latitude"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSLongitude
+<http://iot.linkeddata.es/def/adapters#GPSLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#GPSLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSLongitude> <http://www.w3.org/2000/01/rdf-schema#label> "GPS longitude"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GPSPrecision
+<http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/2000/01/rdf-schema#label> "GPS precision"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HeartRate
 <http://iot.linkeddata.es/def/adapters#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

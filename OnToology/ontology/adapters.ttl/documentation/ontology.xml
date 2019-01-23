@@ -24,7 +24,7 @@
         <vann:preferredNamespacePrefix>vcnt-adap</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo>0.1.5</owl:versionInfo>
+        <owl:versionInfo>0.1.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1797,6 +1797,50 @@ The conditions specified here are those that affect the measurement properties, 
 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#FreezerTemperature">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#GPSAltitude -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#GPSAltitude">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">GPS altitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#GPSLatitude -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#GPSLatitude">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">GPS latitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#GPSLongitude -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#GPSLongitude">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">GPS longitude</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/adapters#GPSPrecision -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#GPSPrecision">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#SpaceProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">GPS precision</rdfs:label>
     </owl:NamedIndividual>
     
 

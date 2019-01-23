@@ -16,7 +16,7 @@
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.5" .
+                                          owl:versionInfo "0.1.6" .
 
 #################################################################
 #    Annotation properties
@@ -1135,6 +1135,34 @@ The conditions specified here are those that affect the measurement properties, 
 ###  http://iot.linkeddata.es/def/adapters#FreezerTemperature
 :FreezerTemperature rdf:type owl:NamedIndividual ,
                              :DeviceTemperatureProperty .
+
+
+###  http://iot.linkeddata.es/def/adapters#GPSAltitude
+:GPSAltitude rdf:type owl:NamedIndividual ,
+                      :SpaceProperty ,
+                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+             rdfs:label "GPS altitude"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#GPSLatitude
+:GPSLatitude rdf:type owl:NamedIndividual ,
+                      :SpaceProperty ,
+                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+             rdfs:label "GPS latitude"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#GPSLongitude
+:GPSLongitude rdf:type owl:NamedIndividual ,
+                       :SpaceProperty ,
+                       <http://www.w3.org/ns/sosa/ObservableProperty> ;
+              rdfs:label "GPS longitude"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#GPSPrecision
+:GPSPrecision rdf:type owl:NamedIndividual ,
+                       :SpaceProperty ,
+                       <http://www.w3.org/ns/sosa/ObservableProperty> ;
+              rdfs:label "GPS precision"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#HeartRate

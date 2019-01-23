@@ -36,7 +36,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.5"
+    "@value" : "0.1.6"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed",
@@ -648,6 +648,34 @@
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#FreezerTemperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty" ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GPSAltitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SpaceProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GPS altitude"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GPSLatitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SpaceProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GPS latitude"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GPSLongitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SpaceProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GPS longitude"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GPSPrecision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SpaceProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GPS precision"
+  } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#HVACSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
