@@ -18,7 +18,7 @@
 	dcterms:creator <http://purl.org/net/mpoveda> ;
 	dc:title "Vicinity adapters model"@en ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
-	owl:versionInfo "0.1.6" ;
+	owl:versionInfo "0.1.7" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
 	vann:preferredNamespaceUri "http://iot.linkeddata.es/def/adapters#" ;
@@ -133,6 +133,13 @@ vs:term_status a owl:AnnotationProperty .
 <http://iot.linkeddata.es/def/adapters#Charger> a owl:Class ;
 	rdfs:subClassOf :Device ;
 	rdfs:label "Charger"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ComboBatteryPV
+
+<http://iot.linkeddata.es/def/adapters#ComboBatteryPV> a owl:Class ;
+	rdfs:subClassOf :Device ;
+	rdfs:comment "Combo system with PV and battery behind the same inverter"@en ;
+	rdfs:label "Combo battery and PV"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty
 
@@ -706,6 +713,11 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
 	rdfs:label "Accumulated energy imported to grid"@en , "Accumulated energy injected to grid"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced
+
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Accumulated energy produced"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid
 
 <http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
@@ -932,6 +944,11 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#ConnectorStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
 	rdfs:label "Connector status"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad
+
+<http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Consumer active power load"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime
 
 <http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#TimeProperty> , sosa:ObservableProperty ;
@@ -1036,6 +1053,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#SpaceProperty> , sosa:ObservableProperty ;
 	rdfs:label "GPS precision"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GridActivePowerLoad
+
+<http://iot.linkeddata.es/def/adapters#GridActivePowerLoad> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Grid active power load"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HeartRate
 
