@@ -16,9 +16,9 @@
 <http://iot.linkeddata.es/def/adapters#> a owl:Ontology ;
 	owl:imports <http://iot.linkeddata.es/def/core#> ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
+	owl:versionInfo "0.1.8" ;
 	dc:title "Vicinity adapters model"@en ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
-	owl:versionInfo "0.1.7" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
 	vann:preferredNamespaceUri "http://iot.linkeddata.es/def/adapters#" ;
@@ -758,10 +758,30 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#ActualActivePowerProduction> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> ;
 	rdfs:label "Actual active power production"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#ActualBatteryStateOfCharge
+
+<http://iot.linkeddata.es/def/adapters#ActualBatteryStateOfCharge> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> ;
+	rdfs:label "Actual battery state of charge"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration
 
 <http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#TimeProperty> , sosa:ObservableProperty ;
 	rdfs:label "Actual charging session duration"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualDCCurrent
+
+<http://iot.linkeddata.es/def/adapters#ActualDCCurrent> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Actual DC current"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualDCPower
+
+<http://iot.linkeddata.es/def/adapters#ActualDCPower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Actual DC power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ActualDCVoltage
+
+<http://iot.linkeddata.es/def/adapters#ActualDCVoltage> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Actual DC voltage"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#ActualEnergyConsumedChargingSession
 
@@ -859,7 +879,8 @@ ssn-system:SystemProperty a owl:Class ;
 # 
 # http://iot.linkeddata.es/def/adapters#Baking
 
-<http://iot.linkeddata.es/def/adapters#Baking> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#Baking> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+	rdfs:label "Baking"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#BakingEndTimeHour
 
@@ -895,10 +916,50 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#BakingTime> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#TimeProperty> .
 # 
+# http://iot.linkeddata.es/def/adapters#BatteryActualControlMode
+
+<http://iot.linkeddata.es/def/adapters#BatteryActualControlMode> a owl:NamedIndividual , ssn-system:OperatingProperty ;
+	rdfs:label "Battery actual control mode"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryActualDCCurrent
+
+<http://iot.linkeddata.es/def/adapters#BatteryActualDCCurrent> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery actual DC current"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryActualDCPower
+
+<http://iot.linkeddata.es/def/adapters#BatteryActualDCPower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery actual DC power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryActualDCVoltage
+
+<http://iot.linkeddata.es/def/adapters#BatteryActualDCVoltage> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery actual DC voltage"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint
+
+<http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery actual powert set point"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryChargeStatus
+
+<http://iot.linkeddata.es/def/adapters#BatteryChargeStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery charga status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryConnectionStatus
+
+<http://iot.linkeddata.es/def/adapters#BatteryConnectionStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
+	rdfs:label "Battery connection status"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity
 
 <http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity> a owl:NamedIndividual , sosa:ObservableProperty , ssn-system:BatteryLifetime ;
 	rdfs:label "Battery nominal capacity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#BatteryOperationalStatus
+
+<http://iot.linkeddata.es/def/adapters#BatteryOperationalStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
+	rdfs:label "Battery operational status"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#CO2Concentration
 
@@ -1118,10 +1179,65 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientProperty> , sosa:ObservableProperty ;
 	rdfs:label "IEQ score"@en , "Indoor environmental quality score"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio
+
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter accumulated active energy consumption"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction
+
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter accumulated active energy production"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualActivePower
+
+<http://iot.linkeddata.es/def/adapters#InverterActualActivePower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual active power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualFrequency
+
+<http://iot.linkeddata.es/def/adapters#InverterActualFrequency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual frequency"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualReactivePower
+
+<http://iot.linkeddata.es/def/adapters#InverterActualReactivePower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual reactive power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad
+
+<http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter consumer active power load"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterGridActivePowerLoad
+
+<http://iot.linkeddata.es/def/adapters#InverterGridActivePowerLoad> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter grid active power load"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#InverterNominalPower
 
 <http://iot.linkeddata.es/def/adapters#InverterNominalPower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
 	rdfs:label "Inverter nominal power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualActivePower
+
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter PV actual active power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower
+
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter PV actual reactive power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterStatus
+
+<http://iot.linkeddata.es/def/adapters#InverterStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
+	rdfs:label "Inverter status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterTotalDCPower
+
+<http://iot.linkeddata.es/def/adapters#InverterTotalDCPower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter total DC power"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#LightColor
 
@@ -1142,6 +1258,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#Luminance> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#LuminusIntensity> , sosa:ActuatableProperty , sosa:ObservableProperty ;
 	rdfs:label "Luminance"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MaxBatteryStateOfCharge
+
+<http://iot.linkeddata.es/def/adapters#MaxBatteryStateOfCharge> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Max battery state of charge"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#MaxCO2Concentration
 
@@ -1192,6 +1313,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#MeatProbeTemperature> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#TemperatureProperty> , sosa:ObservableProperty ;
 	rdfs:label "Meat probe temperature"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#MinBatteryStateOfCharge
+
+<http://iot.linkeddata.es/def/adapters#MinBatteryStateOfCharge> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Min battery state of charge"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#MinCO2Concentration
 
@@ -1272,6 +1398,41 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#OvenEmergency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
 	rdfs:label "Oven emergency"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PVAccumulatedDCEnergy
+
+<http://iot.linkeddata.es/def/adapters#PVAccumulatedDCEnergy> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "PV accumulated DC energy"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PVActualDCCurrent
+
+<http://iot.linkeddata.es/def/adapters#PVActualDCCurrent> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "PV actual DC  current"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PVActualDCPower
+
+<http://iot.linkeddata.es/def/adapters#PVActualDCPower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "PV actual DC power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PVActualDCVoltage
+
+<http://iot.linkeddata.es/def/adapters#PVActualDCVoltage> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "PV actual DC voltage"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PVConnectionStatus
+
+<http://iot.linkeddata.es/def/adapters#PVConnectionStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
+	rdfs:label "PV connection status"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PVInstalledCapacity
+
+<http://iot.linkeddata.es/def/adapters#PVInstalledCapacity> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "PV installed capacity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PVOperationStatus
+
+<http://iot.linkeddata.es/def/adapters#PVOperationStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
+	rdfs:label "PV operation status"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
 
 <http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
@@ -1336,7 +1497,8 @@ ssn-system:SystemProperty a owl:Class ;
 # 
 # http://iot.linkeddata.es/def/adapters#Start
 
-<http://iot.linkeddata.es/def/adapters#Start> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#Start> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+	rdfs:label "Start"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Steps
 
@@ -1345,7 +1507,8 @@ ssn-system:SystemProperty a owl:Class ;
 # 
 # http://iot.linkeddata.es/def/adapters#Stop
 
-<http://iot.linkeddata.es/def/adapters#Stop> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
+<http://iot.linkeddata.es/def/adapters#Stop> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
+	rdfs:label "Stop"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#StoredEnergy
 
