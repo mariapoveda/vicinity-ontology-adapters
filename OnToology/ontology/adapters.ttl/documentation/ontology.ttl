@@ -338,6 +338,12 @@ owl:cardinality rdf:type owl:AnnotationProperty .
                    rdfs:label "Smart refrigerator"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty
+:SolarRadiationAmbientProperty rdf:type owl:Class ;
+                               rdfs:subClassOf :AmbientProperty ;
+                               rdfs:label "Solar radiation ambient property"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#Sound
 :Sound rdf:type owl:Class ;
        rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
@@ -386,6 +392,13 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 :WaterFlowMeter rdf:type owl:Class ;
                 rdfs:subClassOf <http://iot.linkeddata.es/def/core#Sensor> ;
                 rdfs:label "WaterFlowMeter"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#WeatherStation
+:WeatherStation rdf:type owl:Class ;
+                rdfs:subClassOf <http://iot.linkeddata.es/def/core#Device> ;
+                rdfs:comment "Device composed of several sensors to measure different atmospheric properties."@en ;
+                rdfs:label "Weather station"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#WeightScale
@@ -1173,6 +1186,13 @@ The conditions specified here are those that affect the measurement properties, 
               rdfs:label "Dimming level"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#DirectSolarRadiation
+:DirectSolarRadiation rdf:type owl:NamedIndividual ,
+                               :SolarRadiationAmbientProperty ,
+                               <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                      rdfs:label "Direct solar radiation"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#DistanceWalked
 :DistanceWalked rdf:type owl:NamedIndividual ,
                          :MotionProperty ;
@@ -1267,6 +1287,13 @@ The conditions specified here are those that affect the measurement properties, 
                        :SpaceProperty ,
                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
               rdfs:label "GPS precision"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation
+:GlobalSolarRadiation rdf:type owl:NamedIndividual ,
+                               :SolarRadiationAmbientProperty ,
+                               <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                      rdfs:label "Global solar radiation"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#GridActivePowerLoad
@@ -1832,6 +1859,13 @@ The conditions specified here are those that affect the measurement properties, 
 :SystolicBloodPressure rdf:type owl:NamedIndividual ,
                                 :HealthProperty ;
                        rdfs:label "Systolic blood pressure"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#UVIndex
+:UVIndex rdf:type owl:NamedIndividual ,
+                  :SolarRadiationAmbientProperty ,
+                  <http://www.w3.org/ns/sosa/ObservableProperty> ;
+         rdfs:label "UV index"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary

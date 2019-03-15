@@ -275,6 +275,10 @@ This section provides details for each class and property defined by Vicinity ad
             title="http://iot.linkeddata.es/def/adapters#SmartRefrigerator">Smart refrigerator</a>
       </li>
       <li>
+         <a href="#SolarRadiationAmbientProperty"
+            title="http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty">Solar radiation ambient property</a>
+      </li>
+      <li>
          <a href="#Sound" title="http://iot.linkeddata.es/def/adapters#Sound">Sound</a>
       </li>
       <li>
@@ -313,6 +317,10 @@ This section provides details for each class and property defined by Vicinity ad
       <li>
          <a href="#WaterFlowMeter"
             title="http://iot.linkeddata.es/def/adapters#WaterFlowMeter">WaterFlowMeter</a>
+      </li>
+      <li>
+         <a href="#WeatherStation"
+            title="http://iot.linkeddata.es/def/adapters#WeatherStation">Weather station</a>
       </li>
       <li>
          <a href="#WeightScale"
@@ -514,6 +522,8 @@ This section provides details for each class and property defined by Vicinity ad
                title="http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty">Ambient humidity property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#AmbientTemperatureProperty"
                title="http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty">Ambient temperature property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#SolarRadiationAmbientProperty"
+               title="http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty">Solar radiation ambient property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -793,6 +803,8 @@ This section provides details for each class and property defined by Vicinity ad
             <sup class="type-c" title="class">c</sup>, <a href="#SmartOven" title="http://iot.linkeddata.es/def/adapters#SmartOven">Smart oven</a>
             <sup class="type-c" title="class">c</sup>, <a href="#SmartRefrigerator"
                title="http://iot.linkeddata.es/def/adapters#SmartRefrigerator">Smart refrigerator</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#WeatherStation"
+               title="http://iot.linkeddata.es/def/adapters#WeatherStation">Weather station</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1508,6 +1520,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#DeviceTemperature">Device temperature</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DimmingLevel"
                title="http://iot.linkeddata.es/def/adapters#DimmingLevel">Dimming level</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#DirectSolarRadiation"
+               title="http://iot.linkeddata.es/def/adapters#DirectSolarRadiation">Direct solar radiation</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#Elevation" title="http://iot.linkeddata.es/def/adapters#Elevation">Elevation</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#EnergySupplySystem"
                title="http://iot.linkeddata.es/def/adapters#EnergySupplySystem">Energy supply system</a>
@@ -1521,6 +1535,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#GPSLongitude">GPS longitude</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#GPSPrecision"
                title="http://iot.linkeddata.es/def/adapters#GPSPrecision">GPS precision</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#GlobalSolarRadiation"
+               title="http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation">Global solar radiation</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#GridActivePowerLoad"
                title="http://iot.linkeddata.es/def/adapters#GridActivePowerLoad">Grid active power load</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#HeaterDefaultTemperature"
@@ -1648,6 +1664,7 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#SimultaneousCharging">Simultaneous charging</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#StoredEnergy"
                title="http://iot.linkeddata.es/def/adapters#StoredEnergy">Stored energy</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#UVIndex" title="http://iot.linkeddata.es/def/adapters#UVIndex">UV index</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#UpperStateOfChargeBoundary"
                title="http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary">Upper state of charge boundary</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ValvePosition"
@@ -2404,6 +2421,31 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="SolarRadiationAmbientProperty">
+      <h3>Solar radiation ambient property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#AmbientProperty"
+               title="http://iot.linkeddata.es/def/adapters#AmbientProperty">AmbientProperty</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#DirectSolarRadiation"
+               title="http://iot.linkeddata.es/def/adapters#DirectSolarRadiation">Direct solar radiation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#GlobalSolarRadiation"
+               title="http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation">Global solar radiation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#UVIndex" title="http://iot.linkeddata.es/def/adapters#UVIndex">UV index</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Sound">
       <h3>Sound<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -2671,6 +2713,24 @@ The conditions specified here are those that affect the measurement properties, 
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WeatherStation">
+      <h3>Weather station<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#WeatherStation</p>
+      <div class="comment">
+         <span class="markdown">Device composed of several sensors to measure different atmospheric properties.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3013,6 +3073,10 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#DimmingLevel">Dimming level</a>
       </li>
       <li>
+         <a href="#DirectSolarRadiation"
+            title="http://iot.linkeddata.es/def/adapters#DirectSolarRadiation">Direct solar radiation</a>
+      </li>
+      <li>
          <a href="#DistanceWalked"
             title="http://iot.linkeddata.es/def/adapters#DistanceWalked">Distance walked</a>
       </li>
@@ -3056,6 +3120,10 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#FreezerTemperature">
             <span>freezer temperature</span>
          </a>
+      </li>
+      <li>
+         <a href="#GlobalSolarRadiation"
+            title="http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation">Global solar radiation</a>
       </li>
       <li>
          <a href="#GPSAltitude"
@@ -3407,6 +3475,9 @@ The conditions specified here are those that affect the measurement properties, 
       <li>
          <a href="#UpperStateOfChargeBoundary"
             title="http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary">Upper state of charge boundary</a>
+      </li>
+      <li>
+         <a href="#UVIndex" title="http://iot.linkeddata.es/def/adapters#UVIndex">UV index</a>
       </li>
       <li>
          <a href="#ValvePosition"
@@ -4774,6 +4845,26 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="DirectSolarRadiation">
+      <h3>Direct solar radiation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#DirectSolarRadiation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SolarRadiationAmbientProperty"
+               title="http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty">Solar radiation ambient property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="DistanceWalked">
       <h3>Distance walked<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -4944,6 +5035,26 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#DeviceTemperatureProperty"
                title="http://iot.linkeddata.es/def/adapters#DeviceTemperatureProperty">device temperature property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GlobalSolarRadiation">
+      <h3>Global solar radiation<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SolarRadiationAmbientProperty"
+               title="http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty">Solar radiation ambient property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -6616,6 +6727,26 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#http://www.w3.org/ns/ssn/systems/OperatingPowerRange"
                title="http://www.w3.org/ns/ssn/systems/OperatingPowerRange">Operating Power Range</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="UVIndex">
+      <h3>UV index<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#UVIndex</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#SolarRadiationAmbientProperty"
+               title="http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty">Solar radiation ambient property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

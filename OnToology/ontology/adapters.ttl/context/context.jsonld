@@ -63,6 +63,9 @@
     "PeopleCounter" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#PeopleCounter"
     },
+    "SolarRadiationAmbientProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -203,6 +206,9 @@
     },
     "seeAlso" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "WeatherStation" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WeatherStation"
     },
     "Latency" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/Latency"
