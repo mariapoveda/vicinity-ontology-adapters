@@ -8,7 +8,7 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.6" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.7" .
 # 
 # 
 # #################################################################
@@ -102,6 +102,12 @@
 <http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/adapters#Charger> <http://www.w3.org/2000/01/rdf-schema#label> "Charger"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ComboBatteryPV
+<http://iot.linkeddata.es/def/adapters#ComboBatteryPV> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#ComboBatteryPV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#ComboBatteryPV> <http://www.w3.org/2000/01/rdf-schema#comment> "Combo system with PV and battery behind the same inverter"@en .
+<http://iot.linkeddata.es/def/adapters#ComboBatteryPV> <http://www.w3.org/2000/01/rdf-schema#label> "Combo battery and PV"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty
 <http://iot.linkeddata.es/def/adapters#DeviceDoorStatusProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -595,6 +601,12 @@
 <http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy imported to grid"@en .
 <http://iot.linkeddata.es/def/adapters#AccumulatedEnergyInjectedToGrid> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy injected to grid"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced> <http://www.w3.org/2000/01/rdf-schema#label> "Accumulated energy produced"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid
 <http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
@@ -864,6 +876,12 @@
 <http://iot.linkeddata.es/def/adapters#ConnectorStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#ConnectorStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Connector status"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad
+<http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Consumer active power load"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime
 <http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#TimeProperty> .
@@ -985,6 +1003,12 @@
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/2000/01/rdf-schema#label> "GPS precision"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GridActivePowerLoad
+<http://iot.linkeddata.es/def/adapters#GridActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#GridActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#GridActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#GridActivePowerLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Grid active power load"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#HeartRate
 <http://iot.linkeddata.es/def/adapters#HeartRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1358,4 +1382,4 @@
 <http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
 # 
 _:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

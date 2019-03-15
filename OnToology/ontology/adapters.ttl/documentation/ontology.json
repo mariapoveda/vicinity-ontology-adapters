@@ -36,7 +36,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.6"
+    "@value" : "0.1.7"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed",
@@ -54,6 +54,13 @@
   }, {
     "@language" : "en",
     "@value" : "Accumulated energy injected to grid"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accumulated energy produced"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid",
@@ -449,6 +456,20 @@
   "@id" : "http://iot.linkeddata.es/def/adapters#ChildLock",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/ssn/systems/OperatingProperty" ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ComboBatteryPV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Combo system with PV and battery behind the same inverter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Combo battery and PV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://iot.linkeddata.es/def/core#Device"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -475,6 +496,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Connector status"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Consumer active power load"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime",
@@ -675,6 +703,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "GPS precision"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GridActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grid active power load"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#HVACSensor",
