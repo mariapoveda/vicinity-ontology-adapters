@@ -36,7 +36,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.6"
+    "@value" : "0.1.8"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed",
@@ -54,6 +54,13 @@
   }, {
     "@language" : "en",
     "@value" : "Accumulated energy injected to grid"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyProduced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Accumulated energy produced"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ActivePowerAbsorbedFromGrid",
@@ -122,11 +129,39 @@
     "@value" : "Actual active power production"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ActualBatteryStateOfCharge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual battery state of charge"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ActualChargingSessionDuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#TimeProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Actual charging session duration"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ActualDCCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual DC current"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ActualDCPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual DC power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ActualDCVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actual DC voltage"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ActualEnergyConsumedChargingSession",
@@ -291,7 +326,11 @@
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Baking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Baking"
+  } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#BakingEndTimeHour",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#TimeProperty" ]
@@ -338,11 +377,67 @@
     "@id" : "http://iot.linkeddata.es/def/core#Device"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualControlMode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/ssn/systems/OperatingProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery actual control mode"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualDCCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery actual DC current"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualDCPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery actual DC power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualDCVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery actual DC voltage"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery actual powert set point"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryChargeStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery charga status"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryConnectionStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery connection status"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3.org/ns/ssn/systems/BatteryLifetime" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Battery nominal capacity"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryOperationalStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery operational status"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#BatteryStorageUnit",
@@ -449,6 +544,20 @@
   "@id" : "http://iot.linkeddata.es/def/adapters#ChildLock",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/ssn/systems/OperatingProperty" ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ComboBatteryPV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Combo system with PV and battery behind the same inverter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Combo battery and PV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://iot.linkeddata.es/def/core#Device"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -475,6 +584,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Connector status"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ConsumerActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Consumer active power load"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#CurrentBakingStepRemainingTime",
@@ -677,6 +793,13 @@
     "@value" : "GPS precision"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GridActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grid active power load"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#HVACSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -802,11 +925,88 @@
     "@value" : "Indoor environmental quality score"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter accumulated active energy consumption"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter accumulated active energy production"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterActualActivePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter actual active power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterActualFrequency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter actual frequency"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterActualReactivePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter actual reactive power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter consumer active power load"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterGridActivePowerLoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter grid active power load"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#InverterNominalPower",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Inverter nominal power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterPVActualActivePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter PV actual active power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter PV actual reactive power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter status"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterTotalDCPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inverter total DC power"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Irradiance",
@@ -907,6 +1107,13 @@
     "@id" : "http://iot.linkeddata.es/def/adapters#LightProperty"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#MaxBatteryStateOfCharge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Max battery state of charge"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#MaxCO2Concentration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#CarbonDioxide", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -975,6 +1182,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Meat probe temperature"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#MinBatteryStateOfCharge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Min battery state of charge"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#MinCO2Concentration",
@@ -1136,6 +1350,55 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Oven emergency"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVAccumulatedDCEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV accumulated DC energy"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVActualDCCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV actual DC  current"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVActualDCPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV actual DC power"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVActualDCVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV actual DC voltage"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVConnectionStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV connection status"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVInstalledCapacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV installed capacity"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVOperationStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV operation status"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#PanicButton",
@@ -1367,7 +1630,11 @@
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Start",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Start"
+  } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Steps",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#MotionProperty" ],
@@ -1377,7 +1644,11 @@
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Stop",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Stop"
+  } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#StoredEnergy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3.org/ns/ssn/systems/BatteryLifetime" ],
