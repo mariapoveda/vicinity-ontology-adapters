@@ -120,6 +120,9 @@
     "PowerMeter" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#PowerMeter"
     },
+    "ComboBatteryPV" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#ComboBatteryPV"
+    },
     "Thermostat" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#Thermostat"
     },
