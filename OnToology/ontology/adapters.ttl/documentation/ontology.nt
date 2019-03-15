@@ -286,6 +286,11 @@
 <http://iot.linkeddata.es/def/adapters#SmartRefrigerator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/adapters#SmartRefrigerator> <http://www.w3.org/2000/01/rdf-schema#label> "Smart refrigerator"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty
+<http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Solar radiation ambient property"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#Sound
 <http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
@@ -327,6 +332,12 @@
 <http://iot.linkeddata.es/def/adapters#WaterFlowMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#WaterFlowMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
 <http://iot.linkeddata.es/def/adapters#WaterFlowMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterFlowMeter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WeatherStation
+<http://iot.linkeddata.es/def/adapters#WeatherStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
+<http://iot.linkeddata.es/def/adapters#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Device composed of several sensors to measure different atmospheric properties."@en .
+<http://iot.linkeddata.es/def/adapters#WeatherStation> <http://www.w3.org/2000/01/rdf-schema#label> "Weather station"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#WeightScale
 <http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -994,6 +1005,12 @@
 <http://iot.linkeddata.es/def/adapters#DimmingLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#DimmingLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Dimming level"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#DirectSolarRadiation
+<http://iot.linkeddata.es/def/adapters#DirectSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#DirectSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#DirectSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#DirectSolarRadiation> <http://www.w3.org/2000/01/rdf-schema#label> "Direct solar radiation"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#DistanceWalked
 <http://iot.linkeddata.es/def/adapters#DistanceWalked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#DistanceWalked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#MotionProperty> .
@@ -1074,6 +1091,12 @@
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SpaceProperty> .
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#GPSPrecision> <http://www.w3.org/2000/01/rdf-schema#label> "GPS precision"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation
+<http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation> <http://www.w3.org/2000/01/rdf-schema#label> "Global solar radiation"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#GridActivePowerLoad
 <http://iot.linkeddata.es/def/adapters#GridActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1556,6 +1579,12 @@
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
 <http://iot.linkeddata.es/def/adapters#SystolicBloodPressure> <http://www.w3.org/2000/01/rdf-schema#label> "Systolic blood pressure"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#UVIndex
+<http://iot.linkeddata.es/def/adapters#UVIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#UVIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#UVIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#UVIndex> <http://www.w3.org/2000/01/rdf-schema#label> "UV index"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary
 <http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -656,6 +656,13 @@
     "@value" : "Dimming level"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#DirectSolarRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Direct solar radiation"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#DistanceWalked",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#MotionProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -791,6 +798,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "GPS precision"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#GlobalSolarRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Global solar radiation"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#GridActivePowerLoad",
@@ -1605,6 +1619,16 @@
     "@id" : "http://iot.linkeddata.es/def/core#Device"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Solar radiation ambient property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://iot.linkeddata.es/def/adapters#AmbientProperty"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Sound",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1711,6 +1735,13 @@
     "@id" : "http://www.w3.org/ns/ssn/Property"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#UVIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#SolarRadiationAmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "UV index"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/sosa/ObservableProperty", "http://www.w3.org/ns/ssn/systems/OperatingPowerRange" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1743,6 +1774,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#WeatherStation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device composed of several sensors to measure different atmospheric properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather station"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://iot.linkeddata.es/def/core#Device"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Weight",
