@@ -969,6 +969,11 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#BatteryNominalCapacity> a owl:NamedIndividual , sosa:ObservableProperty , ssn-system:BatteryLifetime ;
 	rdfs:label "Battery nominal capacity"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#BatteryNominalPower
+
+<http://iot.linkeddata.es/def/adapters#BatteryNominalPower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery nominal power"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#BatteryOperationalStatus
 
 <http://iot.linkeddata.es/def/adapters#BatteryOperationalStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
