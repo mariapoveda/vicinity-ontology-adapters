@@ -949,10 +949,10 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#BatteryActualDCVoltage> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
 	rdfs:label "Battery actual DC voltage"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint
+# http://iot.linkeddata.es/def/adapters#BatteryActualPowerSetPoint
 
-<http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
-	rdfs:label "Battery actual powert set point"@en .
+<http://iot.linkeddata.es/def/adapters#BatteryActualPowerSetPoint> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Battery actual power set point"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#BatteryChargeStatus
 
