@@ -1461,11 +1461,6 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#PVOperationStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
 	rdfs:label "PV operation status"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel
-
-<http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
-	rdfs:label "Photo voltaic panel service level"@en .
-# 
 # http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound
 
 <http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
@@ -1512,6 +1507,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#RelativeHumidity> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty> , sosa:ObservableProperty ;
 	rdfs:label "Relative humidity"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#ServiceLevel
+
+<http://iot.linkeddata.es/def/adapters#ServiceLevel> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
+	rdfs:label "Service level"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#SimultaneousCharging
 
