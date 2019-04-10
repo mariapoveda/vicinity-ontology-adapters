@@ -405,11 +405,11 @@
     "@value" : "Battery actual DC voltage"
   } ]
 }, {
-  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint",
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualPowerSetPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Battery actual powert set point"
+    "@value" : "Battery actual power set point"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#BatteryChargeStatus",
