@@ -405,11 +405,11 @@
     "@value" : "Battery actual DC voltage"
   } ]
 }, {
-  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualPowertSetPoint",
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryActualPowerSetPoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Battery actual powert set point"
+    "@value" : "Battery actual power set point"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#BatteryChargeStatus",
@@ -431,6 +431,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Battery nominal capacity"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#BatteryNominalPower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Battery nominal power"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#BatteryOperationalStatus",
@@ -1439,13 +1446,6 @@
     "@id" : "http://iot.linkeddata.es/def/core#Sensor"
   } ]
 }, {
-  "@id" : "http://iot.linkeddata.es/def/adapters#PhotoVoltaicPanelServiceLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Photo voltaic panel service level"
-  } ]
-}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#PhotovoltaicPanel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1583,6 +1583,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Relative humidity"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#ServiceLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#OperationalStatus", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service level"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#SimultaneousCharging",
