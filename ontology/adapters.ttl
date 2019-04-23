@@ -1207,9 +1207,9 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientProperty> , sosa:ObservableProperty ;
 	rdfs:label "IEQ score"@en , "Indoor environmental quality score"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio
+# http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption
 
-<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
 	rdfs:label "Inverter accumulated active energy consumption"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction
