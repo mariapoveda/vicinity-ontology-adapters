@@ -1384,6 +1384,13 @@ The conditions specified here are those that affect the measurement properties, 
                              rdfs:label "Highst temperature deviation"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#Illuminance
+:Illuminance rdf:type owl:NamedIndividual ,
+                      :LuminusFlux ,
+                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+             rdfs:label "Illuminance"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore
 :IndoorEnvironmentalQualityScore rdf:type owl:NamedIndividual ,
                                           :AmbientProperty ,

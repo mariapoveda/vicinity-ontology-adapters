@@ -1173,6 +1173,12 @@
 <http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Highst temperature deviation"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#Illuminance
+<http://iot.linkeddata.es/def/adapters#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#LuminusFlux> .
+<http://iot.linkeddata.es/def/adapters#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Illuminance> <http://www.w3.org/2000/01/rdf-schema#label> "Illuminance"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
