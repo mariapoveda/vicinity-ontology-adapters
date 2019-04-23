@@ -1392,11 +1392,11 @@ The conditions specified here are those that affect the measurement properties, 
                                             "Indoor environmental quality score"@en .
 
 
-###  http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio
-:InverterAccumulatedActiveEnergyConsumptio rdf:type owl:NamedIndividual ,
-                                                    :Power ,
-                                                    <http://www.w3.org/ns/sosa/ObservableProperty> ;
-                                           rdfs:label "Inverter accumulated active energy consumption"@en .
+###  http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption
+:InverterAccumulatedActiveEnergyConsumption rdf:type owl:NamedIndividual ,
+                                                     :Power ,
+                                                     <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                            rdfs:label "Inverter accumulated active energy consumption"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction

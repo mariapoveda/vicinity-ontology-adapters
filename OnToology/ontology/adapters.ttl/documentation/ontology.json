@@ -946,7 +946,7 @@
     "@value" : "Indoor environmental quality score"
   } ]
 }, {
-  "@id" : "http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio",
+  "@id" : "http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

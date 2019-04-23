@@ -1180,11 +1180,11 @@
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "IEQ score"@en .
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor environmental quality score"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio
-<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter accumulated active energy consumption"@en .
+# http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter accumulated active energy consumption"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction
 <http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -2205,10 +2205,10 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
-    <!-- http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio -->
+    <!-- http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption -->
 
 
-    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumptio">
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/adapters#InverterAccumulatedActiveEnergyConsumption">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/adapters#Power"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Inverter accumulated active energy consumption</rdfs:label>
