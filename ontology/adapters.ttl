@@ -1202,6 +1202,11 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#HighestTemperatureDeviation> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientTemperatureProperty> , sosa:ObservableProperty ;
 	rdfs:label "Highst temperature deviation"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#Illuminance
+
+<http://iot.linkeddata.es/def/adapters#Illuminance> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#LuminusFlux> , sosa:ObservableProperty ;
+	rdfs:label "Illuminance"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore
 
 <http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientProperty> , sosa:ObservableProperty ;
