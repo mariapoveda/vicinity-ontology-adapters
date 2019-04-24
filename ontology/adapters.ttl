@@ -1456,6 +1456,11 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#PVConnectionStatus> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
 	rdfs:label "PV connection status"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PVForecast
+
+<http://iot.linkeddata.es/def/adapters#PVForecast> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "PV forecast"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PVInstalledCapacity
 
 <http://iot.linkeddata.es/def/adapters#PVInstalledCapacity> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
@@ -1571,6 +1576,11 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#ValvePosition> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> , sosa:ObservableProperty ;
 	rdfs:label "Valve position"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WeatherForecast
+
+<http://iot.linkeddata.es/def/adapters#WeatherForecast> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#AmbientProperty> , sosa:ObservableProperty ;
+	rdfs:label "Weather forecast"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Weight
 
