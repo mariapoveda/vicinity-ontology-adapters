@@ -1479,6 +1479,12 @@
 <http://iot.linkeddata.es/def/adapters#PVConnectionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#PVConnectionStatus> <http://www.w3.org/2000/01/rdf-schema#label> "PV connection status"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#PVForecast
+<http://iot.linkeddata.es/def/adapters#PVForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#PVForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#PVForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#PVForecast> <http://www.w3.org/2000/01/rdf-schema#label> "PV forecast"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#PVInstalledCapacity
 <http://iot.linkeddata.es/def/adapters#PVInstalledCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#PVInstalledCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
@@ -1609,6 +1615,12 @@
 <http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#OperationalStatus> .
 <http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#ValvePosition> <http://www.w3.org/2000/01/rdf-schema#label> "Valve position"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WeatherForecast
+<http://iot.linkeddata.es/def/adapters#WeatherForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#WeatherForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#WeatherForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#WeatherForecast> <http://www.w3.org/2000/01/rdf-schema#label> "Weather forecast"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#Weight
 <http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -1741,6 +1741,13 @@ The conditions specified here are those that affect the measurement properties, 
                     rdfs:label "PV connection status"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#PVForecast
+:PVForecast rdf:type owl:NamedIndividual ,
+                     :Power ,
+                     <http://www.w3.org/ns/sosa/ObservableProperty> ;
+            rdfs:label "PV forecast"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#PVInstalledCapacity
 :PVInstalledCapacity rdf:type owl:NamedIndividual ,
                               :Power ,
@@ -1894,6 +1901,13 @@ The conditions specified here are those that affect the measurement properties, 
                         :OperationalStatus ,
                         <http://www.w3.org/ns/sosa/ObservableProperty> ;
                rdfs:label "Valve position"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#WeatherForecast
+:WeatherForecast rdf:type owl:NamedIndividual ,
+                          :AmbientProperty ,
+                          <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                 rdfs:label "Weather forecast"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#Weight
