@@ -1415,6 +1415,13 @@
     "@value" : "PV connection status"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PVForecast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PV forecast"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#PVInstalledCapacity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1788,6 +1795,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#WeatherForecast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Weather forecast"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#WeatherStation",

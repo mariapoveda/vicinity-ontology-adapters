@@ -536,6 +536,8 @@ This section provides details for each class and property defined by Vicinity ad
          <dd>
             <a href="#IndoorEnvironmentalQualityScore"
                title="http://iot.linkeddata.es/def/adapters#IndoorEnvironmentalQualityScore">IEQ score</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#WeatherForecast"
+               title="http://iot.linkeddata.es/def/adapters#WeatherForecast">Weather forecast</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -1666,6 +1668,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#PVActualDCVoltage">PV actual DC voltage</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVConnectionStatus"
                title="http://iot.linkeddata.es/def/adapters#PVConnectionStatus">PV connection status</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVForecast"
+               title="http://iot.linkeddata.es/def/adapters#PVForecast">PV forecast</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVInstalledCapacity"
                title="http://iot.linkeddata.es/def/adapters#PVInstalledCapacity">PV installed capacity</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVOperationStatus"
@@ -1691,6 +1695,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#UpperStateOfChargeBoundary">Upper state of charge boundary</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ValvePosition"
                title="http://iot.linkeddata.es/def/adapters#ValvePosition">Valve position</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#WeatherForecast"
+               title="http://iot.linkeddata.es/def/adapters#WeatherForecast">Weather forecast</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#AverageCO2ConcentrationDeviation"
                title="http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation">average c o2 concentration deviation</a>
             <sup class="type-ni" title="named individual">ni</sup>
@@ -2055,6 +2061,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#PVActualDCPower">PV actual DC power</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVActualDCVoltage"
                title="http://iot.linkeddata.es/def/adapters#PVActualDCVoltage">PV actual DC voltage</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVForecast"
+               title="http://iot.linkeddata.es/def/adapters#PVForecast">PV forecast</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVInstalledCapacity"
                title="http://iot.linkeddata.es/def/adapters#PVInstalledCapacity">PV installed capacity</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PowerFactorLowerBound"
@@ -3431,6 +3439,10 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#PVConnectionStatus">PV connection status</a>
       </li>
       <li>
+         <a href="#PVForecast"
+            title="http://iot.linkeddata.es/def/adapters#PVForecast">PV forecast</a>
+      </li>
+      <li>
          <a href="#PVInstalledCapacity"
             title="http://iot.linkeddata.es/def/adapters#PVInstalledCapacity">PV installed capacity</a>
       </li>
@@ -3523,6 +3535,10 @@ The conditions specified here are those that affect the measurement properties, 
       <li>
          <a href="#ValvePosition"
             title="http://iot.linkeddata.es/def/adapters#ValvePosition">Valve position</a>
+      </li>
+      <li>
+         <a href="#WeatherForecast"
+            title="http://iot.linkeddata.es/def/adapters#WeatherForecast">Weather forecast</a>
       </li>
       <li>
          <a href="#Weight" title="http://iot.linkeddata.es/def/adapters#Weight">Weight</a>
@@ -6439,6 +6455,25 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="PVForecast">
+      <h3>PV forecast<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PVForecast</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="PVInstalledCapacity">
       <h3>PV installed capacity<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -6844,6 +6879,26 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#OperationalStatus"
                title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WeatherForecast">
+      <h3>Weather forecast<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#WeatherForecast</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#AmbientProperty"
+               title="http://iot.linkeddata.es/def/adapters#AmbientProperty">AmbientProperty</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dd>
