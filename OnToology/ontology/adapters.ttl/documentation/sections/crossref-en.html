@@ -311,6 +311,10 @@ This section provides details for each class and property defined by Vicinity ad
             title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
       </li>
       <li>
+         <a href="#WaterProperty"
+            title="http://iot.linkeddata.es/def/adapters#WaterProperty">Water property</a>
+      </li>
+      <li>
          <a href="#WaterEnergyMeter"
             title="http://iot.linkeddata.es/def/adapters#WaterEnergyMeter">WaterEnergyMeter</a>
       </li>
@@ -422,10 +426,7 @@ This section provides details for each class and property defined by Vicinity ad
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <span class="dotted" title="http://www.w3.org/ns/sosa/Actuator">actuator</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/sosa/Actuator">actuator</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -482,10 +483,7 @@ This section provides details for each class and property defined by Vicinity ad
          <dd>
             <a href="#AmbientProperty"
                title="http://iot.linkeddata.es/def/adapters#AmbientProperty">AmbientProperty</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#TemperatureProperty"
+            <sup class="type-c" title="class">c</sup>, <a href="#TemperatureProperty"
                title="http://iot.linkeddata.es/def/adapters#TemperatureProperty">Temperature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -1059,10 +1057,7 @@ This section provides details for each class and property defined by Vicinity ad
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Actuator" title="http://iot.linkeddata.es/def/core#Actuator">Actuator</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1421,11 +1416,8 @@ The conditions specified here are those that affect the measurement properties, 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
             <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -1655,6 +1647,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#NominalProductionCapacity">Nominal production capacity</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#NumberOfConnectors"
                title="http://iot.linkeddata.es/def/adapters#NumberOfConnectors">Number of connectors</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#OxidationReductionPotential"
+               title="http://iot.linkeddata.es/def/adapters#OxidationReductionPotential">ORP</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#OnOff" title="http://iot.linkeddata.es/def/adapters#OnOff">On Off</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#OpenClosed"
                title="http://iot.linkeddata.es/def/adapters#OpenClosed">Open Closed</a>
@@ -1699,6 +1693,7 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#WeatherForecast">Weather forecast</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#AverageCO2ConcentrationDeviation"
                title="http://iot.linkeddata.es/def/adapters#AverageCO2ConcentrationDeviation">average c o2 concentration deviation</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PH" title="http://iot.linkeddata.es/def/adapters#PH">pH</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -2053,6 +2048,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#NominalProductionCapacity">Nominal production capacity</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#NumberOfConnectors"
                title="http://iot.linkeddata.es/def/adapters#NumberOfConnectors">Number of connectors</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#OxidationReductionPotential"
+               title="http://iot.linkeddata.es/def/adapters#OxidationReductionPotential">ORP</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVAccumulatedDCEnergy"
                title="http://iot.linkeddata.es/def/adapters#PVAccumulatedDCEnergy">PV accumulated DC energy</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PVActualDCCurrent"
@@ -2091,12 +2088,9 @@ The conditions specified here are those that affect the measurement properties, 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
             <a href="#http://www.w3.org/ns/ssn/systems/OperatingProperty"
                title="http://www.w3.org/ns/ssn/systems/OperatingProperty">Operating Property</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has members</dt>
@@ -2241,6 +2235,8 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#TemperatureProperty">Temperature</a>
             <sup class="type-c" title="class">c</sup>, <a href="#TimeProperty"
                title="http://iot.linkeddata.es/def/adapters#TimeProperty">TimeProperty</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#WaterProperty"
+               title="http://iot.linkeddata.es/def/adapters#WaterProperty">Water property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/sosa/ActuatableProperty" title="http://www.w3.org/ns/sosa/ActuatableProperty">actuatable property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
@@ -2382,10 +2378,7 @@ The conditions specified here are those that affect the measurement properties, 
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Device" title="http://iot.linkeddata.es/def/core#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
+            <sup class="type-c" title="class">c</sup>, <span class="dotted" title="http://www.w3.org/ns/sosa/Sensor">sensor</span>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -2680,10 +2673,7 @@ The conditions specified here are those that affect the measurement properties, 
          <dt>has super-classes</dt>
          <dd>
             <a href="#http://iot.linkeddata.es/def/core#Actuator" title="http://iot.linkeddata.es/def/core#Actuator">Actuator</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://iot.linkeddata.es/def/core#Sensor" title="http://iot.linkeddata.es/def/core#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -2724,6 +2714,31 @@ The conditions specified here are those that affect the measurement properties, 
                title="http://iot.linkeddata.es/def/adapters#BakingTime">baking time</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#DelayedBaking"
                title="http://iot.linkeddata.es/def/adapters#DelayedBaking">delayed baking</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WaterProperty">
+      <h3>Water property<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#WaterProperty</p>
+      <div class="comment">
+         <span class="markdown">Properties related to water</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#OxidationReductionPotential"
+               title="http://iot.linkeddata.es/def/adapters#OxidationReductionPotential">ORP</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#PH" title="http://iot.linkeddata.es/def/adapters#PH">pH</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -3405,6 +3420,10 @@ The conditions specified here are those that affect the measurement properties, 
             title="http://iot.linkeddata.es/def/adapters#OpenClosed">Open Closed</a>
       </li>
       <li>
+         <a href="#OxidationReductionPotential"
+            title="http://iot.linkeddata.es/def/adapters#OxidationReductionPotential">ORP</a>
+      </li>
+      <li>
          <a href="#OvenDoorStatus"
             title="http://iot.linkeddata.es/def/adapters#OvenDoorStatus">
             <span>oven door status</span>
@@ -3413,6 +3432,9 @@ The conditions specified here are those that affect the measurement properties, 
       <li>
          <a href="#OvenEmergency"
             title="http://iot.linkeddata.es/def/adapters#OvenEmergency">Oven emergency</a>
+      </li>
+      <li>
+         <a href="#PH" title="http://iot.linkeddata.es/def/adapters#PH">pH</a>
       </li>
       <li>
          <a href="#PowerFactorLowerBound"
@@ -6308,6 +6330,30 @@ The conditions specified here are those that affect the measurement properties, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="OxidationReductionPotential">
+      <h3>ORP<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#OxidationReductionPotential</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#Power" title="http://iot.linkeddata.es/def/adapters#Power">power</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#WaterProperty"
+               title="http://iot.linkeddata.es/def/adapters#WaterProperty">Water property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="OvenDoorStatus">
       <h3>oven door status<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -6336,6 +6382,26 @@ The conditions specified here are those that affect the measurement properties, 
          <dd>
             <a href="#OperationalStatus"
                title="http://iot.linkeddata.es/def/adapters#OperationalStatus">Operational status</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PH">
+      <h3>pH<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://iot.linkeddata.es/def/adapters#PH</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#WaterProperty"
+               title="http://iot.linkeddata.es/def/adapters#WaterProperty">Water property</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#http://www.w3.org/ns/sosa/ObservableProperty" title="http://www.w3.org/ns/sosa/ObservableProperty">observable property</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
