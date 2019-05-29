@@ -288,6 +288,9 @@
     "Lightbulb" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#Lightbulb"
     },
+    "WaterProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WaterProperty"
+    },
     "HVACSensor" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#HVACSensor"
     },

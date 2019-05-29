@@ -36,7 +36,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.8"
+    "@value" : "0.1.9"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed",
@@ -1380,6 +1380,23 @@
     "@value" : "Oven emergency"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#OxidationReductionPotential",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://iot.linkeddata.es/def/adapters#WaterProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ORP"
+  }, {
+    "@language" : "en",
+    "@value" : "Oxidation-Reduction potential"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#PH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#WaterProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pH"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#PVAccumulatedDCEnergy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#Power", "http://www.w3.org/ns/sosa/ObservableProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1795,6 +1812,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#WaterProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Properties related to water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Water property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/ssn/Property"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#WeatherForecast",
