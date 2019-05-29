@@ -16,7 +16,7 @@
 <http://iot.linkeddata.es/def/adapters#> a owl:Ontology ;
 	owl:imports <http://iot.linkeddata.es/def/core#> ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
-	owl:versionInfo "0.1.8" ;
+	owl:versionInfo "0.1.9" ;
 	dc:title "Vicinity adapters model"@en ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
@@ -403,6 +403,13 @@ vs:term_status a owl:AnnotationProperty .
 <http://iot.linkeddata.es/def/adapters#WaterFlowMeter> a owl:Class ;
 	rdfs:subClassOf :Sensor ;
 	rdfs:label "WaterFlowMeter"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WaterProperty
+
+<http://iot.linkeddata.es/def/adapters#WaterProperty> a owl:Class ;
+	rdfs:subClassOf ssn:Property ;
+	rdfs:comment "Properties related to water"@en ;
+	rdfs:label "Water property"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#WeatherStation
 
@@ -1430,6 +1437,16 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#OvenEmergency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#OperationalStatus> ;
 	rdfs:label "Oven emergency"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#OxidationReductionPotential
+
+<http://iot.linkeddata.es/def/adapters#OxidationReductionPotential> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , <http://iot.linkeddata.es/def/adapters#WaterProperty> , sosa:ObservableProperty ;
+	rdfs:label "ORP"@en , "Oxidation-Reduction potential"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#PH
+
+<http://iot.linkeddata.es/def/adapters#PH> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#WaterProperty> , sosa:ObservableProperty ;
+	rdfs:label "pH"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#PVAccumulatedDCEnergy
 
