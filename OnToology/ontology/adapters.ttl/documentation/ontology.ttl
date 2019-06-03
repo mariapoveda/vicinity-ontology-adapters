@@ -16,7 +16,7 @@
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.9" .
+                                          owl:versionInfo "0.1.10" .
 
 #################################################################
 #    Annotation properties
@@ -1427,6 +1427,27 @@ The conditions specified here are those that affect the measurement properties, 
                            rdfs:label "Inverter actual active power"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1
+:InverterActualActivePowerL1 rdf:type owl:NamedIndividual ,
+                                      :Power ,
+                                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                             rdfs:label "Inverter actual active power L1"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2
+:InverterActualActivePowerL2 rdf:type owl:NamedIndividual ,
+                                      :Power ,
+                                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                             rdfs:label "Inverter actual active power L2"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3
+:InverterActualActivePowerL3 rdf:type owl:NamedIndividual ,
+                                      :Power ,
+                                      <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                             rdfs:label "Inverter actual active power L3"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#InverterActualFrequency
 :InverterActualFrequency rdf:type owl:NamedIndividual ,
                                   :Power ,
@@ -1439,6 +1460,27 @@ The conditions specified here are those that affect the measurement properties, 
                                       :Power ,
                                       <http://www.w3.org/ns/sosa/ObservableProperty> ;
                              rdfs:label "Inverter actual reactive power"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1
+:InverterActualReactivePowerL1 rdf:type owl:NamedIndividual ,
+                                        :Power ,
+                                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                               rdfs:label "Inverter actual reactive power L1"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2
+:InverterActualReactivePowerL2 rdf:type owl:NamedIndividual ,
+                                        :Power ,
+                                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                               rdfs:label "Inverter actual reactive power L2"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3
+:InverterActualReactivePowerL3 rdf:type owl:NamedIndividual ,
+                                        :Power ,
+                                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                               rdfs:label "Inverter actual reactive power L3"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad
