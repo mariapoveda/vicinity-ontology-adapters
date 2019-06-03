@@ -16,9 +16,9 @@
 <http://iot.linkeddata.es/def/adapters#> a owl:Ontology ;
 	owl:imports <http://iot.linkeddata.es/def/core#> ;
 	dcterms:creator <http://purl.org/net/mpoveda> ;
-	owl:versionInfo "0.1.9" ;
 	dc:title "Vicinity adapters model"@en ;
 	dcterms:creator <http://www.garcia-castro.com/foaf.rdf#me> ;
+	owl:versionInfo "0.1.10" ;
 	dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
 	rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
 	vann:preferredNamespaceUri "http://iot.linkeddata.es/def/adapters#" ;
@@ -1234,6 +1234,21 @@ ssn-system:SystemProperty a owl:Class ;
 <http://iot.linkeddata.es/def/adapters#InverterActualActivePower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
 	rdfs:label "Inverter actual active power"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1
+
+<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual active power L1"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2
+
+<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual active power L2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3
+
+<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual active power L3"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#InverterActualFrequency
 
 <http://iot.linkeddata.es/def/adapters#InverterActualFrequency> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
@@ -1243,6 +1258,21 @@ ssn-system:SystemProperty a owl:Class ;
 
 <http://iot.linkeddata.es/def/adapters#InverterActualReactivePower> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
 	rdfs:label "Inverter actual reactive power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1
+
+<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual reactive power L1"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2
+
+<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual reactive power L2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3
+
+<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3> a owl:NamedIndividual , <http://iot.linkeddata.es/def/adapters#Power> , sosa:ObservableProperty ;
+	rdfs:label "Inverter actual reactive power L3"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad
 
