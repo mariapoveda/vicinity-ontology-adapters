@@ -1210,24 +1210,6 @@
 <http://iot.linkeddata.es/def/adapters#InverterActualActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#InverterActualActivePower> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual active power"@en .
 # 
-# http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL1> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual active power L1"@en .
-# 
-# http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL2> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual active power L2"@en .
-# 
-# http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterActualActivePowerL3> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual active power L3"@en .
-# 
 # http://iot.linkeddata.es/def/adapters#InverterActualFrequency
 <http://iot.linkeddata.es/def/adapters#InverterActualFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#InverterActualFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
@@ -1239,24 +1221,6 @@
 <http://iot.linkeddata.es/def/adapters#InverterActualReactivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
 <http://iot.linkeddata.es/def/adapters#InverterActualReactivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#InverterActualReactivePower> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual reactive power"@en .
-# 
-# http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL1> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual reactive power L1"@en .
-# 
-# http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL2> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual reactive power L2"@en .
-# 
-# http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
-<http://iot.linkeddata.es/def/adapters#InverterActualReactivePowerL3> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter actual reactive power L3"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad
 <http://iot.linkeddata.es/def/adapters#InverterConsumerActivePowerLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1282,11 +1246,47 @@
 <http://iot.linkeddata.es/def/adapters#InverterPVActualActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#InverterPVActualActivePower> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual active power"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL1
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL1> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual active power L1"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL2
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL2> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual active power L2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL3
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualActivePowerL3> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual active power L3"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower
 <http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
 <http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePower> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual reactive power"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL1
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL1> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual reactive power L1"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL2
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL2> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual reactive power L2"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL3
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#InverterPVActualReactivePowerL3> <http://www.w3.org/2000/01/rdf-schema#label> "Inverter PV actual reactive power L3"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#InverterStatus
 <http://iot.linkeddata.es/def/adapters#InverterStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
