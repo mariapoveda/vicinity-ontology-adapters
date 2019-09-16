@@ -72,6 +72,9 @@
     "CO2Sensor" : {
       "@id" : "http://iot.linkeddata.es/def/core#CO2Sensor"
     },
+    "Repository" : {
+      "@id" : "http://iot.linkeddata.es/def/core#Repository"
+    },
     "Sound" : {
       "@id" : "http://iot.linkeddata.es/def/core#Sound"
     },
@@ -83,6 +86,9 @@
     },
     "Resolution" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/Resolution"
+    },
+    "BitcoinWallet" : {
+      "@id" : "http://iot.linkeddata.es/def/core#BitcoinWallet"
     },
     "DetectionLimit" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/DetectionLimit"
@@ -125,6 +131,9 @@
     },
     "PowerMeter" : {
       "@id" : "http://iot.linkeddata.es/def/core#PowerMeter"
+    },
+    "DashWallet" : {
+      "@id" : "http://iot.linkeddata.es/def/core#DashWallet"
     },
     "ComboBatteryPV" : {
       "@id" : "http://iot.linkeddata.es/def/core#ComboBatteryPV"
@@ -237,8 +246,11 @@
     "PhotovoltaicPanel" : {
       "@id" : "http://iot.linkeddata.es/def/core#PhotovoltaicPanel"
     },
+    "Wallet" : {
+      "@id" : "http://iot.linkeddata.es/def/core#Wallet"
+    },
     "Actuator" : {
-      "@id" : "http://iot.linkeddata.es/def/core#Actuator"
+      "@id" : "http://www.w3.org/ns/sosa/Actuator"
     },
     "WeightScale" : {
       "@id" : "http://iot.linkeddata.es/def/core#WeightScale"
@@ -248,6 +260,9 @@
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "http://iot.linkeddata.es/def/core#Service"
     },
     "ObservableProperty" : {
       "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
@@ -297,8 +312,14 @@
     "Lightbulb" : {
       "@id" : "http://iot.linkeddata.es/def/core#Lightbulb"
     },
+    "RepositoryProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/core#RepositoryProperty"
+    },
     "WaterProperty" : {
       "@id" : "http://iot.linkeddata.es/def/core#WaterProperty"
+    },
+    "WalletProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/core#WalletProperty"
     },
     "HVACSensor" : {
       "@id" : "http://iot.linkeddata.es/def/core#HVACSensor"
@@ -319,7 +340,7 @@
       "@id" : "http://www.w3.org/ns/ssn/systems/SurvivalProperty"
     },
     "Sensor" : {
-      "@id" : "http://www.w3.org/ns/sosa/Sensor"
+      "@id" : "http://iot.linkeddata.es/def/core#Sensor"
     },
     "Accuracy" : {
       "@id" : "http://www.w3.org/ns/ssn/systems/Accuracy"

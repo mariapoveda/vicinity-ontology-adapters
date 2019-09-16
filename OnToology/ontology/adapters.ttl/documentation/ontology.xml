@@ -22,11 +22,11 @@
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
         <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:modified>2019-07-03</terms:modified>
+        <terms:modified>2019-09-16</terms:modified>
         <vann:preferredNamespacePrefix>vcnt-adap</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo>0.1.11</owl:versionInfo>
+        <owl:versionInfo>0.1.12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -174,6 +174,17 @@
     
 
 
+    <!-- http://iot.linkeddata.es/def/core#BitcoinWallet -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#BitcoinWallet">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Wallet"/>
+        <rdfs:comment xml:lang="en">Bitcoin wallet service</rdfs:comment>
+        <rdfs:label xml:lang="en">Bitcoin wallet</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://iot.linkeddata.es/def/core#BloodPressureMonitor -->
 
 
@@ -231,6 +242,17 @@
         <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Device"/>
         <rdfs:comment xml:lang="en">Combo system with PV and battery behind the same inverter</rdfs:comment>
         <rdfs:label xml:lang="en">Combo battery and PV</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#DashWallet -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#DashWallet">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Wallet"/>
+        <rdfs:comment xml:lang="en">Dash wallet service</rdfs:comment>
+        <rdfs:label xml:lang="en">Dash wallet</rdfs:label>
     </owl:Class>
     
 
@@ -588,6 +610,27 @@
     
 
 
+    <!-- http://iot.linkeddata.es/def/core#Repository -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#Repository">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Service"/>
+        <rdfs:comment xml:lang="en">A service that provides access to a repository</rdfs:comment>
+        <rdfs:label xml:lang="en">Repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#RepositoryProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#RepositoryProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:label xml:lang="en">Repository properties</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://iot.linkeddata.es/def/core#Sensor -->
 
 
@@ -699,6 +742,28 @@
     <owl:Class rdf:about="http://iot.linkeddata.es/def/core#TimeProperty">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
         <rdfs:label xml:lang="en">TimeProperty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#Wallet -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#Wallet">
+        <rdfs:subClassOf rdf:resource="http://iot.linkeddata.es/def/core#Service"/>
+        <rdfs:comment xml:lang="en">Electronic wallet service</rdfs:comment>
+        <rdfs:label xml:lang="en">Wallet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletProperty -->
+
+
+    <owl:Class rdf:about="http://iot.linkeddata.es/def/core#WalletProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:comment xml:lang="en">Properties attached to wallet services</rdfs:comment>
+        <rdfs:label xml:lang="en">Wallet property</rdfs:label>
     </owl:Class>
     
 
@@ -3087,6 +3152,28 @@ The conditions specified here are those that affect the measurement properties, 
     
 
 
+    <!-- http://iot.linkeddata.es/def/core#RepositoryDigitalAsset -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#RepositoryDigitalAsset">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#RepositoryProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Repository digital asset</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#RepositoyEntity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#RepositoyEntity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#RepositoryProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Repository (as property)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://iot.linkeddata.es/def/core#ServiceLevel -->
 
 
@@ -3241,6 +3328,72 @@ The conditions specified here are those that affect the measurement properties, 
     <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#VisceralFatRating">
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#HealthProperty"/>
         <rdfs:label xml:lang="en">Visceral fat rating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletBalance -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletBalance">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet balance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletEntity -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletEntity">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet (as property)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletFundingAddress -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletFundingAddress">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet funding address</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletPrivateKey -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletPrivateKey">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet private key</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletTransactions -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletTransactions">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet transactions</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletValue -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletValue">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet value</rdfs:label>
     </owl:NamedIndividual>
     
 

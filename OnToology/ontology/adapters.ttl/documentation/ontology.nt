@@ -5,11 +5,11 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://www.garcia-castro.com/foaf.rdf#me> .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/modified> "2019-07-03" .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/modified> "2019-09-16" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.11" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.12" .
 # 
 # 
 # #################################################################
@@ -87,6 +87,12 @@
 <http://iot.linkeddata.es/def/core#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/core#BeaconReader> <http://www.w3.org/2000/01/rdf-schema#label> "Beacon reader"@en .
 # 
+# http://iot.linkeddata.es/def/core#BitcoinWallet
+<http://iot.linkeddata.es/def/core#BitcoinWallet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#BitcoinWallet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Wallet> .
+<http://iot.linkeddata.es/def/core#BitcoinWallet> <http://www.w3.org/2000/01/rdf-schema#comment> "Bitcoin wallet service"@en .
+<http://iot.linkeddata.es/def/core#BitcoinWallet> <http://www.w3.org/2000/01/rdf-schema#label> "Bitcoin wallet"@en .
+# 
 # http://iot.linkeddata.es/def/core#BloodPressureMonitor
 <http://iot.linkeddata.es/def/core#BloodPressureMonitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/core#BloodPressureMonitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
@@ -117,6 +123,12 @@
 <http://iot.linkeddata.es/def/core#ComboBatteryPV> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
 <http://iot.linkeddata.es/def/core#ComboBatteryPV> <http://www.w3.org/2000/01/rdf-schema#comment> "Combo system with PV and battery behind the same inverter"@en .
 <http://iot.linkeddata.es/def/core#ComboBatteryPV> <http://www.w3.org/2000/01/rdf-schema#label> "Combo battery and PV"@en .
+# 
+# http://iot.linkeddata.es/def/core#DashWallet
+<http://iot.linkeddata.es/def/core#DashWallet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#DashWallet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Wallet> .
+<http://iot.linkeddata.es/def/core#DashWallet> <http://www.w3.org/2000/01/rdf-schema#comment> "Dash wallet service"@en .
+<http://iot.linkeddata.es/def/core#DashWallet> <http://www.w3.org/2000/01/rdf-schema#label> "Dash wallet"@en .
 # 
 # http://iot.linkeddata.es/def/core#Device
 <http://iot.linkeddata.es/def/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -296,6 +308,17 @@
 <http://iot.linkeddata.es/def/core#RadiantIntensity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#LightProperty> .
 <http://iot.linkeddata.es/def/core#RadiantIntensity> <http://www.w3.org/2000/01/rdf-schema#label> "Radiant intensity"@en .
 # 
+# http://iot.linkeddata.es/def/core#Repository
+<http://iot.linkeddata.es/def/core#Repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#Repository> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Service> .
+<http://iot.linkeddata.es/def/core#Repository> <http://www.w3.org/2000/01/rdf-schema#comment> "A service that provides access to a repository"@en .
+<http://iot.linkeddata.es/def/core#Repository> <http://www.w3.org/2000/01/rdf-schema#label> "Repository"@en .
+# 
+# http://iot.linkeddata.es/def/core#RepositoryProperty
+<http://iot.linkeddata.es/def/core#RepositoryProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#RepositoryProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/core#RepositoryProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Repository properties"@en .
+# 
 # http://iot.linkeddata.es/def/core#Sensor
 <http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Device> .
@@ -355,6 +378,18 @@
 <http://iot.linkeddata.es/def/core#TimeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/core#TimeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
 <http://iot.linkeddata.es/def/core#TimeProperty> <http://www.w3.org/2000/01/rdf-schema#label> "TimeProperty"@en .
+# 
+# http://iot.linkeddata.es/def/core#Wallet
+<http://iot.linkeddata.es/def/core#Wallet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#Wallet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Service> .
+<http://iot.linkeddata.es/def/core#Wallet> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic wallet service"@en .
+<http://iot.linkeddata.es/def/core#Wallet> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletProperty
+<http://iot.linkeddata.es/def/core#WalletProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/core#WalletProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
+<http://iot.linkeddata.es/def/core#WalletProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Properties attached to wallet services"@en .
+<http://iot.linkeddata.es/def/core#WalletProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet property"@en .
 # 
 # http://iot.linkeddata.es/def/core#WaterEnergyMeter
 <http://iot.linkeddata.es/def/core#WaterEnergyMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1657,6 +1692,18 @@
 <http://iot.linkeddata.es/def/core#RelativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/core#RelativeHumidity> <http://www.w3.org/2000/01/rdf-schema#label> "Relative humidity"@en .
 # 
+# http://iot.linkeddata.es/def/core#RepositoryDigitalAsset
+<http://iot.linkeddata.es/def/core#RepositoryDigitalAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#RepositoryDigitalAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#RepositoryProperty> .
+<http://iot.linkeddata.es/def/core#RepositoryDigitalAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#RepositoryDigitalAsset> <http://www.w3.org/2000/01/rdf-schema#label> "Repository digital asset"@en .
+# 
+# http://iot.linkeddata.es/def/core#RepositoyEntity
+<http://iot.linkeddata.es/def/core#RepositoyEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#RepositoyEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#RepositoryProperty> .
+<http://iot.linkeddata.es/def/core#RepositoyEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#RepositoyEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Repository (as property)"@en .
+# 
 # http://iot.linkeddata.es/def/core#ServiceLevel
 <http://iot.linkeddata.es/def/core#ServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/core#ServiceLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#OperationalStatus> .
@@ -1739,6 +1786,42 @@
 <http://iot.linkeddata.es/def/core#VisceralFatRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/core#VisceralFatRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#HealthProperty> .
 <http://iot.linkeddata.es/def/core#VisceralFatRating> <http://www.w3.org/2000/01/rdf-schema#label> "Visceral fat rating"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletBalance
+<http://iot.linkeddata.es/def/core#WalletBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletBalance> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet balance"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletEntity
+<http://iot.linkeddata.es/def/core#WalletEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet (as property)"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletFundingAddress
+<http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet funding address"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletPrivateKey
+<http://iot.linkeddata.es/def/core#WalletPrivateKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletPrivateKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletPrivateKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletPrivateKey> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet private key"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletTransactions
+<http://iot.linkeddata.es/def/core#WalletTransactions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletTransactions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletTransactions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletTransactions> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet transactions"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletValue
+<http://iot.linkeddata.es/def/core#WalletValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletValue> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet value"@en .
 # 
 # http://iot.linkeddata.es/def/core#WeatherForecast
 <http://iot.linkeddata.es/def/core#WeatherForecast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
