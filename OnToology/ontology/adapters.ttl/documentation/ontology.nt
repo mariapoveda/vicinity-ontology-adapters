@@ -5,11 +5,11 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://www.garcia-castro.com/foaf.rdf#me> .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/modified> "2019-09-16" .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/modified> "2019-09-24" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.12" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.13" .
 # 
 # 
 # #################################################################
@@ -1804,6 +1804,12 @@
 <http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
 <http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/core#WalletFundingAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet funding address"@en .
+# 
+# http://iot.linkeddata.es/def/core#WalletPaymentForward
+<http://iot.linkeddata.es/def/core#WalletPaymentForward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/core#WalletPaymentForward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/core#WalletProperty> .
+<http://iot.linkeddata.es/def/core#WalletPaymentForward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/core#WalletPaymentForward> <http://www.w3.org/2000/01/rdf-schema#label> "Wallet payment forward"@en .
 # 
 # http://iot.linkeddata.es/def/core#WalletPrivateKey
 <http://iot.linkeddata.es/def/core#WalletPrivateKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

@@ -23,7 +23,7 @@
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2019-09-16"
+    "@value" : "2019-09-24"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "vcnt-adap"
@@ -39,7 +39,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.12"
+    "@value" : "0.1.13"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/core#AccumulatedEnergyConsumed",
@@ -2086,6 +2086,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Wallet funding address"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/core#WalletPaymentForward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/core#WalletProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wallet payment forward"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/core#WalletPrivateKey",

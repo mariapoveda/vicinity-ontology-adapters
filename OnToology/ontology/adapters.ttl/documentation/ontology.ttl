@@ -13,11 +13,11 @@
                                           <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ,
                                                                              <http://www.garcia-castro.com/foaf.rdf#me> ;
                                           <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                          <http://purl.org/dc/terms/modified> "2019-09-16" ;
+                                          <http://purl.org/dc/terms/modified> "2019-09-24" ;
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.12" .
+                                          owl:versionInfo "0.1.13" .
 
 #################################################################
 #    Annotation properties
@@ -2122,6 +2122,13 @@ The conditions specified here are those that affect the measurement properties, 
                                                                   <http://iot.linkeddata.es/def/core#WalletProperty> ,
                                                                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
                                                          rdfs:label "Wallet funding address"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletPaymentForward
+<http://iot.linkeddata.es/def/core#WalletPaymentForward> rdf:type owl:NamedIndividual ,
+                                                                  <http://iot.linkeddata.es/def/core#WalletProperty> ,
+                                                                  <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                                                         rdfs:label "Wallet payment forward"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#WalletPrivateKey
