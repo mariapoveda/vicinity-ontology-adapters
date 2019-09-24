@@ -22,11 +22,11 @@
         <terms:creator rdf:resource="http://purl.org/net/mpoveda"/>
         <terms:creator rdf:resource="http://www.garcia-castro.com/foaf.rdf#me"/>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <terms:modified>2019-09-16</terms:modified>
+        <terms:modified>2019-09-24</terms:modified>
         <vann:preferredNamespacePrefix>vcnt-adap</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://iot.linkeddata.es/def/adapters#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases.</rdfs:comment>
-        <owl:versionInfo>0.1.12</owl:versionInfo>
+        <owl:versionInfo>0.1.13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3361,6 +3361,17 @@ The conditions specified here are those that affect the measurement properties, 
         <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="en">Wallet funding address</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://iot.linkeddata.es/def/core#WalletPaymentForward -->
+
+
+    <owl:NamedIndividual rdf:about="http://iot.linkeddata.es/def/core#WalletPaymentForward">
+        <rdf:type rdf:resource="http://iot.linkeddata.es/def/core#WalletProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:label xml:lang="en">Wallet payment forward</rdfs:label>
     </owl:NamedIndividual>
     
 
