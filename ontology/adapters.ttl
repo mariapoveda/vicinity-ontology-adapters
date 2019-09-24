@@ -21,11 +21,11 @@
                                           dcterms:creator <http://purl.org/net/mpoveda> ,
                                                           <http://www.garcia-castro.com/foaf.rdf#me> ;
                                           dcterms:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                          dcterms:modified "2019-09-16" ;
+                                          dcterms:modified "2019-09-24" ;
                                           vann:preferredNamespacePrefix "vcnt-adap" ;
                                           vann:preferredNamespaceUri "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.12" .
+                                          owl:versionInfo "0.1.13" .
 
 #################################################################
 #    Annotation properties
@@ -54,47 +54,6 @@ vs:term_status rdf:type owl:AnnotationProperty .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://iot.linkeddata.es/def/adapters#BitcoinWallet
-:BitcoinWallet rdf:type owl:Class ;
-               rdfs:subClassOf :Wallet ;
-               rdfs:comment "Bitcoin wallet service"@en ;
-               rdfs:label "Bitcoin wallet"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#DashWallet
-:DashWallet rdf:type owl:Class ;
-            rdfs:subClassOf :Wallet ;
-            rdfs:comment "Dash wallet service"@en ;
-            rdfs:label "Dash wallet"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#Repository
-:Repository rdf:type owl:Class ;
-            rdfs:subClassOf :Service ;
-            rdfs:comment "A service that provides access to a repository"@en ;
-            rdfs:label "Repository"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#RepositoryProperty
-:RepositoryProperty rdf:type owl:Class ;
-                    rdfs:subClassOf ssn:Property ;
-                    rdfs:label "Repository properties"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#Wallet
-:Wallet rdf:type owl:Class ;
-        rdfs:subClassOf :Service ;
-        rdfs:comment "Electronic wallet service"@en ;
-        rdfs:label "Wallet"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletProperty
-:WalletProperty rdf:type owl:Class ;
-                rdfs:subClassOf ssn:Property ;
-                rdfs:comment "Properties attached to wallet services"@en ;
-                rdfs:label "Wallet property"@en .
-
 
 ###  http://iot.linkeddata.es/def/core#ActivityTracker
 :ActivityTracker rdf:type owl:Class ;
@@ -148,6 +107,13 @@ vs:term_status rdf:type owl:AnnotationProperty .
               rdfs:label "Beacon reader"@en .
 
 
+###  http://iot.linkeddata.es/def/core#BitcoinWallet
+:BitcoinWallet rdf:type owl:Class ;
+               rdfs:subClassOf :Wallet ;
+               rdfs:comment "Bitcoin wallet service"@en ;
+               rdfs:label "Bitcoin wallet"@en .
+
+
 ###  http://iot.linkeddata.es/def/core#BloodPressureMonitor
 :BloodPressureMonitor rdf:type owl:Class ;
                       rdfs:subClassOf :Sensor ;
@@ -183,6 +149,13 @@ vs:term_status rdf:type owl:AnnotationProperty .
                 rdfs:subClassOf :Device ;
                 rdfs:comment "Combo system with PV and battery behind the same inverter"@en ;
                 rdfs:label "Combo battery and PV"@en .
+
+
+###  http://iot.linkeddata.es/def/core#DashWallet
+:DashWallet rdf:type owl:Class ;
+            rdfs:subClassOf :Wallet ;
+            rdfs:comment "Dash wallet service"@en ;
+            rdfs:label "Dash wallet"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#Device
@@ -398,6 +371,19 @@ vs:term_status rdf:type owl:AnnotationProperty .
                   rdfs:label "Radiant intensity"@en .
 
 
+###  http://iot.linkeddata.es/def/core#Repository
+:Repository rdf:type owl:Class ;
+            rdfs:subClassOf :Service ;
+            rdfs:comment "A service that provides access to a repository"@en ;
+            rdfs:label "Repository"@en .
+
+
+###  http://iot.linkeddata.es/def/core#RepositoryProperty
+:RepositoryProperty rdf:type owl:Class ;
+                    rdfs:subClassOf ssn:Property ;
+                    rdfs:label "Repository properties"@en .
+
+
 ###  http://iot.linkeddata.es/def/core#Sensor
 :Sensor rdf:type owl:Class ;
         rdfs:subClassOf :Device ,
@@ -467,6 +453,20 @@ vs:term_status rdf:type owl:AnnotationProperty .
 :TimeProperty rdf:type owl:Class ;
               rdfs:subClassOf ssn:Property ;
               rdfs:label "TimeProperty"@en .
+
+
+###  http://iot.linkeddata.es/def/core#Wallet
+:Wallet rdf:type owl:Class ;
+        rdfs:subClassOf :Service ;
+        rdfs:comment "Electronic wallet service"@en ;
+        rdfs:label "Wallet"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletProperty
+:WalletProperty rdf:type owl:Class ;
+                rdfs:subClassOf ssn:Property ;
+                rdfs:comment "Properties attached to wallet services"@en ;
+                rdfs:label "Wallet property"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#WaterEnergyMeter
@@ -779,60 +779,11 @@ ssn-system:SystemProperty rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
-###  http://iot.linkeddata.es/def/adapters#RepositoryDigitalAsset
-:RepositoryDigitalAsset rdf:type owl:NamedIndividual ,
-                                 :RepositoryProperty ,
-                                 sosa:ObservableProperty ;
-                        rdfs:label "Repository digital asset"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#RepositoyEntity
-:RepositoyEntity rdf:type owl:NamedIndividual ,
-                          :RepositoryProperty ,
-                          sosa:ObservableProperty ;
-                 rdfs:label "Repository (as property)"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletBalance
-:WalletBalance rdf:type owl:NamedIndividual ,
-                        :WalletProperty ,
-                        sosa:ObservableProperty ;
-               rdfs:label "Wallet balance"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletEntity
-:WalletEntity rdf:type owl:NamedIndividual ,
-                       :WalletProperty ,
-                       sosa:ObservableProperty ;
-              rdfs:label "Wallet (as property)"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletFundingAddress
-:WalletFundingAddress rdf:type owl:NamedIndividual ,
+###  http://iot.linkeddata.es/def/adapters#WalletPaymentForward
+:WalletPaymentForward rdf:type owl:NamedIndividual ,
                                :WalletProperty ,
                                sosa:ObservableProperty ;
-                      rdfs:label "Wallet funding address"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletPrivateKey
-:WalletPrivateKey rdf:type owl:NamedIndividual ,
-                           :WalletProperty ,
-                           sosa:ObservableProperty ;
-                  rdfs:label "Wallet private key"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletTransactions
-:WalletTransactions rdf:type owl:NamedIndividual ,
-                             :WalletProperty ,
-                             sosa:ObservableProperty ;
-                    rdfs:label "Wallet transactions"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#WalletValue
-:WalletValue rdf:type owl:NamedIndividual ,
-                      :WalletProperty ,
-                      sosa:ObservableProperty ;
-             rdfs:label "Wallet value"@en .
+                      rdfs:label "Wallet payment forward"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#AccumulatedEnergyConsumed
@@ -2055,6 +2006,20 @@ ssn-system:SystemProperty rdf:type owl:Class ;
                   rdfs:label "Relative humidity"@en .
 
 
+###  http://iot.linkeddata.es/def/core#RepositoryDigitalAsset
+:RepositoryDigitalAsset rdf:type owl:NamedIndividual ,
+                                 :RepositoryProperty ,
+                                 sosa:ObservableProperty ;
+                        rdfs:label "Repository digital asset"@en .
+
+
+###  http://iot.linkeddata.es/def/core#RepositoyEntity
+:RepositoyEntity rdf:type owl:NamedIndividual ,
+                          :RepositoryProperty ,
+                          sosa:ObservableProperty ;
+                 rdfs:label "Repository (as property)"@en .
+
+
 ###  http://iot.linkeddata.es/def/core#ServiceLevel
 :ServiceLevel rdf:type owl:NamedIndividual ,
                        :OperationalStatus ,
@@ -2151,6 +2116,48 @@ ssn-system:SystemProperty rdf:type owl:Class ;
 :VisceralFatRating rdf:type owl:NamedIndividual ,
                             :HealthProperty ;
                    rdfs:label "Visceral fat rating"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletBalance
+:WalletBalance rdf:type owl:NamedIndividual ,
+                        :WalletProperty ,
+                        sosa:ObservableProperty ;
+               rdfs:label "Wallet balance"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletEntity
+:WalletEntity rdf:type owl:NamedIndividual ,
+                       :WalletProperty ,
+                       sosa:ObservableProperty ;
+              rdfs:label "Wallet (as property)"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletFundingAddress
+:WalletFundingAddress rdf:type owl:NamedIndividual ,
+                               :WalletProperty ,
+                               sosa:ObservableProperty ;
+                      rdfs:label "Wallet funding address"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletPrivateKey
+:WalletPrivateKey rdf:type owl:NamedIndividual ,
+                           :WalletProperty ,
+                           sosa:ObservableProperty ;
+                  rdfs:label "Wallet private key"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletTransactions
+:WalletTransactions rdf:type owl:NamedIndividual ,
+                             :WalletProperty ,
+                             sosa:ObservableProperty ;
+                    rdfs:label "Wallet transactions"@en .
+
+
+###  http://iot.linkeddata.es/def/core#WalletValue
+:WalletValue rdf:type owl:NamedIndividual ,
+                      :WalletProperty ,
+                      sosa:ObservableProperty ;
+             rdfs:label "Wallet value"@en .
 
 
 ###  http://iot.linkeddata.es/def/core#WeatherForecast
