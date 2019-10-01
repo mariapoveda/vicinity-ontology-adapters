@@ -357,7 +357,7 @@ vs:term_status rdf:type owl:AnnotationProperty .
 
 ###  http://iot.linkeddata.es/def/adapters#Repository
 :Repository rdf:type owl:Class ;
-            rdfs:subClassOf :Service ;
+            rdfs:subClassOf <http://iot.linkeddata.es/def/core#Service> ;
             rdfs:comment "A service that provides access to a repository"@en ;
             rdfs:label "Repository"@en .
 
@@ -366,10 +366,6 @@ vs:term_status rdf:type owl:AnnotationProperty .
 :RepositoryProperty rdf:type owl:Class ;
                     rdfs:subClassOf ssn:Property ;
                     rdfs:label "Repository properties"@en .
-
-
-###  http://iot.linkeddata.es/def/adapters#Service
-:Service rdf:type owl:Class .
 
 
 ###  http://iot.linkeddata.es/def/adapters#SmartOven
@@ -438,7 +434,7 @@ vs:term_status rdf:type owl:AnnotationProperty .
 
 ###  http://iot.linkeddata.es/def/adapters#Wallet
 :Wallet rdf:type owl:Class ;
-        rdfs:subClassOf :Service ;
+        rdfs:subClassOf <http://iot.linkeddata.es/def/core#Service> ;
         rdfs:comment "Electronic wallet service"@en ;
         rdfs:label "Wallet"@en .
 
@@ -512,6 +508,10 @@ vs:term_status rdf:type owl:AnnotationProperty .
                                            rdfs:comment "A sensor is a device that detects and responds to some type of input from the physical environment and outputs digital data that can be transmitted over a network. A sensor is a specialization of an IoT device. A sensor monitors a physical entity. The output digital data may only be distantly related to the input from the physical environment and may be output with a significant time delay, depending on processing of the data within the device, for example, the recognition of the identity of a person from a surveillance camera device. (definition taken from ISO/IEC 11404:2007)"@en ;
                                            rdfs:label "Sensor"@en ;
                                            rdfs:seeAlso "ISO/IEC CC 30141. Information technology - Internet of Things Reference architecutre (IoT RA)"@en .
+
+
+###  http://iot.linkeddata.es/def/core#Service
+<http://iot.linkeddata.es/def/core#Service> rdf:type owl:Class .
 
 
 ###  http://www.w3.org/ns/sosa/ActuatableProperty
