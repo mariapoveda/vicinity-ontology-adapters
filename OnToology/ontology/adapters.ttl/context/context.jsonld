@@ -51,6 +51,9 @@
     "PanicButton" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#PanicButton"
     },
+    "WindAmbientProperty" : {
+      "@id" : "http://iot.linkeddata.es/def/adapters#WindAmbientProperty"
+    },
     "AmbientHumidityProperty" : {
       "@id" : "http://iot.linkeddata.es/def/adapters#AmbientHumidityProperty"
     },

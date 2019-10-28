@@ -13,11 +13,11 @@
                                           <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> ,
                                                                              <http://www.garcia-castro.com/foaf.rdf#me> ;
                                           <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
-                                          <http://purl.org/dc/terms/modified> "2019-09-24" ;
+                                          <http://purl.org/dc/terms/modified> "2019-10-28" ;
                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" ;
                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" ;
                                           rdfs:comment "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en ;
-                                          owl:versionInfo "0.1.13" .
+                                          owl:versionInfo "0.1.14" .
 
 #################################################################
 #    Annotation properties
@@ -61,7 +61,8 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 
 ###  http://iot.linkeddata.es/def/adapters#AmbientProperty
 :AmbientProperty rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.w3.org/ns/ssn/Property> ;
+                 rdfs:subClassOf <http://www.w3.org/ns/sosa/ObservableProperty> ,
+                                 <http://www.w3.org/ns/ssn/Property> ;
                  rdfs:label "AmbientProperty"@en .
 
 
@@ -468,6 +469,12 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 :WeightScale rdf:type owl:Class ;
              rdfs:subClassOf <http://iot.linkeddata.es/def/core#Sensor> ;
              rdfs:label "Weight scale"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#WindAmbientProperty
+:WindAmbientProperty rdf:type owl:Class ;
+                     rdfs:subClassOf :AmbientProperty ;
+                     rdfs:label "Wind ambient property"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#WindowSensor
@@ -1204,6 +1211,13 @@ The conditions specified here are those that affect the measurement properties, 
                     <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 
 
+###  http://iot.linkeddata.es/def/adapters#Clouds
+:Clouds rdf:type owl:NamedIndividual ,
+                 :AmbientProperty ,
+                 <http://www.w3.org/ns/sosa/ObservableProperty> ;
+        rdfs:label "Clouds"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower
 :ConnectorCurrentChargingPower rdf:type owl:NamedIndividual ,
                                         :Power ,
@@ -1929,6 +1943,20 @@ The conditions specified here are those that affect the measurement properties, 
                        rdfs:label "Power factor lower bound"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#Precipitation
+:Precipitation rdf:type owl:NamedIndividual ,
+                        :AmbientProperty ,
+                        <http://www.w3.org/ns/sosa/ObservableProperty> ;
+               rdfs:label "Precipitation"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#Pressure
+:Pressure rdf:type owl:NamedIndividual ,
+                   :AmbientProperty ,
+                   <http://www.w3.org/ns/sosa/ObservableProperty> ;
+          rdfs:label "Pressure"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#Protein
 :Protein rdf:type owl:NamedIndividual ,
                   :HealthProperty ;
@@ -2065,6 +2093,20 @@ The conditions specified here are those that affect the measurement properties, 
                        "mgdl"@en .
 
 
+###  http://iot.linkeddata.es/def/adapters#Sunrise
+:Sunrise rdf:type owl:NamedIndividual ,
+                  :AmbientProperty ,
+                  <http://www.w3.org/ns/sosa/ObservableProperty> ;
+         rdfs:label "Sunrise"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#Sunset
+:Sunset rdf:type owl:NamedIndividual ,
+                 :AmbientProperty ,
+                 <http://www.w3.org/ns/sosa/ObservableProperty> ;
+        rdfs:label "Sunset"@en .
+
+
 ###  http://iot.linkeddata.es/def/adapters#SuperCool
 :SuperCool rdf:type owl:NamedIndividual ,
                     <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
@@ -2107,6 +2149,13 @@ The conditions specified here are those that affect the measurement properties, 
 :VisceralFatRating rdf:type owl:NamedIndividual ,
                             :HealthProperty ;
                    rdfs:label "Visceral fat rating"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#Visibility
+:Visibility rdf:type owl:NamedIndividual ,
+                     :AmbientProperty ,
+                     <http://www.w3.org/ns/sosa/ObservableProperty> ;
+            rdfs:label "Visibility"@en .
 
 
 ###  http://iot.linkeddata.es/def/adapters#WalletBalance
@@ -2169,6 +2218,20 @@ The conditions specified here are those that affect the measurement properties, 
 :Weight rdf:type owl:NamedIndividual ,
                  :HealthProperty ;
         rdfs:label "Weight"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#WindOrientation
+:WindOrientation rdf:type owl:NamedIndividual ,
+                          :WindAmbientProperty ,
+                          <http://www.w3.org/ns/sosa/ObservableProperty> ;
+                 rdfs:label "Wind orientation"@en .
+
+
+###  http://iot.linkeddata.es/def/adapters#WindSpeed
+:WindSpeed rdf:type owl:NamedIndividual ,
+                    :WindAmbientProperty ,
+                    <http://www.w3.org/ns/sosa/ObservableProperty> ;
+           rdfs:label "Wind speed"@en .
 
 
 [ owl:cardinality "1"^^xsd:nonNegativeInteger
