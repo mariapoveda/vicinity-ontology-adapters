@@ -23,7 +23,7 @@
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ],
   "http://purl.org/dc/terms/modified" : [ {
-    "@value" : "2019-09-24"
+    "@value" : "2019-10-28"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "vcnt-adap"
@@ -39,7 +39,7 @@
     "@id" : "http://iot.linkeddata.es/def/core#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.13"
+    "@value" : "0.1.14"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#AccumulatedEnergyConsumed",
@@ -222,6 +222,8 @@
     "@value" : "AmbientProperty"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  }, {
     "@id" : "http://www.w3.org/ns/ssn/Property"
   } ]
 }, {
@@ -595,6 +597,13 @@
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ChildLock",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/ssn/systems/OperatingProperty" ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#Clouds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Clouds"
+  } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#ComboBatteryPV",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -1643,6 +1652,13 @@
     "@id" : "http://iot.linkeddata.es/def/core#Sensor"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#Precipitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Precipitation"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Presence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1651,6 +1667,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#Pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pressure"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#PressureMat",
@@ -1915,6 +1938,20 @@
     "@value" : "mgdl"
   } ]
 }, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#Sunrise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sunrise"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#Sunset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sunset"
+  } ]
+}, {
   "@id" : "http://iot.linkeddata.es/def/adapters#SuperCool",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/ssn/systems/OperatingProperty" ]
 }, {
@@ -2000,6 +2037,13 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Visceral fat rating"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#Visibility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#AmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Visibility"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#Wallet",
@@ -2149,6 +2193,30 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#WindAmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind ambient property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://iot.linkeddata.es/def/adapters#AmbientProperty"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#WindOrientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#WindAmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind orientation"
+  } ]
+}, {
+  "@id" : "http://iot.linkeddata.es/def/adapters#WindSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://iot.linkeddata.es/def/adapters#WindAmbientProperty", "http://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Wind speed"
   } ]
 }, {
   "@id" : "http://iot.linkeddata.es/def/adapters#WindowSensor",

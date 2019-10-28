@@ -5,11 +5,11 @@
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://purl.org/net/mpoveda> .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/creator> <http://www.garcia-castro.com/foaf.rdf#me> .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/modified> "2019-09-24" .
+<http://iot.linkeddata.es/def/adapters#> <http://purl.org/dc/terms/modified> "2019-10-28" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vcnt-adap" .
 <http://iot.linkeddata.es/def/adapters#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://iot.linkeddata.es/def/adapters#" .
 <http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology represents the terms needed to represent the devices involded in the VICINITY pilot cases."@en .
-<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.13" .
+<http://iot.linkeddata.es/def/adapters#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.14" .
 # 
 # 
 # #################################################################
@@ -55,6 +55,7 @@
 # 
 # http://iot.linkeddata.es/def/adapters#AmbientProperty
 <http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/ssn/Property> .
 <http://iot.linkeddata.es/def/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "AmbientProperty"@en .
 # 
@@ -397,6 +398,11 @@
 <http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/core#Sensor> .
 <http://iot.linkeddata.es/def/adapters#WeightScale> <http://www.w3.org/2000/01/rdf-schema#label> "Weight scale"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WindAmbientProperty
+<http://iot.linkeddata.es/def/adapters#WindAmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iot.linkeddata.es/def/adapters#WindAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#WindAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Wind ambient property"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#WindowSensor
 <http://iot.linkeddata.es/def/adapters#WindowSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1020,6 +1026,12 @@
 <http://iot.linkeddata.es/def/adapters#ChildLock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#ChildLock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
 # 
+# http://iot.linkeddata.es/def/adapters#Clouds
+<http://iot.linkeddata.es/def/adapters#Clouds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Clouds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#Clouds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Clouds> <http://www.w3.org/2000/01/rdf-schema#label> "Clouds"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower
 <http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#ConnectorCurrentChargingPower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#Power> .
@@ -1640,6 +1652,18 @@
 <http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
 <http://iot.linkeddata.es/def/adapters#PowerFactorLowerBound> <http://www.w3.org/2000/01/rdf-schema#label> "Power factor lower bound"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#Precipitation
+<http://iot.linkeddata.es/def/adapters#Precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#Precipitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Precipitation> <http://www.w3.org/2000/01/rdf-schema#label> "Precipitation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Pressure
+<http://iot.linkeddata.es/def/adapters#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#Protein
 <http://iot.linkeddata.es/def/adapters#Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
@@ -1755,6 +1779,18 @@
 <http://iot.linkeddata.es/def/adapters#SugarLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Sugar level"@en .
 <http://iot.linkeddata.es/def/adapters#SugarLevel> <http://www.w3.org/2000/01/rdf-schema#label> "mgdl"@en .
 # 
+# http://iot.linkeddata.es/def/adapters#Sunrise
+<http://iot.linkeddata.es/def/adapters#Sunrise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Sunrise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#Sunrise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Sunrise> <http://www.w3.org/2000/01/rdf-schema#label> "Sunrise"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Sunset
+<http://iot.linkeddata.es/def/adapters#Sunset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Sunset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#Sunset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Sunset> <http://www.w3.org/2000/01/rdf-schema#label> "Sunset"@en .
+# 
 # http://iot.linkeddata.es/def/adapters#SuperCool
 <http://iot.linkeddata.es/def/adapters#SuperCool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#SuperCool> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/ssn/systems/OperatingProperty> .
@@ -1791,6 +1827,12 @@
 <http://iot.linkeddata.es/def/adapters#VisceralFatRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#VisceralFatRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
 <http://iot.linkeddata.es/def/adapters#VisceralFatRating> <http://www.w3.org/2000/01/rdf-schema#label> "Visceral fat rating"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#Visibility
+<http://iot.linkeddata.es/def/adapters#Visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#Visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#AmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#Visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#Visibility> <http://www.w3.org/2000/01/rdf-schema#label> "Visibility"@en .
 # 
 # http://iot.linkeddata.es/def/adapters#WalletBalance
 <http://iot.linkeddata.es/def/adapters#WalletBalance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1844,6 +1886,18 @@
 <http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#HealthProperty> .
 <http://iot.linkeddata.es/def/adapters#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WindOrientation
+<http://iot.linkeddata.es/def/adapters#WindOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#WindOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#WindAmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#WindOrientation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#WindOrientation> <http://www.w3.org/2000/01/rdf-schema#label> "Wind orientation"@en .
+# 
+# http://iot.linkeddata.es/def/adapters#WindSpeed
+<http://iot.linkeddata.es/def/adapters#WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://iot.linkeddata.es/def/adapters#WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://iot.linkeddata.es/def/adapters#WindAmbientProperty> .
+<http://iot.linkeddata.es/def/adapters#WindSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sosa/ObservableProperty> .
+<http://iot.linkeddata.es/def/adapters#WindSpeed> <http://www.w3.org/2000/01/rdf-schema#label> "Wind speed"@en .
 # 
 _:genid1 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
